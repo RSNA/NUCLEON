@@ -1,0 +1,279 @@
+########################################################################
+# NUCLEON — competency queries (Table 4)
+#
+# Tested against NUCLEON.ttl, 98,932 triples, with rdflib 7.
+# All queries run over asserted triples only: no reasoner is required.
+#
+# Prefixes used throughout:
+#   :      <https://rsna.org/radlex/nucleon#>
+#   rdfs:  <http://www.w3.org/2000/01/rdf-schema#>
+#   skos:  <http://www.w3.org/2004/02/skos/core#>
+#
+# A note on positron emitters, which affects Q1, Q5 and Q6.
+# NUCLEON's :BetaPlusDecay carries the IAEA code EC+B+, an unresolved sum
+# over electron capture and positron emission; :PositronEmission carries the
+# explicit B+ code and is used only 13 times. Clinically used tracers —
+# 18F, 11C, 13N, 15O, 68Ga, 82Rb — all fall under :BetaPlusDecay, so a query
+# that omits it returns almost nothing. Queries below therefore treat both
+# as positron-emitting, and Q1a shows the strict alternative for comparison.
+# Neither set is exactly "emits a positron with non-zero intensity"; that
+# would need positron branching intensities the source does not supply.
+########################################################################
+
+
+### Q1 — Which positron emitters have half-lives between 5 min and 2 h? ###
+# Returns 216 nuclides, among them 18F (6,586 s), 68Ga (4,058 s), 11C (1,223 s)
+# and 13N (598 s). 15O falls outside at 122 s, as intended. :halfLife is
+# always seconds and always xsd:double, so the filter needs no conversion.
+# DISTINCT matters: without it a nuclide with two qualifying branches
+# appears twice, which is why the row count exceeds the nuclide count.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT DISTINCT ?nuclide ?halfLifeSeconds
+WHERE {
+  ?nuclide a :Nuclide ;
+           :halfLife       ?halfLifeSeconds ;
+           :hasDecayBranch ?branch .
+  ?branch :decayMode ?mode .
+  VALUES ?mode { :BetaPlusDecay :PositronEmission }
+  FILTER(?halfLifeSeconds >= 300 && ?halfLifeSeconds <= 7200)
+}
+ORDER BY ?halfLifeSeconds
+
+
+### Q1a — the strict reading, :PositronEmission only ###
+# Returns 3 nuclides — 131Ce, 119I, 117Te — and none of the clinical
+# tracers. Included to show why Q1 admits :BetaPlusDecay.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT DISTINCT ?nuclide ?halfLifeSeconds
+WHERE {
+  ?nuclide a :Nuclide ;
+           :halfLife       ?halfLifeSeconds ;
+           :hasDecayBranch ?branch .
+  ?branch :decayMode :PositronEmission .
+  FILTER(?halfLifeSeconds >= 300 && ?halfLifeSeconds <= 7200)
+}
+ORDER BY ?halfLifeSeconds
+
+
+### Q2 — Given the Radionuclide Code Sequence of a study, what is the half-life? ###
+# Bind ?code to the concatenation of Coding Scheme Designator (0008,0102)
+# and Code Value (0008,0100), separated by a colon — the form :dicomCode
+# stores. "SCT:77004003" is 18F; the query returns 6586.0 s.
+# Substitute the pair read from the header, or pass it in as a parameter.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?nuclide ?halfLifeSeconds ?halfLifeValue ?halfLifeUnit ?element
+WHERE {
+  VALUES ?code { "SCT:77004003" }
+  ?nuclide :dicomCode ?code ;
+           :halfLife  ?halfLifeSeconds .
+  OPTIONAL { ?nuclide :halfLifeValue ?halfLifeValue ; :halfLifeUnit ?halfLifeUnit }
+  OPTIONAL { ?element :hasNuclide ?nuclide }
+}
+
+
+### Q3 — What does 225Ac decay to, and what does that decay to? ###
+# Property path over :hasDecayBranch/:decayProduct, one or more steps.
+# Returns 14 nuclides: the seven of the main chain, the side products
+# 221Ra, 217Rn and 209Tl, the 14C cluster product 211Bi with its own
+# daughters 207Tl and 207Pb, and 205Tl from 209Bi's alpha branch.
+# The path operator handles the chain's convergence — 217Rn and 209Pb are
+# each reached two ways — and terminates on cycles, so no depth bound is
+# needed. Note that it also walks past 209Bi, which NUCLEON flags stable
+# while still carrying its alpha branch.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT DISTINCT ?descendant
+WHERE {
+  :Ac-225 (:hasDecayBranch/:decayProduct)+ ?descendant .
+}
+
+
+### Q3a — the same chain as parent/daughter steps, with branch detail ###
+# Returns 18 rows: every branch of every nuclide in the 225Ac chain,
+# including the ones Fig. 5 omits for legibility. Useful for rendering a
+# decay diagram; ?branchingRatio is unbound where the source gives none.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?parent ?mode ?branchingRatio ?daughter ?daughterHalfLife
+WHERE {
+  { BIND(:Ac-225 AS ?parent) } UNION { :Ac-225 (:hasDecayBranch/:decayProduct)+ ?parent }
+  ?parent :hasDecayBranch ?branch .
+  ?branch :decayMode     ?mode ;
+          :decayProduct  ?daughter .
+  OPTIONAL { ?branch  :branchingRatio ?branchingRatio }
+  OPTIONAL { ?daughter :halfLife      ?daughterHalfLife }
+}
+ORDER BY DESC(?branchingRatio)
+
+
+### Q4 — Which nuclides decay to a stable daughter in one step? ###
+# Returns 569 rows over 511 distinct nuclides — the difference being
+# nuclides with two branches that both land on a stable daughter.
+# :isStable is a genuine boolean, so no string comparison is needed.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT ?nuclide ?mode ?stableDaughter
+WHERE {
+  ?nuclide a :Nuclide ;
+           :hasDecayBranch ?branch .
+  ?branch :decayMode    ?mode ;
+          :decayProduct ?stableDaughter .
+  ?stableDaughter :isStable true .
+}
+ORDER BY ?nuclide
+
+
+### Q5 — Which alpha emitters have a half-life in the therapeutic window? ###
+# Returns 69 nuclides for a window of 1 hour to 30 days. That window is a
+# choice, not a defined term; it admits 225Ac (10 d), 223Ra (11.4 d),
+# 211At (7.2 h) and 212Bi (60.6 min). Adjust both bounds freely.
+#
+# The branching-ratio filter is doing real work here. Without it the result
+# includes nuclides whose alpha branch is negligible — 147Eu appears on a
+# 0.0022% alpha branch and is in no sense an alpha emitter. Requiring at
+# least 1% cuts 69 to 33 and leaves a clinically meaningful set. Drop the
+# ?branchingRatio line and its filter to see the unfiltered set.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT DISTINCT ?nuclide ?halfLifeValue ?halfLifeUnit ?branchingRatio
+WHERE {
+  ?nuclide a :Nuclide ;
+           :halfLife       ?halfLifeSeconds ;
+           :hasDecayBranch ?branch .
+  ?branch :decayMode      :AlphaDecay ;
+          :branchingRatio ?branchingRatio .
+  OPTIONAL { ?nuclide :halfLifeValue ?halfLifeValue ; :halfLifeUnit ?halfLifeUnit }
+  FILTER(?halfLifeSeconds >= 3600 && ?halfLifeSeconds <= 2592000)
+  FILTER(?branchingRatio >= 1)
+}
+ORDER BY DESC(?halfLifeSeconds)
+
+
+### Q6 — Which DICOM-coded radionuclides are NOT positron emitters? ###
+# Returns 48 of the 87 DICOM-coded nuclides. FILTER NOT EXISTS rather than
+# a negated join, so nuclides with no decay branches at all — and 99mTc,
+# whose only branch is an isomeric transition — are still returned.
+# Without DISTINCT the four nuclides in both context groups appear twice.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT DISTINCT ?nuclide ?dicomCode
+WHERE {
+  ?nuclide :dicomCode ?dicomCode .
+  FILTER NOT EXISTS {
+    ?nuclide :hasDecayBranch/:decayMode ?mode .
+    VALUES ?mode { :BetaPlusDecay :PositronEmission }
+  }
+}
+ORDER BY ?nuclide
+
+
+### Q7 — What is the German name of the element of 99mTc? ###
+# Returns "Technetium"@de. :hasNuclide is traversed backwards with ^ because
+# :isNuclideOf, though declared, is never asserted in the released file.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?element ?germanName
+WHERE {
+  :Tc-99m ^:hasNuclide ?element .
+  ?element skos:altLabel ?germanName .
+  FILTER(LANG(?germanName) = "de")
+}
+
+
+### Q7a — every language NUCLEON holds for that element ###
+# Returns 9 rows across 7 language tags (German through to both Chinese scripts). The untagged symbol is excluded by
+# the LANG test; symbol-form strings deliberately carry no language tag.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+SELECT ?symbol ?language ?name
+WHERE {
+  :Tc-99m ^:hasNuclide ?element .
+  ?element rdfs:label    ?symbol ;
+           skos:altLabel ?name .
+  BIND(LANG(?name) AS ?language)
+  FILTER(?language != "")
+}
+ORDER BY ?language
+
+
+########################################################################
+# Validation queries reported in the manuscript
+########################################################################
+
+### V1 — nucleon conservation across every asserted daughter link ###
+# Returns 0. Confirms internal consistency and correct implementation,
+# not independent physical correctness: the daughters were derived with
+# this same arithmetic.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT (COUNT(*) AS ?violations)
+WHERE {
+  ?branch a :DecayBranch ;
+          :decayMode       ?mode ;
+          :decayProduct    ?daughter ;
+          ^:hasDecayBranch ?parent .
+  ?parent   :atomicNumber ?zp ; :massNumber ?ap .
+  ?daughter :atomicNumber ?zd ; :massNumber ?ad .
+  ?mode :changeInAtomicNumber ?dz ; :changeInMassNumber ?da .
+  FILTER(?zd != ?zp + ?dz || ?ad != ?ap + ?da)
+}
+
+
+### V2 — A = Z + N for every nuclide ###
+# Returns 0.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT (COUNT(*) AS ?violations)
+WHERE {
+  ?nuclide a :Nuclide ;
+           :atomicNumber  ?z ;
+           :neutronNumber ?n ;
+           :massNumber    ?a .
+  FILTER(?z + ?n != ?a)
+}
+
+
+### V3 — no nuclide decays to itself ###
+# Returns 0 rows. This is the check that caught the two isomeric transitions
+# the IAEA export attributes to ground states (183Hf, 60Mn), both since
+# relocated to the corresponding isomers.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT ?parent ?branch
+WHERE {
+  ?parent :hasDecayBranch ?branch .
+  ?branch :decayProduct   ?parent .
+}
+
+
+### V4 — every decayProduct target is a declared nuclide ###
+# Returns 0 rows. Guards against dangling IRIs when new branches are added.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT ?branch ?daughter
+WHERE {
+  ?branch :decayProduct ?daughter .
+  FILTER NOT EXISTS { ?daughter a :Nuclide }
+}
+
+
+### V5 — every nuclide's atomic number matches its element's ###
+# Returns 0 rows.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT ?element ?nuclide ?elementZ ?nuclideZ
+WHERE {
+  ?element :hasNuclide   ?nuclide ;
+           :atomicNumber ?elementZ .
+  ?nuclide :atomicNumber ?nuclideZ .
+  FILTER(?elementZ != ?nuclideZ)
+}
