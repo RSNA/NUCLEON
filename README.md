@@ -17,7 +17,8 @@ NUCLEON is also available from [NCBO BioPortal](https://bioportal.bioontology.or
 | [`scripts/validate.py`](scripts/validate.py) | Runs every query, reports content counts and structural checks |
 | [`scripts/add_isomer_branches.py`](scripts/add_isomer_branches.py) | Derives decay branches for metastable isomers (used for v1.1) |
 | [`scripts/add_display_annotations.py`](scripts/add_display_annotations.py) | Regenerates the class-level display annotations and decay summaries; rerun after any data change |
-| [`validation/report.txt`](validation/report.txt) | Output of `validate.py` for the current release |
+| [`validation/`](validation) | Validation results: internal checks, daughter comparison against ICRP-107 and ENSDF, comparison with the IAEA source, and the manual audit sample; see [`validation/README.md`](validation/README.md) |
+| [`scripts/compare_daughters.py`](scripts/compare_daughters.py), [`compare_to_source.py`](scripts/compare_to_source.py), [`draw_audit_sample.py`](scripts/draw_audit_sample.py) | Scripts that produce those results |
 | [`source-data/`](source-data) | IAEA LiveChart export and the decay-mode reference table |
 
 ## Content (v1.2)
@@ -47,6 +48,8 @@ python3 scripts/validate.py
 ```
 
 The script runs every query in `nucleon_queries.rq` over asserted triples only (no reasoner is needed) and exits non-zero if any validation query or structural check fails. V1 confirms nucleon conservation across every asserted daughter link; because daughters are derived with that same arithmetic, it verifies internal consistency, not independent physical correctness. The ontology classifies as consistent with no unsatisfiable classes under HermiT.
+
+Derived parent&ndash;daughter links have also been compared with ICRP Publication 107 and ENSDF, which list daughters explicitly: no link disagrees with either. See [`validation/README.md`](validation/README.md), which also records open data issues found by comparing the ontology with its IAEA source.
 
 ## Using the ontology
 

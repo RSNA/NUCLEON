@@ -1,0 +1,2065 @@
+nuclide,field,nucleon,source,note
+n-1,missing from NUCLEON,,present,
+n-4,missing from NUCLEON,,present,
+n-6,missing from NUCLEON,,present,
+H-1,naturalAbundance,,99.9855,
+H-2,naturalAbundance,,0.0145,
+He-3,naturalAbundance,,0.0002,
+He-4,naturalAbundance,,99.9998,
+He-5,decay width,0.6 MeV,0.648 MeV,
+He-7,decay width,160 keV,150 keV,
+He-10,decay width,0.3 MeV,300 keV,
+Li-5,decay width,1.5 MeV,1.23 MeV,
+Li-6,naturalAbundance,,4.85,
+Li-7,naturalAbundance,,95.15,
+Li-8,halfLife (s),0.838,0.8399,ratio 0.9977
+Li-8,halfLifeValue/Unit,838 ms,839.9 ms,
+Li-11,halfLife (s),0.0085,0.00875,ratio 0.9714
+Li-11,halfLifeValue/Unit,8.5 ms,8.75 ms,
+Be-7,halfLife (s),4589568.0,4598208.0,ratio 0.9981
+Be-7,halfLifeValue/Unit,53.12 d,53.22 d,
+Be-8,decay width,6.8 eV,5.57 eV,
+Be-9,naturalAbundance,,100.0,
+Be-11,halfLife (s),13.81,13.76,ratio 1.004
+Be-11,halfLifeValue/Unit,13.81 s,13.76 s,
+Be-12,halfLife (s),0.0236,0.02146,ratio 1.1
+Be-12,halfLifeValue/Unit,23.6 ms,21.46 ms,
+Be-13,halfLife (s),5.069308e-22,2.7e-21,ratio 0.1878
+B-7,decay width,1.4 MeV,801 keV,
+B-10,naturalAbundance,,19.65,
+B-11,naturalAbundance,,80.35,
+B-13,halfLife (s),0.01736,0.01733,ratio 1.002
+B-13,halfLifeValue/Unit,17.36 ms,17.33 ms,
+B-14,halfLife (s),0.0138,0.0125,ratio 1.104
+B-14,halfLifeValue/Unit,13.8 ms,12.5 ms,
+B-15,halfLife (s),0.0105,0.00993,ratio 1.057
+B-15,halfLifeValue/Unit,10.5 ms,9.93 ms,
+B-16,decay width,None None,100 keV,
+C-8,decay width,230 keV,130 keV,
+C-10,halfLife (s),19.255,19.29,ratio 0.9982
+C-10,halfLifeValue/Unit,19.255 s,19.29 s,
+C-11,halfLife (s),1223.4,1221.84,ratio 1.001
+C-11,halfLifeValue/Unit,20.39 m,20.364 m,
+C-13,naturalAbundance,,1.06,
+C-14,halfLife (s),180825000000.0,179874000000.0,ratio 1.005
+C-14,halfLifeValue/Unit,5730 a,5700 Y,
+C-17,halfLifeValue/Unit,0.193 s,193 ms,
+C-18,halfLife (s),0.095,0.092,ratio 1.033
+C-18,halfLifeValue/Unit,0.095 s,92 ms,
+C-19,halfLife (s),0.046,0.0463,ratio 0.9935
+C-19,halfLifeValue/Unit,0.046 s,46.3 ms,
+C-20,halfLife (s),0.014,0.0163,ratio 0.8589
+C-20,halfLifeValue/Unit,0.014 s,16.3 ms,
+N-11,decay width,740 keV,830 keV,
+N-14,naturalAbundance,,99.6205,
+N-15,naturalAbundance,,0.3795,
+N-18,halfLife (s),0.624,0.619,ratio 1.008
+N-18,halfLifeValue/Unit,624 ms,619 ms,
+N-19,halfLife (s),0.304,0.336,ratio 0.9048
+N-19,halfLifeValue/Unit,0.304 s,336 ms,
+N-20,halfLife (s),0.1,0.1344,ratio 0.744
+N-20,halfLifeValue/Unit,100 ms,134.4 ms,
+N-21,halfLife (s),0.085,0.084,ratio 1.012
+N-21,halfLifeValue/Unit,85 ms,84 ms,
+N-22,halfLife (s),0.024,0.023,ratio 1.043
+N-22,halfLifeValue/Unit,24 ms,23 ms,
+O-12,decay width,0.4 MeV,72 keV,
+O-16,naturalAbundance,,99.757,
+O-17,naturalAbundance,,0.03835,
+O-18,naturalAbundance,,0.2045,
+O-19,halfLife (s),26.91,26.88,ratio 1.001
+O-19,halfLifeValue/Unit,26.91 s,26.88 s,
+O-23,halfLife (s),0.082,0.097,ratio 0.8454
+O-23,halfLifeValue/Unit,82 ms,97 ms,
+O-24,halfLife (s),0.061,0.072,ratio 0.8472
+O-24,halfLifeValue/Unit,61 ms,72 ms,
+F-14,decay width,None None,910 keV,
+F-15,decay width,1 MeV,660 keV,
+F-19,naturalAbundance,,100.0,
+F-20,halfLife (s),11.0,11.07,ratio 0.9937
+F-20,halfLifeValue/Unit,11 s,11.07 s,
+F-24,halfLife (s),0.34,0.382,ratio 0.8901
+F-24,halfLifeValue/Unit,0.34 s,382 ms,
+F-25,halfLife (s),0.059,0.08,ratio 0.7375
+F-25,halfLifeValue/Unit,59 ms,80 ms,
+Ne-16,decay width,122 keV,80 keV,
+Ne-20,naturalAbundance,,90.48,
+Ne-21,naturalAbundance,,0.27,
+Ne-22,naturalAbundance,,9.25,
+Ne-27,halfLife (s),0.032,0.0315,ratio 1.016
+Ne-27,halfLifeValue/Unit,32 ms,31.5 ms,
+Ne-28,halfLife (s),0.017,0.02,ratio 0.85
+Ne-28,halfLifeValue/Unit,17 ms,20 ms,
+Ne-29,halfLife (s),0.2,0.015,ratio 13.33
+Ne-29,halfLifeValue/Unit,0.2 s,15 ms,
+Na-19,decay width,None None,40 keV,
+Na-23,naturalAbundance,,100.0,
+Na-24,halfLife (s),14.959,53841.6,off by a factor of 3600: likely unit error (h vs s)
+Na-24,halfLifeValue/Unit,14.959 s,14.956 h,
+Na-29,halfLife (s),0.0449,0.0441,ratio 1.018
+Na-29,halfLifeValue/Unit,44.9 ms,44.1 ms,
+Na-33,halfLife (s),0.0082,0.008,ratio 1.025
+Na-33,halfLifeValue/Unit,8.2 ms,8 ms,
+Na-35,halfLife (s),0.0015,0.0018,ratio 0.8333
+Na-35,halfLifeValue/Unit,1.5 ms,1.8 ms,
+Mg-20,halfLife (s),0.095,0.0904,ratio 1.051
+Mg-20,halfLifeValue/Unit,95 ms,90.4 ms,
+Mg-22,halfLife (s),3.857,3.8755,ratio 0.9952
+Mg-22,halfLifeValue/Unit,3.857 s,3.8755 s,
+Mg-23,halfLife (s),11.317,11.3046,ratio 1.001
+Mg-23,halfLifeValue/Unit,11.317 s,11.3046 s,
+Mg-24,naturalAbundance,,78.965,
+Mg-25,naturalAbundance,,10.011,
+Mg-26,naturalAbundance,,11.025,
+Mg-31,halfLife (s),0.23,0.27,ratio 0.8519
+Mg-31,halfLifeValue/Unit,230 ms,270 ms,
+Mg-32,halfLife (s),0.12,0.086,ratio 1.395
+Mg-32,halfLifeValue/Unit,120 ms,86 ms,
+Mg-33,halfLife (s),0.09,0.0905,ratio 0.9945
+Mg-33,halfLifeValue/Unit,90 ms,90.5 ms,
+Al-22,halfLife (s),0.07,0.0911,ratio 0.7684
+Al-22,halfLifeValue/Unit,70 ms,91.1 ms,
+Al-23,halfLife (s),0.47,0.446,ratio 1.054
+Al-23,halfLifeValue/Unit,0.47 s,446 ms,
+Al-27,naturalAbundance,,100.0,
+Al-28,halfLife (s),134.484,134.7,ratio 0.9984
+Al-28,halfLifeValue/Unit,2.2414 m,2.245 m,
+Al-30,halfLife (s),3.6,3.62,ratio 0.9945
+Al-30,halfLifeValue/Unit,3.6 s,3.62 s,
+Si-22,halfLife (s),0.006,0.029,ratio 0.2069
+Si-22,halfLifeValue/Unit,6 ms,29 ms,
+Si-23,halfLife (s),,0.0423,absent in NUCLEON
+Si-24,halfLife (s),0.102,0.1413,ratio 0.7219
+Si-24,halfLifeValue/Unit,102 ms,141.3 ms,
+Si-26,halfLife (s),2.234,2.2453,ratio 0.995
+Si-26,halfLifeValue/Unit,2.234 s,2.2453 s,
+Si-27,halfLife (s),4.16,4.15,ratio 1.002
+Si-27,halfLifeValue/Unit,4.16 s,4.15 s,
+Si-28,naturalAbundance,,92.2545,
+Si-29,naturalAbundance,,4.672,
+Si-30,naturalAbundance,,3.0735,
+Si-32,halfLife (s),4733640000.0,4954437378.0,ratio 0.9554
+Si-32,halfLifeValue/Unit,150 a,157 Y,
+Si-33,halfLife (s),6.18,6.11,ratio 1.011
+Si-33,halfLifeValue/Unit,6.18 s,6.11 s,
+P-26,halfLife (s),0.02,0.0437,ratio 0.4577
+P-26,halfLifeValue/Unit,20 ms,43.7 ms,
+P-31,naturalAbundance,,100.0,
+P-39,halfLife (s),0.16,0.28,ratio 0.5714
+P-39,halfLifeValue/Unit,0.16 s,0.28 s,
+P-40,halfLife (s),0.26,0.15,ratio 1.733
+P-40,halfLifeValue/Unit,260 ms,150 ms,
+P-41,halfLife (s),0.12,0.101,ratio 1.188
+P-41,halfLifeValue/Unit,120 ms,101 ms,
+P-42,halfLife (s),0.11,0.0485,ratio 2.268
+P-42,halfLifeValue/Unit,110 ms,48.5 ms,
+P-43,halfLife (s),0.033,0.0365,ratio 0.9041
+P-43,halfLifeValue/Unit,33 ms,36.5 ms,
+S-27,halfLife (s),0.021,0.0155,ratio 1.355
+S-27,halfLifeValue/Unit,21 ms,15.5 ms,
+S-29,halfLife (s),0.187,0.188,ratio 0.9947
+S-29,halfLifeValue/Unit,187 ms,188 ms,
+S-31,halfLife (s),2.572,2.5534,ratio 1.007
+S-31,halfLifeValue/Unit,2.572 s,2.5534 s,
+S-32,naturalAbundance,,94.85,
+S-33,naturalAbundance,,0.763,
+S-34,naturalAbundance,,4.365,
+S-36,naturalAbundance,,0.0158,
+S-41,halfLife (s),,1.99,absent in NUCLEON
+S-42,halfLife (s),0.56,1.016,ratio 0.5512
+S-42,halfLifeValue/Unit,0.56 s,1.016 s,
+S-43,halfLife (s),0.22,0.265,ratio 0.8302
+S-43,halfLifeValue/Unit,220 ms,265 ms,
+S-44,halfLife (s),0.123,0.1,ratio 1.23
+S-44,halfLifeValue/Unit,123 ms,100 ms,
+S-45,halfLife (s),0.082,0.068,ratio 1.206
+S-45,halfLifeValue/Unit,82 ms,68 ms,
+Cl-31,halfLife (s),0.15,0.19,ratio 0.7895
+Cl-31,halfLifeValue/Unit,150 ms,190 ms,
+Cl-35,naturalAbundance,,75.8,
+Cl-37,naturalAbundance,,24.2,
+Cl-39,halfLife (s),3336.0,3372.0,ratio 0.9893
+Cl-39,halfLifeValue/Unit,55.6 m,56.2 m,
+Cl-43,halfLife (s),3.3,3.13,ratio 1.054
+Cl-43,halfLifeValue/Unit,3.3 s,3.13 s,
+Cl-44,halfLife (s),0.434,0.56,ratio 0.775
+Cl-44,halfLifeValue/Unit,434 ms,0.56 s,
+Cl-45,halfLife (s),0.4,0.413,ratio 0.9685
+Cl-45,halfLifeValue/Unit,400 ms,413 ms,
+Cl-46,halfLife (s),0.223,0.232,ratio 0.9612
+Cl-46,halfLifeValue/Unit,223 ms,232 ms,
+Cl-47,halfLife (s),,0.101,absent in NUCLEON
+Ar-30,halfLife (s),2e-08,1e-11,ratio 2000
+Ar-30,halfLifeValue/Unit,20 ns,10 ps,
+Ar-31,halfLife (s),0.0151,0.015,ratio 1.007
+Ar-31,halfLifeValue/Unit,15.1 ms,15 ms,
+Ar-36,naturalAbundance,,0.3336,
+Ar-38,naturalAbundance,,0.0629,
+Ar-39,halfLife (s),8488994000.0,8457256161.0,ratio 1.004
+Ar-39,halfLifeValue/Unit,269 a,268 Y,
+Ar-40,naturalAbundance,,99.6035,
+Ar-41,halfLife (s),6560.4,6576.6,ratio 0.9975
+Ar-41,halfLifeValue/Unit,109.34 m,109.61 m,
+Ar-47,halfLife (s),0.7,1.23,ratio 0.5691
+Ar-47,halfLifeValue/Unit,700 ms,1.23 s,
+K-35,halfLife (s),0.19,0.178,ratio 1.067
+K-35,halfLifeValue/Unit,190 ms,178 ms,
+K-36,halfLife (s),0.342,0.341,ratio 1.003
+K-36,halfLifeValue/Unit,342 ms,341 ms,
+K-38,halfLife (s),458.16,459.06,ratio 0.998
+K-38,halfLifeValue/Unit,7.636 m,7.651 m,
+K-39,naturalAbundance,,93.2581,
+K-40,halfLife (s),4.029906e+16,3.94e+16,ratio 1.023
+K-40,halfLifeValue/Unit,1277000000 a,1.25E+09 Y,
+K-40,naturalAbundance,,0.0117,
+K-40,decay modes,"[('BetaMinusDecay', 89.28), ('ElectronCapture', 10.72)]","[('BetaMinusDecay', 89.28), ('BetaPlusDecay', 10.72)]",
+K-41,naturalAbundance,,6.7302,
+K-45,halfLife (s),1038.0,1068.6,ratio 0.9714
+K-45,halfLifeValue/Unit,17.3 m,17.81 m,
+K-52,halfLife (s),0.105,0.11,ratio 0.9545
+K-52,halfLifeValue/Unit,105 ms,110 ms,
+Ca-35,halfLife (s),0.05,0.0257,ratio 1.946
+Ca-35,halfLifeValue/Unit,50 ms,25.7 ms,
+Ca-36,halfLife (s),0.102,0.1012,ratio 1.008
+Ca-36,halfLifeValue/Unit,102 ms,101.2 ms,
+Ca-38,halfLife (s),0.44,0.44376,ratio 0.9915
+Ca-38,halfLifeValue/Unit,440 ms,443.76 ms,
+Ca-40,naturalAbundance,,96.941,
+Ca-41,halfLife (s),3250433000000.0,3136760000000.0,ratio 1.036
+Ca-41,halfLifeValue/Unit,103000 a,9.94E+04 Y,
+Ca-42,naturalAbundance,,0.647,
+Ca-43,naturalAbundance,,0.135,
+Ca-44,naturalAbundance,,2.086,
+Ca-46,naturalAbundance,,0.004,
+Ca-48,halfLife (s),1.893456e+26,9.15e+26,ratio 0.2069
+Ca-48,halfLifeValue/Unit,6e+18 a,2.90E+19 Y,
+Ca-48,naturalAbundance,,0.187,
+Ca-50,halfLife (s),13.9,13.45,ratio 1.033
+Ca-50,halfLifeValue/Unit,13.9 s,13.45 s,
+Ca-53,halfLife (s),0.09,0.461,ratio 0.1952
+Ca-53,halfLifeValue/Unit,90 ms,461 ms,
+Sc-44,halfLife (s),14137.2,14292.0,ratio 0.9892
+Sc-44,halfLifeValue/Unit,3.927 h,3.97 h,
+Sc-45,naturalAbundance,,100.0,
+Ti-39,halfLife (s),0.026,0.0285,ratio 0.9123
+Ti-39,halfLifeValue/Unit,26 ms,28.5 ms,
+Ti-40,halfLife (s),0.05,0.0524,ratio 0.9542
+Ti-40,halfLifeValue/Unit,50 ms,52.4 ms,
+Ti-41,halfLife (s),0.08,0.0819,ratio 0.9768
+Ti-41,halfLifeValue/Unit,80 ms,81.9 ms,
+Ti-42,halfLife (s),0.199,0.20865,ratio 0.9538
+Ti-42,halfLifeValue/Unit,199 ms,208.65 ms,
+Ti-44,halfLife (s),1988129000.0,1865014325.0,ratio 1.066
+Ti-44,halfLifeValue/Unit,63 a,59.1 Y,
+Ti-46,naturalAbundance,,8.25,
+Ti-47,naturalAbundance,,7.44,
+Ti-48,naturalAbundance,,73.72,
+Ti-49,naturalAbundance,,5.41,
+Ti-50,naturalAbundance,,5.18,
+Ti-54,halfLife (s),,2.1,absent in NUCLEON
+Ti-55,halfLife (s),0.32,1.3,ratio 0.2462
+Ti-55,halfLifeValue/Unit,320 ms,1.3 s,
+Ti-56,halfLife (s),0.16,0.2,ratio 0.8
+Ti-56,halfLifeValue/Unit,160 ms,200 ms,
+Ti-57,halfLife (s),0.18,0.098,ratio 1.837
+Ti-57,halfLifeValue/Unit,180 ms,98 ms,
+Ti-58,halfLife (s),,0.058,absent in NUCLEON
+Ti-59,halfLife (s),,0.0285,absent in NUCLEON
+Ti-60,halfLife (s),,0.022,absent in NUCLEON
+Ti-61,halfLife (s),,0.015,absent in NUCLEON
+V-43,halfLife (s),0.8,0.0793,ratio 10.09
+V-43,halfLifeValue/Unit,800 ms,79.3 ms,
+V-44,halfLife (s),0.09,0.111,ratio 0.8108
+V-44,halfLifeValue/Unit,90 ms,111 ms,
+V-50,halfLife (s),4.418064e+24,8.36e+24,ratio 0.5285
+V-50,halfLifeValue/Unit,1.4e+17 a,2.65E+17 Y,
+V-50,naturalAbundance,,0.25,
+V-51,naturalAbundance,,99.75,
+V-53,halfLife (s),96.6,92.58,ratio 1.043
+V-53,halfLifeValue/Unit,1.61 m,1.543 m,
+V-56,halfLife (s),0.23,0.216,ratio 1.065
+V-56,halfLifeValue/Unit,230 ms,216 ms,
+V-57,halfLifeValue/Unit,320 ms,0.32 s,
+V-58,halfLife (s),0.2,0.191,ratio 1.047
+V-58,halfLifeValue/Unit,200 ms,191 ms,
+V-59,halfLife (s),0.13,0.097,ratio 1.34
+V-59,halfLifeValue/Unit,130 ms,97 ms,
+V-60,halfLife (s),0.2,0.122,ratio 1.639
+V-60,halfLifeValue/Unit,200 ms,122 ms,
+V-61,halfLife (s),,0.0483,absent in NUCLEON
+V-62,halfLife (s),,0.0336,absent in NUCLEON
+V-63,halfLife (s),,0.017,absent in NUCLEON
+V-64,halfLife (s),,0.015,absent in NUCLEON
+Cr-43,halfLife (s),0.021,0.0212,ratio 0.9906
+Cr-43,halfLifeValue/Unit,21 ms,21.2 ms,
+Cr-44,halfLife (s),0.053,0.0428,ratio 1.238
+Cr-44,halfLifeValue/Unit,53 ms,42.8 ms,
+Cr-45,halfLife (s),0.05,0.0609,ratio 0.821
+Cr-45,halfLifeValue/Unit,50 ms,60.9 ms,
+Cr-50,halfLife (s),5.680368e+24,4.1e+25,ratio 0.1385
+Cr-50,halfLifeValue/Unit,1.8e+17 a,1.30E+18 Y,
+Cr-50,naturalAbundance,,4.345,
+Cr-52,naturalAbundance,,83.789,
+Cr-53,naturalAbundance,,9.501,
+Cr-54,naturalAbundance,,2.365,
+Cr-60,halfLife (s),0.57,0.49,ratio 1.163
+Cr-60,halfLifeValue/Unit,0.57 s,0.49 s,
+Cr-61,halfLife (s),0.27,0.234,ratio 1.154
+Cr-61,halfLifeValue/Unit,270 ms,234 ms,
+Cr-62,halfLife (s),0.19,0.206,ratio 0.9223
+Cr-62,halfLifeValue/Unit,190 ms,206 ms,
+Cr-63,halfLife (s),0.11,0.129,ratio 0.8527
+Cr-63,halfLifeValue/Unit,110 ms,129 ms,
+Cr-64,halfLife (s),,0.0429,absent in NUCLEON
+Cr-65,halfLife (s),,0.027,absent in NUCLEON
+Cr-66,halfLife (s),,0.024,absent in NUCLEON
+Mn-46,halfLife (s),0.041,0.0362,ratio 1.133
+Mn-46,halfLifeValue/Unit,41 ms,36.2 ms,
+Mn-48,halfLife (s),0.1581,0.1577,ratio 1.003
+Mn-48,halfLifeValue/Unit,158.1 ms,157.7 ms,
+Mn-50,halfLife (s),0.28388,0.28319,ratio 1.002
+Mn-50,halfLifeValue/Unit,283.88 ms,283.19 ms,
+Mn-53,halfLife (s),118025400000000.0,116761000000000.0,ratio 1.011
+Mn-53,halfLifeValue/Unit,3740000 a,3.70E+06 Y,
+Mn-55,naturalAbundance,,100.0,
+Mn-59,halfLife (s),4.6,4.59,ratio 1.002
+Mn-59,halfLifeValue/Unit,4.6 s,4.59 s,
+Mn-60,halfLife (s),51.0,0.28,ratio 182.1
+Mn-60,halfLifeValue/Unit,51 s,0.28 s,
+Mn-60,decay modes,"[('BetaMinusDecay', 100.0)]","[('BetaMinusDecay', 100.0), ('IsomericTransition', 100.0)]",
+Mn-61,halfLife (s),0.71,0.709,ratio 1.001
+Mn-61,halfLifeValue/Unit,0.71 s,0.709 s,
+Mn-62,halfLife (s),0.88,0.092,ratio 9.565
+Mn-62,halfLifeValue/Unit,0.88 s,92 ms,
+Mn-63,halfLife (s),0.25,0.275,ratio 0.9091
+Mn-63,halfLifeValue/Unit,0.25 s,0.275 s,
+Mn-64,halfLife (s),0.14,0.09,ratio 1.556
+Mn-64,halfLifeValue/Unit,140 ms,90 ms,
+Mn-65,halfLife (s),0.11,0.092,ratio 1.196
+Mn-65,halfLifeValue/Unit,110 ms,92 ms,
+Mn-66,halfLife (s),0.09,0.065,ratio 1.385
+Mn-66,halfLifeValue/Unit,90 ms,65 ms,
+Fe-46,halfLife (s),0.02,0.013,ratio 1.538
+Fe-46,halfLifeValue/Unit,20 ms,13 ms,
+Fe-47,halfLife (s),0.027,0.0218,ratio 1.239
+Fe-47,halfLifeValue/Unit,27 ms,21.8 ms,
+Fe-48,halfLife (s),0.044,0.0455,ratio 0.967
+Fe-48,halfLifeValue/Unit,44 ms,45.5 ms,
+Fe-49,halfLife (s),0.07,0.0647,ratio 1.082
+Fe-49,halfLifeValue/Unit,70 ms,64.7 ms,
+Fe-50,halfLife (s),0.15,0.152,ratio 0.9868
+Fe-50,halfLifeValue/Unit,150 ms,152 ms,
+Fe-54,naturalAbundance,,5.845,
+Fe-55,halfLife (s),86152250.0,86592204.87,ratio 0.9949
+Fe-55,halfLifeValue/Unit,2.73 a,2.744 Y,
+Fe-56,naturalAbundance,,91.754,
+Fe-57,naturalAbundance,,2.119,
+Fe-58,naturalAbundance,,0.282,
+Fe-60,halfLife (s),47336400000000.0,82679100000000.0,ratio 0.5725
+Fe-60,halfLifeValue/Unit,1500000 a,2.62E+06 Y,
+Fe-65,halfLife (s),0.4,0.81,ratio 0.4938
+Fe-65,halfLifeValue/Unit,0.4 s,0.81 s,
+Fe-67,halfLife (s),0.47,0.6,ratio 0.7833
+Fe-67,halfLifeValue/Unit,470 ms,0.6 s,
+Fe-68,halfLife (s),0.1,0.188,ratio 0.5319
+Fe-68,halfLifeValue/Unit,0.1 s,188 ms,
+Fe-69,halfLife (s),0.17,0.11,ratio 1.545
+Fe-69,halfLifeValue/Unit,170 ms,110 ms,
+Co-50,halfLife (s),0.044,0.0388,ratio 1.134
+Co-50,halfLifeValue/Unit,44 ms,38.8 ms,
+Co-51,halfLife (s),,0.0688,absent in NUCLEON
+Co-52,halfLife (s),0.018,0.104,ratio 0.1731
+Co-52,halfLifeValue/Unit,18 ms,104 ms,
+Co-59,naturalAbundance,,100.0,
+Co-60,halfLifeValue/Unit,5.2714 a,1925.28 d,
+Co-62,halfLife (s),90.0,92.4,ratio 0.974
+Co-62,halfLifeValue/Unit,1.5 m,1.54 m,
+Co-65,halfLife (s),1.2,1.16,ratio 1.034
+Co-65,halfLifeValue/Unit,1.2 s,1.16 s,
+Co-66,halfLife (s),0.233,0.2,ratio 1.165
+Co-66,halfLifeValue/Unit,0.233 s,0.2 s,
+Co-67,halfLife (s),0.42,0.425,ratio 0.9882
+Co-67,halfLifeValue/Unit,0.42 s,0.425 s,
+Co-68,halfLife (s),0.18,0.2,ratio 0.9
+Co-68,halfLifeValue/Unit,0.18 s,0.2 s,
+Co-69,halfLife (s),0.27,0.227,ratio 1.189
+Co-69,halfLifeValue/Unit,0.27 s,227 ms,
+Co-70,halfLife (s),0.15,0.112,ratio 1.339
+Co-70,halfLifeValue/Unit,150 ms,112 ms,
+Co-71,halfLife (s),0.21,0.08,ratio 2.625
+Co-71,halfLifeValue/Unit,210 ms,80 ms,
+Co-72,halfLife (s),0.09,0.0599,ratio 1.503
+Co-72,halfLifeValue/Unit,90 ms,59.9 ms,
+Co-73,halfLife (s),,0.0407,absent in NUCLEON
+Co-74,halfLife (s),,0.0313,absent in NUCLEON
+Co-75,halfLife (s),,0.03,absent in NUCLEON
+Ni-52,halfLife (s),0.038,0.0408,ratio 0.9314
+Ni-52,halfLifeValue/Unit,38 ms,40.8 ms,
+Ni-53,halfLife (s),0.045,0.0552,ratio 0.8152
+Ni-53,halfLifeValue/Unit,45 ms,55.2 ms,
+Ni-54,halfLife (s),,0.1142,absent in NUCLEON
+Ni-55,halfLife (s),0.2121,0.2037,ratio 1.041
+Ni-55,halfLifeValue/Unit,212.1 ms,203.7 ms,
+Ni-58,naturalAbundance,,68.0769,
+Ni-60,naturalAbundance,,26.2231,
+Ni-61,naturalAbundance,,1.1399,
+Ni-62,naturalAbundance,,3.6345,
+Ni-63,halfLife (s),3158916000.0,3193560909.0,ratio 0.9892
+Ni-63,halfLifeValue/Unit,100.1 a,101.2 Y,
+Ni-64,naturalAbundance,,0.9256,
+Ni-68,halfLife (s),19.0,29.0,ratio 0.6552
+Ni-68,halfLifeValue/Unit,19 s,29 s,
+Ni-70,halfLife (s),,6.0,absent in NUCLEON
+Ni-71,halfLife (s),1.86,2.56,ratio 0.7266
+Ni-71,halfLifeValue/Unit,1.86 s,2.56 s,
+Ni-72,halfLife (s),2.1,1.57,ratio 1.338
+Ni-72,halfLifeValue/Unit,2.1 s,1.57 s,
+Ni-73,halfLife (s),0.7,0.84,ratio 0.8333
+Ni-73,halfLifeValue/Unit,0.7 s,0.84 s,
+Ni-74,halfLife (s),0.54,0.5077,ratio 1.064
+Ni-74,halfLifeValue/Unit,0.54 s,507.7 ms,
+Ni-75,halfLife (s),0.6,0.344,ratio 1.744
+Ni-75,halfLifeValue/Unit,0.6 s,344 ms,
+Ni-76,halfLife (s),0.24,0.238,ratio 1.008
+Ni-76,halfLifeValue/Unit,0.24 s,0.238 s,
+Cu-57,halfLife (s),0.1994,0.1963,ratio 1.016
+Cu-57,halfLifeValue/Unit,199.4 ms,196.3 ms,
+Cu-61,halfLife (s),11998.8,12020.4,ratio 0.9982
+Cu-61,halfLifeValue/Unit,3.333 h,3.339 h,
+Cu-62,halfLife (s),584.4,580.2,ratio 1.007
+Cu-62,halfLifeValue/Unit,9.74 m,9.67 m,
+Cu-63,naturalAbundance,,69.15,
+Cu-65,naturalAbundance,,30.85,
+Cu-68,halfLife (s),31.1,30.9,ratio 1.006
+Cu-68,halfLifeValue/Unit,31.1 s,30.9 s,
+Cu-70,halfLife (s),4.5,44.5,ratio 0.1011
+Cu-70,halfLifeValue/Unit,4.5 s,44.5 s,
+Cu-71,halfLife (s),19.5,19.4,ratio 1.005
+Cu-71,halfLifeValue/Unit,19.5 s,19.4 s,
+Cu-72,halfLife (s),6.6,6.63,ratio 0.9955
+Cu-72,halfLifeValue/Unit,6.6 s,6.63 s,
+Cu-73,halfLife (s),3.9,4.2,ratio 0.9286
+Cu-73,halfLifeValue/Unit,3.9 s,4.2 s,
+Cu-74,halfLife (s),1.594,1.63,ratio 0.9779
+Cu-74,halfLifeValue/Unit,1.594 s,1.63 s,
+Cu-77,halfLife (s),0.469,0.4698,ratio 0.9983
+Cu-77,halfLifeValue/Unit,469 ms,469.8 ms,
+Cu-78,halfLife (s),0.342,0.335,ratio 1.021
+Cu-78,halfLifeValue/Unit,342 ms,335 ms,
+Cu-79,halfLife (s),0.188,0.241,ratio 0.7801
+Cu-79,halfLifeValue/Unit,188 ms,241 ms,
+Zn-58,halfLife (s),0.065,0.0867,ratio 0.7497
+Zn-58,halfLifeValue/Unit,65 ms,86.7 ms,
+Zn-59,halfLife (s),0.182,0.1786,ratio 1.019
+Zn-59,halfLifeValue/Unit,182 ms,178.6 ms,
+Zn-64,naturalAbundance,,49.17,
+Zn-65,halfLife (s),21104060.0,21075552.0,ratio 1.001
+Zn-65,halfLifeValue/Unit,244.26 d,243.93 d,
+Zn-66,naturalAbundance,,27.73,
+Zn-67,naturalAbundance,,4.04,
+Zn-68,naturalAbundance,,18.45,
+Zn-70,halfLife (s),1.57788e+22,1.2e+26,ratio 0.0001315
+Zn-70,halfLifeValue/Unit,500000000000000 a,3.80E+18 Y,
+Zn-70,naturalAbundance,,0.61,
+Zn-71,halfLife (s),147.0,145.2,ratio 1.012
+Zn-71,halfLifeValue/Unit,2.45 m,2.42 m,
+Zn-73,halfLife (s),23.5,24.5,ratio 0.9592
+Zn-73,halfLifeValue/Unit,23.5 s,24.5 s,
+Zn-79,halfLife (s),0.995,0.746,ratio 1.334
+Zn-79,halfLifeValue/Unit,995 ms,0.746 s,
+Zn-80,halfLife (s),0.545,0.5619,ratio 0.9699
+Zn-80,halfLifeValue/Unit,0.545 s,561.9 ms,
+Zn-81,halfLife (s),0.29,0.32,ratio 0.9062
+Zn-81,halfLifeValue/Unit,0.29 s,0.32 s,
+Ga-61,halfLife (s),0.15,0.167,ratio 0.8982
+Ga-61,halfLifeValue/Unit,0.15 s,167 ms,
+Ga-68,halfLife (s),4057.74,4062.6,ratio 0.9988
+Ga-68,halfLifeValue/Unit,67.629 m,67.71 m,
+Ga-69,naturalAbundance,,60.108,
+Ga-71,naturalAbundance,,39.892,
+Ga-80,halfLife (s),1.697,1.9,ratio 0.8932
+Ga-80,halfLifeValue/Unit,1.697 s,1.9 s,
+Ga-82,halfLife (s),0.599,0.6,ratio 0.9983
+Ga-82,halfLifeValue/Unit,0.599 s,0.6 s,
+Ga-83,halfLife (s),0.31,0.3081,ratio 1.006
+Ga-83,halfLifeValue/Unit,0.31 s,308.1 ms,
+Ga-84,halfLife (s),0.085,0.0952,ratio 0.8929
+Ga-84,halfLifeValue/Unit,85 ms,95.2 ms,
+Ge-61,halfLife (s),0.04,0.044,ratio 0.9091
+Ge-61,halfLifeValue/Unit,40 ms,44 ms,
+Ge-62,halfLife (s),,0.129,absent in NUCLEON
+Ge-63,halfLife (s),0.095,0.15,ratio 0.6333
+Ge-63,halfLifeValue/Unit,95 ms,150 ms,
+Ge-70,naturalAbundance,,20.52,
+Ge-72,naturalAbundance,,27.45,
+Ge-73,naturalAbundance,,7.76,
+Ge-74,naturalAbundance,,36.52,
+Ge-76,naturalAbundance,,7.75,
+Ge-77,halfLife (s),40680.0,40359.6,ratio 1.008
+Ge-77,halfLifeValue/Unit,11.3 h,11.211 h,
+Ge-82,halfLife (s),4.6,4.0,ratio 1.15
+Ge-82,halfLifeValue/Unit,4.6 s,4 s,
+As-65,halfLife (s),0.19,0.128,ratio 1.484
+As-65,halfLifeValue/Unit,0.19 s,128 ms,
+As-75,naturalAbundance,,100.0,
+As-76,halfLife (s),93121.92,94464.0,ratio 0.9858
+As-76,halfLifeValue/Unit,1.0778 d,26.24 h,
+As-77,halfLife (s),139788.0,139644.0,ratio 1.001
+As-77,halfLifeValue/Unit,38.83 h,38.79 h,
+As-84,halfLife (s),4.5,4.2,ratio 1.071
+As-84,halfLifeValue/Unit,4.5 s,4.2 s,
+As-87,halfLife (s),0.48,0.484,ratio 0.9917
+As-87,halfLifeValue/Unit,0.48 s,484 ms,
+Se-67,halfLife (s),0.06,0.133,ratio 0.4511
+Se-67,halfLifeValue/Unit,60 ms,133 ms,
+Se-74,naturalAbundance,,0.86,
+Se-76,naturalAbundance,,9.23,
+Se-77,naturalAbundance,,7.6,
+Se-78,naturalAbundance,,23.69,
+Se-79,halfLife (s),35660090000000.0,10319100000000.0,ratio 3.456
+Se-79,halfLifeValue/Unit,1130000 a,3.27E+05 Y,
+Se-80,naturalAbundance,,49.8,
+Se-82,halfLife (s),3.408221e+27,3.0300000000000005e+27,ratio 1.125
+Se-82,halfLifeValue/Unit,1.08e+20 a,9.60E+19 Y,
+Se-82,naturalAbundance,,8.82,
+Se-84,halfLife (s),186.0,195.6,ratio 0.9509
+Se-84,halfLifeValue/Unit,3.1 m,3.26 m,
+Se-85,halfLife (s),31.7,32.9,ratio 0.9635
+Se-85,halfLifeValue/Unit,31.7 s,32.9 s,
+Se-86,halfLife (s),15.3,14.3,ratio 1.07
+Se-86,halfLifeValue/Unit,15.3 s,14.3 s,
+Se-87,halfLife (s),5.29,5.5,ratio 0.9618
+Se-87,halfLifeValue/Unit,5.29 s,5.5 s,
+Se-89,halfLife (s),0.41,0.43,ratio 0.9535
+Se-89,halfLifeValue/Unit,0.41 s,0.43 s,
+Se-90,halfLife (s),,0.195,absent in NUCLEON
+Br-78,halfLife (s),387.6,387.0,ratio 1.002
+Br-78,halfLifeValue/Unit,6.46 m,6.45 m,
+Br-79,naturalAbundance,,50.65,
+Br-81,naturalAbundance,,49.35,
+Br-83,halfLife (s),8640.0,8546.4,ratio 1.011
+Br-83,halfLifeValue/Unit,2.4 h,2.374 h,
+Br-84,halfLife (s),1908.0,1905.6,ratio 1.001
+Br-84,halfLifeValue/Unit,31.8 m,31.76 m,
+Br-87,halfLife (s),55.6,55.68,ratio 0.9986
+Br-87,halfLifeValue/Unit,55.6 s,55.68 s,
+Br-89,halfLife (s),4.348,4.357,ratio 0.9979
+Br-89,halfLifeValue/Unit,4.348 s,4.357 s,
+Br-91,halfLife (s),0.541,0.543,ratio 0.9963
+Br-91,halfLifeValue/Unit,0.541 s,0.543 s,
+Br-92,halfLife (s),0.343,0.314,ratio 1.092
+Br-92,halfLifeValue/Unit,0.343 s,0.314 s,
+Kr-71,halfLife (s),0.064,0.0949,ratio 0.6744
+Kr-71,halfLifeValue/Unit,64 ms,94.9 ms,
+Kr-72,halfLife (s),17.2,17.1,ratio 1.006
+Kr-72,halfLifeValue/Unit,17.2 s,17.1 s,
+Kr-73,halfLife (s),27.0,27.3,ratio 0.989
+Kr-73,halfLifeValue/Unit,27 s,27.3 s,
+Kr-75,halfLife (s),258.0,276.0,ratio 0.9348
+Kr-75,halfLifeValue/Unit,4.3 m,4.6 m,
+Kr-77,halfLife (s),4464.0,4275.0,ratio 1.044
+Kr-77,halfLifeValue/Unit,74.4 m,71.25 m,
+Kr-78,naturalAbundance,,0.355,
+Kr-80,naturalAbundance,,2.286,
+Kr-82,naturalAbundance,,11.593,
+Kr-83,naturalAbundance,,11.5,
+Kr-84,naturalAbundance,,56.987,
+Kr-85,halfLife (s),339433500.0,338889828.0,ratio 1.002
+Kr-85,halfLifeValue/Unit,10.756 a,10.739 Y,
+Kr-86,naturalAbundance,,17.279,
+Kr-88,halfLife (s),10224.0,10170.0,ratio 1.005
+Kr-88,halfLifeValue/Unit,2.84 h,2.825 h,
+Kr-94,halfLife (s),0.2,0.212,ratio 0.9434
+Kr-94,halfLifeValue/Unit,0.2 s,212 ms,
+Kr-95,halfLife (s),0.78,0.114,ratio 6.842
+Kr-95,halfLifeValue/Unit,0.78 s,0.114 s,
+Rb-74,halfLife (s),0.0649,0.064776,ratio 1.002
+Rb-74,halfLifeValue/Unit,64.9 ms,64.776 ms,
+Rb-77,halfLife (s),226.2,226.8,ratio 0.9974
+Rb-77,halfLifeValue/Unit,3.77 m,3.78 m,
+Rb-80,halfLife (s),34.0,33.4,ratio 1.018
+Rb-80,halfLifeValue/Unit,34 s,33.4 s,
+Rb-82,halfLife (s),76.38,75.45,ratio 1.012
+Rb-82,halfLifeValue/Unit,1.273 m,1.2575 m,
+Rb-84,halfLife (s),2831328.0,2835648.0,ratio 0.9985
+Rb-84,halfLifeValue/Unit,32.77 d,32.82 d,
+Rb-85,naturalAbundance,,72.17,
+Rb-87,halfLife (s),1.498986e+18,1.57e+18,ratio 0.9548
+Rb-87,halfLifeValue/Unit,47500000000 a,4.97E+10 Y,
+Rb-87,naturalAbundance,,27.83,
+Rb-89,halfLife (s),909.0,919.2,ratio 0.9889
+Rb-89,halfLifeValue/Unit,15.15 m,15.32 m,
+Rb-91,halfLife (s),58.4,58.2,ratio 1.003
+Rb-91,halfLifeValue/Unit,58.4 s,58.2 s,
+Rb-92,halfLife (s),4.492,4.48,ratio 1.003
+Rb-92,halfLifeValue/Unit,4.492 s,4.48 s,
+Rb-96,halfLife (s),0.199,0.203,ratio 0.9803
+Rb-96,halfLifeValue/Unit,0.199 s,203 ms,
+Rb-97,halfLife (s),0.1699,0.1691,ratio 1.005
+Rb-97,halfLifeValue/Unit,169.9 ms,169.1 ms,
+Rb-98,halfLife (s),0.114,0.115,ratio 0.9913
+Rb-98,halfLifeValue/Unit,114 ms,115 ms,
+Rb-99,halfLife (s),0.0503,0.054,ratio 0.9315
+Rb-99,halfLifeValue/Unit,50.3 ms,54 ms,
+Rb-100,halfLife (s),0.051,0.052,ratio 0.9808
+Rb-100,halfLifeValue/Unit,51 ms,52 ms,
+Sr-75,halfLife (s),0.071,0.088,ratio 0.8068
+Sr-75,halfLifeValue/Unit,71 ms,88 ms,
+Sr-76,halfLife (s),8.9,7.89,ratio 1.128
+Sr-76,halfLifeValue/Unit,8.9 s,7.89 s,
+Sr-78,halfLife (s),150.0,160.0,ratio 0.9375
+Sr-78,halfLifeValue/Unit,2.5 m,160 s,
+Sr-82,halfLife (s),2207520.0,2190240.0,ratio 1.008
+Sr-82,halfLifeValue/Unit,25.55 d,25.35 d,
+Sr-84,naturalAbundance,,0.56,
+Sr-86,naturalAbundance,,9.86,
+Sr-87,naturalAbundance,,7.0,
+Sr-88,naturalAbundance,,82.58,
+Sr-90,halfLife (s),908543300.0,912310729.9,ratio 0.9959
+Sr-90,halfLifeValue/Unit,28.79 a,28.91 Y,
+Sr-91,halfLife (s),34668.0,34740.0,ratio 0.9979
+Sr-91,halfLifeValue/Unit,9.63 h,9.65 h,
+Sr-92,halfLife (s),9756.0,9399.6,ratio 1.038
+Sr-92,halfLifeValue/Unit,2.71 h,2.611 h,
+Sr-97,halfLife (s),0.426,0.429,ratio 0.993
+Sr-97,halfLifeValue/Unit,426 ms,429 ms,
+Sr-100,halfLife (s),0.202,0.2,ratio 1.01
+Sr-100,halfLifeValue/Unit,202 ms,200 ms,
+Y-80,halfLife (s),35.0,30.1,ratio 1.163
+Y-80,halfLifeValue/Unit,35 s,30.1 s,
+Y-82,halfLife (s),9.5,8.3,ratio 1.145
+Y-82,halfLifeValue/Unit,9.5 s,8.3 s,
+Y-84,halfLife (s),4.6,2370.0,ratio 0.001941
+Y-84,halfLifeValue/Unit,4.6 s,39.5 m,
+Y-89,naturalAbundance,,100.0,
+Zr-81,halfLife (s),15.0,5.5,ratio 2.727
+Zr-81,halfLifeValue/Unit,15 s,5.5 s,
+Zr-83,halfLife (s),44.0,42.0,ratio 1.048
+Zr-83,halfLifeValue/Unit,44 s,42 s,
+Zr-84,halfLife (s),1554.0,1548.0,ratio 1.004
+Zr-84,halfLifeValue/Unit,25.9 m,25.8 m,
+Zr-90,naturalAbundance,,51.45,
+Zr-91,naturalAbundance,,11.22,
+Zr-92,naturalAbundance,,17.15,
+Zr-93,halfLife (s),48283130000000.0,50806700000000.0,ratio 0.9503
+Zr-93,halfLifeValue/Unit,1530000 a,1.61E+06 Y,
+Zr-94,naturalAbundance,,17.38,
+Zr-96,halfLife (s),1.199189e+27,6.31e+26,ratio 1.9
+Zr-96,halfLifeValue/Unit,3.8e+19 a,2.00E+19 Y,
+Zr-96,naturalAbundance,,2.8,
+Zr-97,halfLife (s),60876.0,60296.4,ratio 1.01
+Zr-97,halfLifeValue/Unit,16.91 h,16.749 h,
+Nb-83,halfLife (s),4.1,3.9,ratio 1.051
+Nb-83,halfLifeValue/Unit,4.1 s,3.9 s,
+Nb-84,halfLife (s),12.0,9.8,ratio 1.224
+Nb-84,halfLifeValue/Unit,12 s,9.8 s,
+Nb-85,halfLife (s),20.9,20.5,ratio 1.02
+Nb-85,halfLifeValue/Unit,20.9 s,20.5 s,
+Nb-87,halfLife (s),156.0,222.0,ratio 0.7027
+Nb-87,halfLifeValue/Unit,2.6 m,3.7 m,
+Nb-89,halfLife (s),6840.0,7308.0,ratio 0.936
+Nb-89,halfLifeValue/Unit,1.9 h,2.03 h,
+Nb-93,naturalAbundance,,100.0,
+Mo-86,halfLife (s),19.6,19.1,ratio 1.026
+Mo-86,halfLifeValue/Unit,19.6 s,19.1 s,
+Mo-87,halfLife (s),13.4,14.1,ratio 0.9504
+Mo-87,halfLifeValue/Unit,13.4 s,14.1 s,
+Mo-89,halfLife (s),122.4,126.6,ratio 0.9668
+Mo-89,halfLifeValue/Unit,2.04 m,2.11 m,
+Mo-92,naturalAbundance,,14.649,
+Mo-94,naturalAbundance,,9.187,
+Mo-95,naturalAbundance,,15.873,
+Mo-96,naturalAbundance,,16.673,
+Mo-97,naturalAbundance,,9.582,
+Mo-98,naturalAbundance,,24.292,
+Mo-100,halfLife (s),3.15576e+26,2.21e+26,ratio 1.428
+Mo-100,halfLifeValue/Unit,1e+19 a,7.01E+18 Y,
+Mo-100,naturalAbundance,,9.744,
+Mo-105,halfLife (s),35.6,36.3,ratio 0.9807
+Mo-105,halfLifeValue/Unit,35.6 s,36.3 s,
+Mo-106,halfLife (s),8.4,8.73,ratio 0.9622
+Mo-106,halfLifeValue/Unit,8.4 s,8.73 s,
+Mo-109,halfLife (s),0.53,0.61,ratio 0.8689
+Mo-109,halfLifeValue/Unit,0.53 s,0.61 s,
+Mo-110,halfLife (s),0.3,0.296,ratio 1.014
+Mo-110,halfLifeValue/Unit,0.3 s,0.296 s,
+Tc-92,halfLife (s),253.8,255.0,ratio 0.9953
+Tc-92,halfLifeValue/Unit,4.23 m,4.25 m,
+Tc-97,halfLife (s),82049760000000.0,132855000000000.0,ratio 0.6176
+Tc-97,halfLifeValue/Unit,2600000 a,4.21E+06 Y,
+Tc-100,halfLife (s),15.8,15.65,ratio 1.01
+Tc-100,halfLifeValue/Unit,15.8 s,15.65 s,
+Tc-105,halfLife (s),456.0,458.4,ratio 0.9948
+Tc-105,halfLifeValue/Unit,7.6 m,7.64 m,
+Ru-90,halfLife (s),11.0,11.7,ratio 0.9402
+Ru-90,halfLifeValue/Unit,11 s,11.7 s,
+Ru-91,halfLife (s),9.0,8.0,ratio 1.125
+Ru-91,halfLifeValue/Unit,9 s,8 s,
+Ru-96,naturalAbundance,,5.54,
+Ru-97,halfLife (s),250560.0,244512.0,ratio 1.025
+Ru-97,halfLifeValue/Unit,2.9 d,2.83 d,
+Ru-98,naturalAbundance,,1.87,
+Ru-99,naturalAbundance,,12.76,
+Ru-100,naturalAbundance,,12.6,
+Ru-101,naturalAbundance,,17.06,
+Ru-102,naturalAbundance,,31.55,
+Ru-104,naturalAbundance,,18.62,
+Ru-106,halfLife (s),32278180.0,32123520.0,ratio 1.005
+Ru-106,halfLifeValue/Unit,373.59 d,371.8 d,
+Ru-109,halfLife (s),34.5,34.4,ratio 1.003
+Ru-109,halfLifeValue/Unit,34.5 s,34.4 s,
+Ru-110,halfLife (s),14.6,12.04,ratio 1.213
+Ru-110,halfLifeValue/Unit,14.6 s,12.04 s,
+Ru-114,halfLife (s),0.53,0.54,ratio 0.9815
+Ru-114,halfLifeValue/Unit,0.53 s,0.54 s,
+Ru-115,halfLife (s),0.4,0.318,ratio 1.258
+Ru-115,halfLifeValue/Unit,0.4 s,318 ms,
+Rh-98,halfLife (s),522.0,523.2,ratio 0.9977
+Rh-98,halfLifeValue/Unit,8.7 m,8.72 m,
+Rh-100,halfLife (s),74880.0,73800.0,ratio 1.015
+Rh-100,halfLifeValue/Unit,20.8 h,20.5 h,
+Rh-102,halfLife (s),17884800.0,17910720.0,ratio 0.9986
+Rh-102,halfLifeValue/Unit,207 d,207.3 d,
+Rh-103,naturalAbundance,,100.0,
+Rh-106,halfLife (s),29.8,30.07,ratio 0.991
+Rh-106,halfLifeValue/Unit,29.8 s,30.07 s,
+Rh-109,halfLife (s),80.0,80.8,ratio 0.9901
+Rh-109,halfLifeValue/Unit,80 s,80.8 s,
+Pd-102,naturalAbundance,,1.02,
+Pd-104,naturalAbundance,,11.14,
+Pd-105,naturalAbundance,,22.33,
+Pd-106,naturalAbundance,,27.33,
+Pd-108,naturalAbundance,,26.46,
+Pd-109,halfLife (s),49324.32,48924.0,ratio 1.008
+Pd-109,halfLifeValue/Unit,13.7012 h,13.59 h,
+Pd-110,naturalAbundance,,11.72,
+Pd-120,halfLife (s),0.5,0.492,ratio 1.016
+Pd-120,halfLifeValue/Unit,0.5 s,492 ms,
+Ag-94,halfLife (s),0.01,0.026,ratio 0.3846
+Ag-94,halfLifeValue/Unit,10 ms,26 ms,
+Ag-95,halfLife (s),2.0,1.75,ratio 1.143
+Ag-95,halfLifeValue/Unit,2 s,1.75 s,
+Ag-96,halfLife (s),5.1,4.4,ratio 1.159
+Ag-96,halfLifeValue/Unit,5.1 s,4.4 s,
+Ag-97,halfLife (s),19.0,25.5,ratio 0.7451
+Ag-97,halfLifeValue/Unit,19 s,25.5 s,
+Ag-98,halfLife (s),46.7,47.5,ratio 0.9832
+Ag-98,halfLifeValue/Unit,46.7 s,47.5 s,
+Ag-107,naturalAbundance,,51.839,
+Ag-108,halfLife (s),142.2,142.92,ratio 0.995
+Ag-108,halfLifeValue/Unit,2.37 m,2.382 m,
+Ag-109,naturalAbundance,,48.161,
+Ag-110,halfLife (s),24.6,24.56,ratio 1.002
+Ag-110,halfLifeValue/Unit,24.6 s,24.56 s,
+Ag-116,halfLife (s),160.8,230.0,ratio 0.6991
+Ag-116,halfLifeValue/Unit,2.68 m,230 s,
+Ag-122,halfLife (s),0.48,0.529,ratio 0.9074
+Ag-122,halfLifeValue/Unit,0.48 s,0.529 s,
+Ag-123,halfLife (s),0.309,0.299,ratio 1.033
+Ag-123,halfLifeValue/Unit,0.309 s,0.299 s,
+Ag-124,halfLife (s),0.172,0.191,ratio 0.9005
+Ag-124,halfLifeValue/Unit,0.172 s,191 ms,
+Ag-125,halfLife (s),0.166,0.159,ratio 1.044
+Ag-125,halfLifeValue/Unit,166 ms,159 ms,
+Ag-126,halfLife (s),0.107,0.052,ratio 2.058
+Ag-126,halfLifeValue/Unit,107 ms,52 ms,
+Cd-97,halfLife (s),3.0,2.8,ratio 1.071
+Cd-97,halfLifeValue/Unit,3 s,2.8 s,
+Cd-98,halfLife (s),9.2,9.3,ratio 0.9892
+Cd-98,halfLifeValue/Unit,9.2 s,9.3 s,
+Cd-106,naturalAbundance,,1.245,
+Cd-108,naturalAbundance,,0.888,
+Cd-109,halfLife (s),39968640.0,39908160.0,ratio 1.002
+Cd-109,halfLifeValue/Unit,462.6 d,461.9 d,
+Cd-110,naturalAbundance,,12.47,
+Cd-111,naturalAbundance,,12.795,
+Cd-112,naturalAbundance,,24.109,
+Cd-113,halfLife (s),2.429935e+23,2.54e+23,ratio 0.9567
+Cd-113,halfLifeValue/Unit,7700000000000000.0 a,8.04E+15 Y,
+Cd-113,naturalAbundance,,12.227,
+Cd-114,naturalAbundance,,28.754,
+Cd-116,isStable,True,False,
+Cd-116,halfLife (s),,1.0400000000000001e+27,absent in NUCLEON
+Cd-116,naturalAbundance,,7.512,
+Cd-125,halfLife (s),0.65,0.68,ratio 0.9559
+Cd-125,halfLifeValue/Unit,0.65 s,0.68 s,
+Cd-126,halfLife (s),0.506,0.514,ratio 0.9844
+Cd-126,halfLifeValue/Unit,0.506 s,0.514 s,
+Cd-128,halfLife (s),0.34,0.28,ratio 1.214
+Cd-128,halfLifeValue/Unit,0.34 s,0.28 s,
+Cd-129,halfLife (s),0.27,0.154,ratio 1.753
+Cd-129,halfLifeValue/Unit,0.27 s,154 ms,
+Cd-130,halfLife (s),0.2,0.162,ratio 1.235
+Cd-130,halfLifeValue/Unit,0.2 s,162 ms,
+In-100,halfLife (s),7.0,5.65,ratio 1.239
+In-100,halfLifeValue/Unit,7 s,5.65 s,
+In-102,halfLife (s),22.0,23.3,ratio 0.9442
+In-102,halfLifeValue/Unit,22 s,23.3 s,
+In-109,halfLife (s),15120.0,14972.4,ratio 1.01
+In-109,halfLifeValue/Unit,4.2 h,4.159 h,
+In-110,halfLife (s),17640.0,17712.0,ratio 0.9959
+In-110,halfLifeValue/Unit,4.9 h,4.92 h,
+In-112,halfLife (s),898.2,892.8,ratio 1.006
+In-112,halfLifeValue/Unit,14.97 m,14.88 m,
+In-113,naturalAbundance,,4.281,
+In-115,halfLife (s),1.39169e+22,1.39e+22,ratio 1.001
+In-115,naturalAbundance,,95.719,
+In-123,halfLife (s),5.98,6.15,ratio 0.9724
+In-123,halfLifeValue/Unit,5.98 s,6.15 s,
+In-124,halfLife (s),3.11,3.12,ratio 0.9968
+In-124,halfLifeValue/Unit,3.11 s,3.12 s,
+In-126,halfLife (s),1.6,1.53,ratio 1.046
+In-126,halfLifeValue/Unit,1.6 s,1.53 s,
+In-129,halfLife (s),0.61,0.611,ratio 0.9984
+In-129,halfLifeValue/Unit,0.61 s,611 ms,
+In-130,halfLife (s),0.32,0.29,ratio 1.103
+In-130,halfLifeValue/Unit,0.32 s,0.29 s,
+In-131,halfLife (s),0.282,0.28,ratio 1.007
+In-131,halfLifeValue/Unit,0.282 s,0.28 s,
+In-132,halfLife (s),0.201,0.2,ratio 1.005
+In-132,halfLifeValue/Unit,0.201 s,0.2 s,
+In-133,halfLife (s),0.18,0.165,ratio 1.091
+In-133,halfLifeValue/Unit,180 ms,165 ms,
+In-134,halfLife (s),0.138,0.14,ratio 0.9857
+In-134,halfLifeValue/Unit,138 ms,140 ms,
+Sn-100,halfLife (s),0.94,1.18,ratio 0.7966
+Sn-100,halfLifeValue/Unit,0.94 s,1.18 s,
+Sn-101,halfLife (s),3.0,1.7,ratio 1.765
+Sn-101,halfLifeValue/Unit,3 s,1.7 s,
+Sn-102,halfLife (s),4.5,3.8,ratio 1.184
+Sn-102,halfLifeValue/Unit,4.5 s,3.8 s,
+Sn-105,halfLife (s),31.0,32.7,ratio 0.948
+Sn-105,halfLifeValue/Unit,31 s,32.7 s,
+Sn-109,halfLife (s),1080.0,1086.0,ratio 0.9945
+Sn-109,halfLifeValue/Unit,18 m,18.1 m,
+Sn-110,halfLife (s),14796.0,14954.4,ratio 0.9894
+Sn-110,halfLifeValue/Unit,4.11 h,4.154 h,
+Sn-112,naturalAbundance,,0.97,
+Sn-114,naturalAbundance,,0.66,
+Sn-115,naturalAbundance,,0.34,
+Sn-116,naturalAbundance,,14.54,
+Sn-117,naturalAbundance,,7.68,
+Sn-118,naturalAbundance,,24.22,
+Sn-119,naturalAbundance,,8.59,
+Sn-120,naturalAbundance,,32.58,
+Sn-121,halfLife (s),97416.0,97308.0,ratio 1.001
+Sn-121,halfLifeValue/Unit,27.06 h,27.03 h,
+Sn-122,naturalAbundance,,4.63,
+Sn-124,naturalAbundance,,5.79,
+Sn-126,halfLife (s),3155760000000.0,6879410000000.0,ratio 0.4587
+Sn-126,halfLifeValue/Unit,100000 a,2.18E+05 Y,
+Sn-133,halfLife (s),1.45,1.46,ratio 0.9932
+Sn-133,halfLifeValue/Unit,1.45 s,1.46 s,
+Sn-134,halfLife (s),1.12,1.05,ratio 1.067
+Sn-134,halfLifeValue/Unit,1.12 s,1.05 s,
+Sb-109,halfLife (s),17.0,17.2,ratio 0.9884
+Sb-109,halfLifeValue/Unit,17 s,17.2 s,
+Sb-110,halfLife (s),23.0,23.6,ratio 0.9746
+Sb-110,halfLifeValue/Unit,23 s,23.6 s,
+Sb-112,halfLife (s),51.4,53.5,ratio 0.9607
+Sb-112,halfLifeValue/Unit,51.4 s,53.5 s,
+Sb-121,naturalAbundance,,57.21,
+Sb-123,naturalAbundance,,42.79,
+Sb-126,halfLife (s),1076544.0,1067040.0,ratio 1.009
+Sb-126,halfLifeValue/Unit,12.46 d,12.35 d,
+Sb-128,halfLife (s),32436.0,32580.0,ratio 0.9956
+Sb-128,halfLifeValue/Unit,9.01 h,9.05 h,
+Sb-129,halfLife (s),15840.0,15717.6,ratio 1.008
+Sb-129,halfLifeValue/Unit,4.4 h,4.366 h,
+Sb-133,halfLife (s),150.0,140.4,ratio 1.068
+Sb-133,halfLifeValue/Unit,2.5 m,2.34 m,
+Sb-135,halfLife (s),1.71,1.679,ratio 1.018
+Sb-135,halfLifeValue/Unit,1.71 s,1.679 s,
+Sb-136,halfLife (s),0.82,0.923,ratio 0.8884
+Sb-136,halfLifeValue/Unit,0.82 s,0.923 s,
+Te-105,halfLifeValue/Unit,0.62 µs,0.62 us,
+Te-106,halfLife (s),6e-05,7e-05,ratio 0.8571
+Te-106,halfLifeValue/Unit,60 µs,70 us,
+Te-109,halfLife (s),4.6,4.4,ratio 1.045
+Te-109,halfLifeValue/Unit,4.6 s,4.4 s,
+Te-119,halfLife (s),57708.0,57780.0,ratio 0.9988
+Te-119,halfLifeValue/Unit,16.03 h,16.05 h,
+Te-120,naturalAbundance,,0.09,
+Te-121,halfLife (s),1449792.0,1656288.0,ratio 0.8753
+Te-121,halfLifeValue/Unit,16.78 d,19.17 d,
+Te-122,naturalAbundance,,2.55,
+Te-123,halfLife (s),3.15576e+20,2.9e+24,ratio 0.0001088
+Te-123,halfLifeValue/Unit,10000000000000 a,9.20E+16 Y,
+Te-123,naturalAbundance,,0.89,
+Te-124,naturalAbundance,,4.74,
+Te-125,naturalAbundance,,7.07,
+Te-126,naturalAbundance,,18.84,
+Te-128,halfLife (s),6.942672e+31,2.43e+32,ratio 0.2857
+Te-128,halfLifeValue/Unit,2.2e+24 a,7.70E+24 Y,
+Te-128,naturalAbundance,,31.74,
+Te-130,halfLife (s),2.49305e+28,2.4900000000000003e+28,ratio 1.001
+Te-130,naturalAbundance,,34.08,
+Te-136,halfLife (s),17.5,17.63,ratio 0.9926
+Te-136,halfLifeValue/Unit,17.5 s,17.63 s,
+I-109,halfLife (s),0.0001,9.28e-05,ratio 1.078
+I-109,halfLifeValue/Unit,100 µs,92.8 us,
+I-110,halfLife (s),0.65,0.664,ratio 0.9789
+I-110,halfLifeValue/Unit,0.65 s,0.664 s,
+I-112,halfLife (s),3.42,3.34,ratio 1.024
+I-112,halfLifeValue/Unit,3.42 s,3.34 s,
+I-120,halfLife (s),4860.0,4896.0,ratio 0.9926
+I-120,halfLifeValue/Unit,81 m,81.6 m,
+I-123,halfLife (s),47772.0,47602.8,ratio 1.004
+I-123,halfLifeValue/Unit,13.27 h,13.223 h,
+I-126,halfLife (s),1132704.0,1117152.0,ratio 1.014
+I-126,halfLifeValue/Unit,13.11 d,12.93 d,
+I-127,naturalAbundance,,100.0,
+I-133,halfLife (s),74880.0,74988.0,ratio 0.9986
+I-133,halfLifeValue/Unit,20.8 h,20.83 h,
+I-135,halfLife (s),23652.0,23688.0,ratio 0.9985
+I-135,halfLifeValue/Unit,6.57 h,6.58 h,
+I-138,halfLife (s),6.49,6.26,ratio 1.037
+I-138,halfLifeValue/Unit,6.49 s,6.26 s,
+I-139,halfLife (s),2.29,2.28,ratio 1.004
+I-139,halfLifeValue/Unit,2.29 s,2.28 s,
+I-141,halfLife (s),0.43,0.418,ratio 1.029
+I-141,halfLifeValue/Unit,0.43 s,0.418 s,
+Xe-108,halfLifeValue/Unit,54 µs,54 us,
+Xe-110,halfLife (s),6e-07,0.093,ratio 6.452e-06
+Xe-110,halfLifeValue/Unit,0.6 µs,93 ms,
+Xe-123,halfLife (s),7488.0,7380.0,ratio 1.015
+Xe-123,halfLifeValue/Unit,2.08 h,2.05 h,
+Xe-124,naturalAbundance,,0.095,
+Xe-126,naturalAbundance,,0.089,
+Xe-127,halfLife (s),3144960.0,3140294.4,ratio 1.001
+Xe-127,halfLifeValue/Unit,36.4 d,36.346 d,
+Xe-128,naturalAbundance,,1.91,
+Xe-129,naturalAbundance,,26.401,
+Xe-130,naturalAbundance,,4.071,
+Xe-131,naturalAbundance,,21.232,
+Xe-132,naturalAbundance,,26.909,
+Xe-134,isStable,True,False,
+Xe-134,halfLife (s),,1.8299999999999998e+30,absent in NUCLEON
+Xe-134,naturalAbundance,,10.436,
+Xe-136,halfLife (s),7.447594e+28,6.83e+28,ratio 1.09
+Xe-136,halfLifeValue/Unit,2.36e+21 a,2.17E+21 Y,
+Xe-136,naturalAbundance,,8.857,
+Xe-138,halfLife (s),844.8,848.4,ratio 0.9958
+Xe-138,halfLifeValue/Unit,14.08 m,14.14 m,
+Xe-142,halfLife (s),1.22,1.23,ratio 0.9919
+Xe-142,halfLifeValue/Unit,1.22 s,1.23 s,
+Xe-143,halfLife (s),0.3,0.511,ratio 0.5871
+Xe-143,halfLifeValue/Unit,0.3 s,0.511 s,
+Xe-145,halfLife (s),0.9,0.188,ratio 4.787
+Xe-145,halfLifeValue/Unit,0.9 s,188 ms,
+Xe-146,halfLife (s),,0.146,absent in NUCLEON
+Xe-148,halfLifeValue/Unit,0.4 µs,0.4 us,
+Cs-113,halfLife (s),1.7e-05,1.77e-05,ratio 0.9605
+Cs-113,halfLifeValue/Unit,17 µs,17.7 us,
+Cs-116,halfLife (s),3.84,0.7,ratio 5.486
+Cs-116,halfLifeValue/Unit,3.84 s,0.7 s,
+Cs-120,halfLife (s),64.0,61.3,ratio 1.044
+Cs-120,halfLifeValue/Unit,64 s,61.3 s,
+Cs-122,halfLife (s),21.0,21.18,ratio 0.9915
+Cs-122,halfLifeValue/Unit,21 s,21.18 s,
+Cs-123,halfLife (s),356.4,351.6,ratio 1.014
+Cs-123,halfLifeValue/Unit,5.94 m,5.86 m,
+Cs-124,halfLife (s),30.8,30.9,ratio 0.9968
+Cs-124,halfLifeValue/Unit,30.8 s,30.9 s,
+Cs-125,halfLife (s),2700.0,2802.0,ratio 0.9636
+Cs-125,halfLifeValue/Unit,45 m,46.7 m,
+Cs-126,halfLife (s),98.4,98.58,ratio 0.9982
+Cs-126,halfLifeValue/Unit,1.64 m,1.643 m,
+Cs-128,halfLife (s),219.6,218.4,ratio 1.005
+Cs-128,halfLifeValue/Unit,3.66 m,3.64 m,
+Cs-133,naturalAbundance,,100.0,
+Cs-136,halfLife (s),1137024.0,1124064.0,ratio 1.012
+Cs-136,halfLifeValue/Unit,13.16 d,13.01 d,
+Cs-138,halfLife (s),2004.6,1950.0,ratio 1.028
+Cs-138,halfLifeValue/Unit,33.41 m,32.5 m,
+Cs-141,halfLife (s),24.94,24.84,ratio 1.004
+Cs-141,halfLifeValue/Unit,24.94 s,24.84 s,
+Cs-142,halfLife (s),1.7,1.684,ratio 1.01
+Cs-142,halfLifeValue/Unit,1.7 s,1.684 s,
+Cs-143,halfLife (s),1.78,1.791,ratio 0.9939
+Cs-143,halfLifeValue/Unit,1.78 s,1.791 s,
+Cs-144,halfLife (s),1.01,0.994,ratio 1.016
+Cs-144,halfLifeValue/Unit,1.01 s,0.994 s,
+Cs-145,halfLife (s),0.594,0.587,ratio 1.012
+Cs-145,halfLifeValue/Unit,0.594 s,0.587 s,
+Cs-146,halfLife (s),0.321,0.322,ratio 0.9969
+Cs-146,halfLifeValue/Unit,0.321 s,0.322 s,
+Cs-147,halfLife (s),0.225,0.2295,ratio 0.9804
+Cs-147,halfLifeValue/Unit,0.225 s,0.2295 s,
+Cs-148,halfLife (s),0.158,0.146,ratio 1.082
+Cs-148,halfLifeValue/Unit,158 ms,146 ms,
+Ba-115,halfLife (s),0.4,0.45,ratio 0.8889
+Ba-115,halfLifeValue/Unit,0.4 s,0.45 s,
+Ba-116,halfLife (s),0.3,1.3,ratio 0.2308
+Ba-116,halfLifeValue/Unit,0.3 s,1.3 s,
+Ba-120,halfLife (s),32.0,24.0,ratio 1.333
+Ba-120,halfLifeValue/Unit,32 s,24 s,
+Ba-123,halfLife (s),162.0,144.0,ratio 1.125
+Ba-123,halfLifeValue/Unit,2.7 m,2.4 m,
+Ba-125,halfLife (s),210.0,198.0,ratio 1.061
+Ba-125,halfLifeValue/Unit,3.5 m,3.3 m,
+Ba-130,naturalAbundance,,0.11,
+Ba-132,isStable,True,False,
+Ba-132,halfLife (s),,9.47e+28,absent in NUCLEON
+Ba-132,naturalAbundance,,0.1,
+Ba-133,halfLife (s),331670400.0,332957126.0,ratio 0.9961
+Ba-133,halfLifeValue/Unit,10.51 a,10.551 Y,
+Ba-134,naturalAbundance,,2.42,
+Ba-135,naturalAbundance,,6.59,
+Ba-136,naturalAbundance,,7.85,
+Ba-137,naturalAbundance,,11.23,
+Ba-138,naturalAbundance,,71.7,
+Ba-139,halfLife (s),4983.6,4975.8,ratio 1.002
+Ba-139,halfLifeValue/Unit,83.06 m,82.93 m,
+Ba-143,halfLife (s),14.33,14.5,ratio 0.9883
+Ba-143,halfLifeValue/Unit,14.33 s,14.5 s,
+Ba-146,halfLife (s),2.22,2.21,ratio 1.005
+Ba-146,halfLifeValue/Unit,2.22 s,2.21 s,
+Ba-147,halfLife (s),0.893,0.894,ratio 0.9989
+Ba-147,halfLifeValue/Unit,0.893 s,0.894 s,
+Ba-148,halfLife (s),0.607,0.612,ratio 0.9918
+Ba-148,halfLifeValue/Unit,0.607 s,0.612 s,
+Ba-149,halfLife (s),0.344,0.352,ratio 0.9773
+Ba-149,halfLifeValue/Unit,0.344 s,352 ms,
+Ba-150,halfLife (s),0.3,0.259,ratio 1.158
+Ba-150,halfLifeValue/Unit,0.3 s,0.259 s,
+La-122,halfLife (s),8.7,8.6,ratio 1.012
+La-122,halfLifeValue/Unit,8.7 s,8.6 s,
+La-123,halfLife (s),17.0,16.3,ratio 1.043
+La-123,halfLifeValue/Unit,17 s,16.3 s,
+La-124,halfLife (s),29.0,21.0,ratio 1.381
+La-124,halfLifeValue/Unit,29 s,21 s,
+La-125,halfLife (s),76.0,64.8,ratio 1.173
+La-125,halfLifeValue/Unit,76 s,64.8 s,
+La-128,halfLife (s),300.0,310.8,ratio 0.9653
+La-128,halfLifeValue/Unit,5 m,5.18 m,
+La-138,halfLife (s),3.313548e+18,3.25e+18,ratio 1.02
+La-138,halfLifeValue/Unit,105000000000 a,1.03E+11 Y,
+La-138,naturalAbundance,,0.08881,
+La-139,naturalAbundance,,99.91119,
+La-146,halfLife (s),6.27,6.1,ratio 1.028
+La-146,halfLifeValue/Unit,6.27 s,6.1 s,
+La-147,halfLife (s),4.015,4.06,ratio 0.9889
+La-147,halfLifeValue/Unit,4.015 s,4.06 s,
+La-148,halfLife (s),1.05,1.26,ratio 0.8333
+La-148,halfLifeValue/Unit,1.05 s,1.26 s,
+La-149,halfLife (s),1.05,1.091,ratio 0.9624
+La-149,halfLifeValue/Unit,1.05 s,1.091 s,
+La-150,halfLife (s),0.86,0.59,ratio 1.458
+La-150,halfLifeValue/Unit,0.86 s,0.59 s,
+Ce-123,halfLife (s),3.2,3.8,ratio 0.8421
+Ce-123,halfLifeValue/Unit,3.2 s,3.8 s,
+Ce-125,halfLife (s),9.0,9.7,ratio 0.9278
+Ce-125,halfLifeValue/Unit,9 s,9.7 s,
+Ce-126,halfLife (s),50.0,51.0,ratio 0.9804
+Ce-126,halfLifeValue/Unit,50 s,51 s,
+Ce-127,halfLife (s),31.0,34.0,ratio 0.9118
+Ce-127,halfLifeValue/Unit,31 s,34 s,
+Ce-128,halfLife (s),4.1,235.8,ratio 0.01739
+Ce-128,halfLifeValue/Unit,4.1 s,3.93 m,
+Ce-130,halfLife (s),1500.0,1374.0,ratio 1.092
+Ce-130,halfLifeValue/Unit,25 m,22.9 m,
+Ce-131,halfLife (s),612.0,618.0,ratio 0.9903
+Ce-131,halfLifeValue/Unit,10.2 m,10.3 m,
+Ce-136,naturalAbundance,,0.186,
+Ce-138,isStable,True,False,
+Ce-138,halfLife (s),,1.39e+24,absent in NUCLEON
+Ce-138,naturalAbundance,,0.251,
+Ce-140,naturalAbundance,,88.449,
+Ce-142,halfLife (s),1.57788e+24,1.58e+24,ratio 0.9987
+Ce-142,naturalAbundance,,11.114,
+Ce-146,halfLife (s),811.2,809.4,ratio 1.002
+Ce-146,halfLifeValue/Unit,13.52 m,13.49 m,
+Ce-148,halfLife (s),56.0,56.8,ratio 0.9859
+Ce-148,halfLifeValue/Unit,56 s,56.8 s,
+Ce-149,halfLife (s),5.3,5.12,ratio 1.035
+Ce-149,halfLifeValue/Unit,5.3 s,5.12 s,
+Ce-151,halfLife (s),1.02,1.76,ratio 0.5795
+Ce-151,halfLifeValue/Unit,1.02 s,1.76 s,
+Pr-128,halfLife (s),3.1,2.84,ratio 1.092
+Pr-128,halfLifeValue/Unit,3.1 s,2.84 s,
+Pr-131,halfLife (s),91.8,90.6,ratio 1.013
+Pr-131,halfLifeValue/Unit,1.53 m,1.51 m,
+Pr-141,naturalAbundance,,100.0,
+Pr-146,halfLife (s),1449.0,1445.4,ratio 1.002
+Pr-146,halfLifeValue/Unit,24.15 m,24.09 m,
+Pr-147,halfLife (s),804.0,806.4,ratio 0.997
+Pr-147,halfLifeValue/Unit,13.4 m,13.44 m,
+Pr-148,halfLife (s),136.2,137.4,ratio 0.9913
+Pr-148,halfLifeValue/Unit,2.27 m,2.29 m,
+Pr-152,halfLife (s),3.63,3.57,ratio 1.017
+Pr-152,halfLifeValue/Unit,3.63 s,3.57 s,
+Pr-153,halfLife (s),4.28,4.29,ratio 0.9977
+Pr-153,halfLifeValue/Unit,4.28 s,4.29 s,
+Nd-128,halfLife (s),4.0,5.0,ratio 0.8
+Nd-128,halfLifeValue/Unit,4 s,5 s,
+Nd-129,halfLife (s),7.0,6.7,ratio 1.045
+Nd-129,halfLifeValue/Unit,7 s,6.7 s,
+Nd-130,halfLife (s),28.0,13.0,ratio 2.154
+Nd-130,halfLifeValue/Unit,28 s,13 s,
+Nd-131,halfLife (s),27.0,25.4,ratio 1.063
+Nd-131,halfLifeValue/Unit,27 s,25.4 s,
+Nd-132,halfLife (s),105.0,94.0,ratio 1.117
+Nd-132,halfLifeValue/Unit,1.75 m,94 s,
+Nd-142,naturalAbundance,,27.153,
+Nd-143,naturalAbundance,,12.173,
+Nd-144,naturalAbundance,,23.798,
+Nd-145,naturalAbundance,,8.293,
+Nd-146,naturalAbundance,,17.189,
+Nd-147,halfLife (s),948672.0,952992.0,ratio 0.9955
+Nd-147,halfLifeValue/Unit,10.98 d,11.03 d,
+Nd-148,naturalAbundance,,5.756,
+Nd-149,halfLife (s),6220.8,6213.6,ratio 1.001
+Nd-149,halfLifeValue/Unit,1.728 h,1.726 h,
+Nd-150,halfLife (s),3.471336e+26,2.87e+26,ratio 1.21
+Nd-150,halfLifeValue/Unit,1.1e+19 a,9.10E+18 Y,
+Nd-150,naturalAbundance,,5.638,
+Nd-156,halfLife (s),5.47,5.26,ratio 1.04
+Nd-156,halfLifeValue/Unit,5.47 s,5.26 s,
+Pm-132,halfLife (s),6.3,6.2,ratio 1.016
+Pm-132,halfLifeValue/Unit,6.3 s,6.2 s,
+Pm-133,halfLife (s),,13.5,absent in NUCLEON
+Pm-135,halfLife (s),45.0,49.0,ratio 0.9184
+Pm-135,halfLifeValue/Unit,45 s,49 s,
+Pm-136,halfLife (s),47.0,300.0,ratio 0.1567
+Pm-136,halfLifeValue/Unit,47 s,300 s,
+Pm-150,halfLife (s),9648.0,9712.8,ratio 0.9933
+Pm-150,halfLifeValue/Unit,2.68 h,2.698 h,
+Pm-154,halfLife (s),103.8,160.8,ratio 0.6455
+Pm-154,halfLifeValue/Unit,1.73 m,2.68 m,
+Sm-133,halfLife (s),3.7,2.89,ratio 1.28
+Sm-133,halfLifeValue/Unit,3.7 s,2.89 s,
+Sm-134,halfLife (s),10.0,9.5,ratio 1.053
+Sm-134,halfLifeValue/Unit,10 s,9.5 s,
+Sm-143,halfLife (s),529.8,525.0,ratio 1.009
+Sm-143,halfLifeValue/Unit,8.83 m,8.75 m,
+Sm-144,naturalAbundance,,3.08,
+Sm-146,halfLife (s),3250433000000000.0,2150000000000000.0,ratio 1.512
+Sm-146,halfLifeValue/Unit,103000000 a,6.80E+07 Y,
+Sm-147,halfLife (s),3.345106e+18,3.39e+18,ratio 0.9868
+Sm-147,halfLifeValue/Unit,106000000000 a,1.07E+11 Y,
+Sm-147,naturalAbundance,,15.0,
+Sm-148,naturalAbundance,,11.25,
+Sm-149,isStable,False,True,
+Sm-149,naturalAbundance,,13.82,
+Sm-150,naturalAbundance,,7.37,
+Sm-152,naturalAbundance,,26.74,
+Sm-154,naturalAbundance,,22.74,
+Sm-155,halfLife (s),1338.0,1330.8,ratio 1.005
+Sm-155,halfLifeValue/Unit,22.3 m,22.18 m,
+Sm-157,halfLifeValue/Unit,482 s,8.03 m,
+Eu-143,halfLife (s),157.8,155.4,ratio 1.015
+Eu-143,halfLifeValue/Unit,2.63 m,2.59 m,
+Eu-151,isStable,True,False,
+Eu-151,halfLife (s),,5.36e+25,absent in NUCLEON
+Eu-151,naturalAbundance,,47.81,
+Eu-152,halfLife (s),427195200.0,426554968.4,ratio 1.002
+Eu-152,halfLifeValue/Unit,13.537 a,13.517 Y,
+Eu-153,naturalAbundance,,52.19,
+Eu-155,halfLife (s),150248900.0,149990069.2,ratio 1.002
+Eu-155,halfLifeValue/Unit,4.7611 a,4.753 Y,
+Eu-160,halfLife (s),38.0,42.6,ratio 0.892
+Eu-160,halfLifeValue/Unit,38 s,42.6 s,
+Gd-139,halfLife (s),4.9,5.8,ratio 0.8448
+Gd-139,halfLifeValue/Unit,4.9 s,5.8 s,
+Gd-144,halfLife (s),270.0,268.2,ratio 1.007
+Gd-144,halfLifeValue/Unit,4.5 m,4.47 m,
+Gd-148,halfLife (s),2354197000.0,2243697437.0,ratio 1.049
+Gd-148,halfLifeValue/Unit,74.6 a,71.1 Y,
+Gd-152,naturalAbundance,,0.2,
+Gd-154,naturalAbundance,,2.18,
+Gd-155,naturalAbundance,,14.8,
+Gd-156,naturalAbundance,,20.47,
+Gd-157,naturalAbundance,,15.65,
+Gd-158,naturalAbundance,,24.84,
+Gd-160,naturalAbundance,,21.86,
+Tb-140,halfLife (s),2.4,2.29,ratio 1.048
+Tb-140,halfLifeValue/Unit,2.4 s,2.29 s,
+Tb-147,halfLife (s),6120.0,5904.0,ratio 1.037
+Tb-147,halfLifeValue/Unit,1.7 h,1.64 h,
+Tb-159,naturalAbundance,,100.0,
+Tb-161,halfLife (s),594432.0,595296.0,ratio 0.9985
+Tb-161,halfLifeValue/Unit,6.88 d,6.89 d,
+Dy-143,halfLife (s),4.1,5.6,ratio 0.7321
+Dy-143,halfLifeValue/Unit,4.1 s,5.6 s,
+Dy-145,halfLife (s),10.0,6.0,ratio 1.667
+Dy-145,halfLifeValue/Unit,10 s,6 s,
+Dy-146,halfLife (s),29.0,33.2,ratio 0.8735
+Dy-146,halfLifeValue/Unit,29 s,33.2 s,
+Dy-147,halfLife (s),40.0,67.0,ratio 0.597
+Dy-147,halfLifeValue/Unit,40 s,67 s,
+Dy-148,halfLife (s),186.0,198.0,ratio 0.9394
+Dy-148,halfLifeValue/Unit,3.1 m,3.3 m,
+Dy-156,naturalAbundance,,0.056,
+Dy-158,naturalAbundance,,0.095,
+Dy-160,naturalAbundance,,2.329,
+Dy-161,naturalAbundance,,18.889,
+Dy-162,naturalAbundance,,25.475,
+Dy-163,naturalAbundance,,24.896,
+Dy-164,naturalAbundance,,28.26,
+Ho-146,halfLife (s),3.6,3.32,ratio 1.084
+Ho-146,halfLifeValue/Unit,3.6 s,3.32 s,
+Ho-149,halfLife (s),21.1,21.0,ratio 1.005
+Ho-149,halfLifeValue/Unit,21.1 s,21 s,
+Ho-164,halfLife (s),1740.0,1728.0,ratio 1.007
+Ho-164,halfLifeValue/Unit,29 m,28.8 m,
+Ho-165,naturalAbundance,,100.0,
+Ho-169,halfLife (s),282.0,283.2,ratio 0.9958
+Ho-169,halfLifeValue/Unit,4.7 m,4.72 m,
+Er-147,halfLife (s),2.5,3.2,ratio 0.7812
+Er-147,halfLifeValue/Unit,2.5 s,3.2 s,
+Er-162,naturalAbundance,,0.139,
+Er-164,naturalAbundance,,1.601,
+Er-166,naturalAbundance,,33.503,
+Er-167,naturalAbundance,,22.869,
+Er-168,naturalAbundance,,26.978,
+Er-170,naturalAbundance,,14.91,
+Er-174,halfLife (s),198.0,192.0,ratio 1.031
+Er-174,halfLifeValue/Unit,3.3 m,3.2 m,
+Tm-144,halfLifeValue/Unit,1.9 µs,1.9 us,
+Tm-145,halfLifeValue/Unit,3.17 µs,3.17 us,
+Tm-146,halfLife (s),0.235,0.068,ratio 3.456
+Tm-146,halfLifeValue/Unit,235 ms,68 ms,
+Tm-147,halfLife (s),0.56,0.58,ratio 0.9655
+Tm-147,halfLifeValue/Unit,0.56 s,0.58 s,
+Tm-161,halfLife (s),1980.0,1812.0,ratio 1.093
+Tm-161,halfLifeValue/Unit,33 m,30.2 m,
+Tm-164,halfLife (s),120.0,117.0,ratio 1.026
+Tm-164,halfLifeValue/Unit,2 m,1.95 m,
+Tm-169,naturalAbundance,,100.0,
+Tm-176,halfLife (s),114.0,111.0,ratio 1.027
+Tm-176,halfLifeValue/Unit,1.9 m,1.85 m,
+Tm-177,halfLife (s),85.0,95.0,ratio 0.8947
+Tm-177,halfLifeValue/Unit,85 s,95 s,
+Yb-152,halfLife (s),3.04,3.03,ratio 1.003
+Yb-152,halfLifeValue/Unit,3.04 s,3.03 s,
+Yb-155,halfLife (s),1.8,1.793,ratio 1.004
+Yb-155,halfLifeValue/Unit,1.8 s,1.793 s,
+Yb-159,halfLife (s),94.8,100.2,ratio 0.9461
+Yb-159,halfLifeValue/Unit,1.58 m,1.67 m,
+Yb-168,naturalAbundance,,0.123,
+Yb-170,naturalAbundance,,2.982,
+Yb-171,naturalAbundance,,14.086,
+Yb-172,naturalAbundance,,21.686,
+Yb-173,naturalAbundance,,16.103,
+Yb-174,naturalAbundance,,32.025,
+Yb-176,naturalAbundance,,12.995,
+Lu-149,halfLifeValue/Unit,0.45 µs,0.45 us,
+Lu-150,halfLife (s),0.035,0.045,ratio 0.7778
+Lu-150,halfLifeValue/Unit,35 ms,45 ms,
+Lu-151,halfLife (s),0.088,0.0806,ratio 1.092
+Lu-151,halfLifeValue/Unit,88 ms,80.6 ms,
+Lu-155,halfLife (s),0.14,0.068,ratio 2.059
+Lu-155,halfLifeValue/Unit,140 ms,68 ms,
+Lu-156,halfLife (s),0.198,0.494,ratio 0.4008
+Lu-156,halfLifeValue/Unit,198 ms,494 ms,
+Lu-163,halfLifeValue/Unit,238 s,3.97 m,
+Lu-175,naturalAbundance,,97.401,
+Lu-176,halfLife (s),1.192877e+18,1.19e+18,ratio 1.002
+Lu-176,halfLifeValue/Unit,37800000000 a,3.76E+10 Y,
+Lu-176,naturalAbundance,,2.599,
+Lu-177,halfLife (s),581817.6,574067.52,ratio 1.014
+Lu-177,halfLifeValue/Unit,6.734 d,6.6443 d,
+Lu-184,halfLife (s),20.0,19.0,ratio 1.053
+Lu-184,halfLifeValue/Unit,20 s,19 s,
+Hf-155,halfLife (s),0.89,0.843,ratio 1.056
+Hf-155,halfLifeValue/Unit,0.89 s,843 ms,
+Hf-156,halfLife (s),0.025,0.023,ratio 1.087
+Hf-156,halfLifeValue/Unit,25 ms,23 ms,
+Hf-157,halfLife (s),0.11,0.115,ratio 0.9565
+Hf-157,halfLifeValue/Unit,110 ms,115 ms,
+Hf-161,halfLife (s),16.8,18.4,ratio 0.913
+Hf-161,halfLifeValue/Unit,16.8 s,18.4 s,
+Hf-162,halfLife (s),37.6,39.4,ratio 0.9543
+Hf-162,halfLifeValue/Unit,37.6 s,39.4 s,
+Hf-174,naturalAbundance,,0.16,
+Hf-176,naturalAbundance,,5.26,
+Hf-177,naturalAbundance,,18.6,
+Hf-178,naturalAbundance,,27.28,
+Hf-179,naturalAbundance,,13.62,
+Hf-180,naturalAbundance,,35.08,
+Hf-182,halfLife (s),284018400000000.0,280857000000000.0,ratio 1.011
+Hf-182,halfLifeValue/Unit,9000000 a,8.90E+06 Y,
+Hf-183,halfLife (s),3841.2,3664.8,ratio 1.048
+Hf-183,halfLifeValue/Unit,1.067 h,1.018 h,
+Hf-183,decay modes,"[('BetaMinusDecay', 100.0)]","[('BetaMinusDecay', 100.0), ('IsomericTransition', 100.0)]",
+Ta-156,halfLife (s),0.144,0.106,ratio 1.358
+Ta-156,halfLifeValue/Unit,144 ms,106 ms,
+Ta-158,halfLife (s),0.0365,0.055,ratio 0.6636
+Ta-158,halfLifeValue/Unit,36.5 ms,55 ms,
+Ta-159,halfLife (s),0.57,0.83,ratio 0.6867
+Ta-159,halfLifeValue/Unit,0.57 s,0.83 s,
+Ta-162,halfLife (s),3.52,3.57,ratio 0.986
+Ta-162,halfLifeValue/Unit,3.52 s,3.57 s,
+Ta-167,halfLife (s),84.0,80.0,ratio 1.05
+Ta-167,halfLifeValue/Unit,1.4 m,80 s,
+Ta-174,halfLife (s),3780.0,4104.0,ratio 0.9211
+Ta-174,halfLifeValue/Unit,1.05 h,1.14 h,
+Ta-177,halfLife (s),203616.0,202896.0,ratio 1.004
+Ta-177,halfLifeValue/Unit,56.56 h,56.36 h,
+Ta-178,halfLife (s),558.6,8496.0,ratio 0.06575
+Ta-178,halfLifeValue/Unit,9.31 m,2.36 h,
+Ta-181,naturalAbundance,,99.98799,
+Ta-182,halfLife (s),9886752.0,9913536.0,ratio 0.9973
+Ta-182,halfLifeValue/Unit,114.43 d,114.74 d,
+Ta-186,halfLife (s),630.0,623.4,ratio 1.011
+Ta-186,halfLifeValue/Unit,10.5 m,10.39 m,
+W-158,halfLife (s),0.0009,0.00125,ratio 0.72
+W-158,halfLifeValue/Unit,0.9 ms,1.25 ms,
+W-161,halfLife (s),0.41,0.409,ratio 1.002
+W-161,halfLifeValue/Unit,410 ms,409 ms,
+W-162,halfLife (s),1.39,1.19,ratio 1.168
+W-162,halfLifeValue/Unit,1.39 s,1.19 s,
+W-163,halfLife (s),2.75,2.67,ratio 1.03
+W-163,halfLifeValue/Unit,2.75 s,2.67 s,
+W-164,halfLife (s),6.0,6.3,ratio 0.9524
+W-164,halfLifeValue/Unit,6 s,6.3 s,
+W-166,halfLife (s),18.8,19.2,ratio 0.9792
+W-166,halfLifeValue/Unit,18.8 s,19.2 s,
+W-168,halfLife (s),53.0,50.9,ratio 1.041
+W-168,halfLifeValue/Unit,53 s,50.9 s,
+W-169,halfLife (s),76.0,74.0,ratio 1.027
+W-169,halfLifeValue/Unit,76 s,74 s,
+W-174,halfLife (s),1860.0,1992.0,ratio 0.9337
+W-174,halfLifeValue/Unit,31 m,33.2 m,
+W-177,halfLife (s),8100.0,7944.0,ratio 1.02
+W-177,halfLifeValue/Unit,135 m,132.4 m,
+W-180,isStable,True,False,
+W-180,halfLife (s),,5.68e+25,absent in NUCLEON
+W-180,naturalAbundance,,0.12,
+W-182,naturalAbundance,,26.5,
+W-183,halfLife (s),3.471336e+24,2.1100000000000002e+28,ratio 0.0001645
+W-183,halfLifeValue/Unit,1.1e+17 a,6.70E+20 Y,
+W-183,naturalAbundance,,14.31,
+W-184,isStable,False,True,
+W-184,naturalAbundance,,30.64,
+W-186,naturalAbundance,,28.43,
+W-187,halfLife (s),85392.0,85680.0,ratio 0.9966
+W-187,halfLifeValue/Unit,23.72 h,23.8 h,
+W-188,halfLife (s),5996160.0,6028992.0,ratio 0.9946
+W-188,halfLifeValue/Unit,69.4 d,69.78 d,
+W-189,halfLife (s),690.0,696.0,ratio 0.9914
+W-189,halfLifeValue/Unit,11.5 m,11.6 m,
+Re-160,halfLife (s),0.00079,0.000612,ratio 1.291
+Re-160,halfLifeValue/Unit,0.79 ms,612 us,
+Re-161,halfLife (s),0.00037,0.00044,ratio 0.8409
+Re-161,halfLifeValue/Unit,0.37 ms,0.44 ms,
+Re-163,halfLife (s),0.26,0.39,ratio 0.6667
+Re-163,halfLifeValue/Unit,260 ms,390 ms,
+Re-164,halfLife (s),0.38,0.7,ratio 0.5429
+Re-164,halfLifeValue/Unit,0.38 s,0.7 s,
+Re-165,halfLife (s),2.4,1.6,ratio 1.5
+Re-165,halfLifeValue/Unit,2.4 s,1.6 s,
+Re-166,halfLife (s),2.8,2.25,ratio 1.244
+Re-166,halfLifeValue/Unit,2.8 s,2.25 s,
+Re-167,halfLife (s),6.1,5.9,ratio 1.034
+Re-167,halfLifeValue/Unit,6.1 s,5.9 s,
+Re-169,halfLife (s),,8.1,absent in NUCLEON
+Re-180,halfLife (s),146.4,147.6,ratio 0.9919
+Re-180,halfLifeValue/Unit,2.44 m,2.46 m,
+Re-182,halfLife (s),230400.0,231120.0,ratio 0.9969
+Re-182,halfLifeValue/Unit,64 h,64.2 h,
+Re-184,halfLife (s),3283200.0,3058560.0,ratio 1.073
+Re-184,halfLifeValue/Unit,38 d,35.4 d,
+Re-185,naturalAbundance,,37.4,
+Re-187,halfLife (s),1.372756e+18,1.37e+18,ratio 1.002
+Re-187,halfLifeValue/Unit,43500000000 a,4.33E+10 Y,
+Re-187,naturalAbundance,,62.6,
+Re-190,halfLife (s),186.0,180.0,ratio 1.033
+Re-190,halfLifeValue/Unit,3.1 m,3 m,
+Os-162,halfLife (s),0.0019,0.0021,ratio 0.9048
+Os-162,halfLifeValue/Unit,1.9 ms,2.1 ms,
+Os-163,halfLife (s),,0.0055,absent in NUCLEON
+Os-166,halfLife (s),0.181,0.213,ratio 0.8498
+Os-166,halfLifeValue/Unit,181 ms,213 ms,
+Os-167,halfLife (s),0.83,0.81,ratio 1.025
+Os-167,halfLifeValue/Unit,0.83 s,0.81 s,
+Os-169,halfLife (s),3.4,3.43,ratio 0.9913
+Os-169,halfLifeValue/Unit,3.4 s,3.43 s,
+Os-170,halfLife (s),7.3,7.37,ratio 0.9905
+Os-170,halfLifeValue/Unit,7.3 s,7.37 s,
+Os-171,halfLife (s),8.0,8.3,ratio 0.9639
+Os-171,halfLifeValue/Unit,8 s,8.3 s,
+Os-173,halfLife (s),16.0,22.4,ratio 0.7143
+Os-173,halfLifeValue/Unit,16 s,22.4 s,
+Os-177,halfLife (s),168.0,180.0,ratio 0.9333
+Os-177,halfLifeValue/Unit,2.8 m,3 m,
+Os-182,halfLife (s),79560.0,78624.0,ratio 1.012
+Os-182,halfLifeValue/Unit,22.1 h,21.84 h,
+Os-184,halfLife (s),1.767226e+21,1.77e+21,ratio 0.9984
+Os-184,naturalAbundance,,0.02,
+Os-186,naturalAbundance,,1.59,
+Os-187,naturalAbundance,,1.96,
+Os-188,naturalAbundance,,13.24,
+Os-189,naturalAbundance,,16.15,
+Os-190,naturalAbundance,,26.26,
+Os-192,naturalAbundance,,40.78,
+Os-193,halfLife (s),108396.0,107388.0,ratio 1.009
+Os-193,halfLifeValue/Unit,30.11 h,29.83 h,
+Ir-165,halfLife (s),0.0003,1e-06,ratio 300
+Ir-165,halfLifeValue/Unit,300 µs,1 us,
+Ir-167,halfLife (s),0.005,0.0352,ratio 0.142
+Ir-167,halfLifeValue/Unit,5 ms,35.2 ms,
+Ir-168,halfLife (s),0.161,0.222,ratio 0.7252
+Ir-168,halfLifeValue/Unit,161 ms,222 ms,
+Ir-169,halfLife (s),0.4,0.353,ratio 1.133
+Ir-169,halfLifeValue/Unit,0.4 s,0.353 s,
+Ir-170,halfLife (s),1.05,0.87,ratio 1.207
+Ir-170,halfLifeValue/Unit,1.05 s,0.87 s,
+Ir-171,halfLife (s),1.5,3.2,ratio 0.4688
+Ir-171,halfLifeValue/Unit,1.5 s,3.2 s,
+Ir-174,halfLife (s),9.0,7.9,ratio 1.139
+Ir-174,halfLifeValue/Unit,9 s,7.9 s,
+Ir-176,halfLife (s),8.0,8.7,ratio 0.9195
+Ir-176,halfLifeValue/Unit,8 s,8.7 s,
+Ir-177,halfLife (s),30.0,29.8,ratio 1.007
+Ir-177,halfLifeValue/Unit,30 s,29.8 s,
+Ir-191,naturalAbundance,,37.3,
+Ir-193,naturalAbundance,,62.7,
+Ir-194,halfLife (s),69408.0,69048.0,ratio 1.005
+Ir-194,halfLifeValue/Unit,19.28 h,19.18 h,
+Ir-195,halfLife (s),9000.0,8244.0,ratio 1.092
+Ir-195,halfLifeValue/Unit,2.5 h,2.29 h,
+Pt-166,halfLifeValue/Unit,300 µs,300 us,
+Pt-168,halfLife (s),0.002,0.00202,ratio 0.9901
+Pt-168,halfLifeValue/Unit,2 ms,2.02 ms,
+Pt-169,halfLife (s),0.005,0.007,ratio 0.7143
+Pt-169,halfLifeValue/Unit,5 ms,7 ms,
+Pt-170,halfLife (s),0.006,0.0138,ratio 0.4348
+Pt-170,halfLifeValue/Unit,6 ms,13.8 ms,
+Pt-171,halfLife (s),0.025,0.0455,ratio 0.5495
+Pt-171,halfLifeValue/Unit,25 ms,45.5 ms,
+Pt-172,halfLife (s),0.096,0.0976,ratio 0.9836
+Pt-172,halfLifeValue/Unit,0.096 s,97.6 ms,
+Pt-173,halfLife (s),0.342,0.382,ratio 0.8953
+Pt-173,halfLifeValue/Unit,342 ms,382 ms,
+Pt-174,halfLife (s),0.9,0.889,ratio 1.012
+Pt-174,halfLifeValue/Unit,0.9 s,0.889 s,
+Pt-175,halfLife (s),2.52,2.53,ratio 0.996
+Pt-175,halfLifeValue/Unit,2.52 s,2.53 s,
+Pt-177,halfLife (s),11.0,10.0,ratio 1.1
+Pt-177,halfLifeValue/Unit,11 s,10 s,
+Pt-178,halfLife (s),21.1,20.7,ratio 1.019
+Pt-178,halfLifeValue/Unit,21.1 s,20.7 s,
+Pt-180,halfLife (s),52.0,56.0,ratio 0.9286
+Pt-180,halfLifeValue/Unit,52 s,56 s,
+Pt-181,halfLife (s),51.0,52.0,ratio 0.9808
+Pt-181,halfLifeValue/Unit,51 s,52 s,
+Pt-182,halfLife (s),180.0,160.2,ratio 1.124
+Pt-182,halfLifeValue/Unit,3 m,2.67 m,
+Pt-186,halfLife (s),7920.0,7560.0,ratio 1.048
+Pt-186,halfLifeValue/Unit,2.2 h,2.1 h,
+Pt-188,halfLife (s),881280.0,877824.0,ratio 1.004
+Pt-188,halfLifeValue/Unit,10.2 d,10.16 d,
+Pt-190,halfLife (s),2.051244e+19,1.57e+19,ratio 1.307
+Pt-190,halfLifeValue/Unit,650000000000 a,4.97E+11 Y,
+Pt-190,naturalAbundance,,0.012,
+Pt-191,halfLife (s),242092.8,244512.0,ratio 0.9901
+Pt-191,halfLifeValue/Unit,2.802 d,2.83 d,
+Pt-192,naturalAbundance,,0.782,
+Pt-194,naturalAbundance,,32.864,
+Pt-195,naturalAbundance,,33.775,
+Pt-196,naturalAbundance,,25.211,
+Pt-198,naturalAbundance,,7.356,
+Pt-200,halfLife (s),45000.0,45360.0,ratio 0.9921
+Pt-200,halfLifeValue/Unit,12.5 h,12.6 h,
+Pt-201,halfLife (s),150.0,147.6,ratio 1.016
+Pt-201,halfLifeValue/Unit,2.5 m,2.46 m,
+Au-171,halfLifeValue/Unit,22 µs,22 us,
+Au-172,halfLife (s),0.0063,0.022,ratio 0.2864
+Au-172,halfLifeValue/Unit,6.3 ms,22 ms,
+Au-173,halfLife (s),0.059,0.0263,ratio 2.243
+Au-173,halfLifeValue/Unit,59 ms,26.3 ms,
+Au-177,halfLife (s),1.18,1.501,ratio 0.7861
+Au-177,halfLifeValue/Unit,1.18 s,1.501 s,
+Au-180,halfLife (s),8.1,8.4,ratio 0.9643
+Au-180,halfLifeValue/Unit,8.1 s,8.4 s,
+Au-181,halfLife (s),11.4,13.7,ratio 0.8321
+Au-181,halfLifeValue/Unit,11.4 s,13.7 s,
+Au-182,halfLife (s),15.6,15.5,ratio 1.006
+Au-182,halfLifeValue/Unit,15.6 s,15.5 s,
+Au-183,halfLife (s),42.0,42.8,ratio 0.9813
+Au-183,halfLifeValue/Unit,42 s,42.8 s,
+Au-184,halfLife (s),53.0,20.6,ratio 2.573
+Au-184,halfLifeValue/Unit,53 s,20.6 s,
+Au-187,halfLife (s),504.0,498.0,ratio 1.012
+Au-187,halfLifeValue/Unit,8.4 m,8.3 m,
+Au-196,halfLife (s),534211.2,532820.16,ratio 1.003
+Au-196,halfLifeValue/Unit,6.183 d,6.1669 d,
+Au-197,naturalAbundance,,100.0,
+Au-202,halfLife (s),28.8,28.4,ratio 1.014
+Au-202,halfLifeValue/Unit,28.8 s,28.4 s,
+Au-203,halfLife (s),53.0,60.0,ratio 0.8833
+Au-203,halfLifeValue/Unit,53 s,60 s,
+Au-205,halfLife (s),31.0,32.0,ratio 0.9688
+Au-205,halfLifeValue/Unit,31 s,32 s,
+Hg-171,halfLifeValue/Unit,59 µs,59 us,
+Hg-172,halfLifeValue/Unit,231 µs,231 us,
+Hg-175,halfLife (s),0.02,0.0106,ratio 1.887
+Hg-175,halfLifeValue/Unit,20 ms,10.6 ms,
+Hg-176,halfLife (s),0.018,0.0203,ratio 0.8867
+Hg-176,halfLifeValue/Unit,18 ms,20.3 ms,
+Hg-177,halfLife (s),0.13,0.117,ratio 1.111
+Hg-177,halfLifeValue/Unit,0.13 s,117 ms,
+Hg-178,halfLife (s),0.266,0.2665,ratio 0.9981
+Hg-178,halfLifeValue/Unit,266 ms,266.5 ms,
+Hg-179,halfLife (s),1.09,1.05,ratio 1.038
+Hg-179,halfLifeValue/Unit,1.09 s,1.05 s,
+Hg-180,halfLife (s),2.8,2.59,ratio 1.081
+Hg-180,halfLifeValue/Unit,2.8 s,2.59 s,
+Hg-187,halfLife (s),144.0,114.0,ratio 1.263
+Hg-187,halfLifeValue/Unit,2.4 m,1.9 m,
+Hg-194,halfLife (s),14011570000.0,14105945911.0,ratio 0.9933
+Hg-194,halfLifeValue/Unit,444 a,447 Y,
+Hg-195,halfLife (s),35640.0,37908.0,ratio 0.9402
+Hg-195,halfLifeValue/Unit,9.9 h,10.53 h,
+Hg-196,naturalAbundance,,0.15,
+Hg-198,naturalAbundance,,10.04,
+Hg-199,naturalAbundance,,16.94,
+Hg-200,naturalAbundance,,23.14,
+Hg-201,naturalAbundance,,13.17,
+Hg-202,naturalAbundance,,29.74,
+Hg-204,naturalAbundance,,6.82,
+Hg-205,halfLife (s),312.0,308.4,ratio 1.012
+Hg-205,halfLifeValue/Unit,5.2 m,5.14 m,
+Hg-206,halfLife (s),489.0,499.2,ratio 0.9796
+Hg-206,halfLifeValue/Unit,8.15 m,8.32 m,
+Hg-208,halfLife (s),2520.0,2460.0,ratio 1.024
+Hg-208,halfLifeValue/Unit,42 m,41 m,
+Tl-179,halfLife (s),0.16,0.23,ratio 0.6957
+Tl-179,halfLifeValue/Unit,0.16 s,0.23 s,
+Tl-180,halfLife (s),0.7,1.09,ratio 0.6422
+Tl-180,halfLifeValue/Unit,0.7 s,1.09 s,
+Tl-181,halfLife (s),,3.2,absent in NUCLEON
+Tl-183,halfLife (s),,6.9,absent in NUCLEON
+Tl-184,halfLife (s),11.0,10.1,ratio 1.089
+Tl-184,halfLifeValue/Unit,11 s,10.1 s,
+Tl-186,halfLife (s),27.5,3.4,ratio 8.088
+Tl-186,halfLifeValue/Unit,27.5 s,3.4 s,
+Tl-201,halfLife (s),262483.2,262828.8,ratio 0.9987
+Tl-201,halfLifeValue/Unit,72.912 h,3.042 d,
+Tl-202,halfLife (s),1056672.0,1063584.0,ratio 0.9935
+Tl-202,halfLifeValue/Unit,12.23 d,12.31 d,
+Tl-203,naturalAbundance,,29.515,
+Tl-205,naturalAbundance,,70.485,
+Tl-209,halfLife (s),132.0,129.72,ratio 1.018
+Tl-209,halfLifeValue/Unit,2.2 m,2.162 m,
+Pb-183,halfLife (s),0.3,0.535,ratio 0.5607
+Pb-183,halfLifeValue/Unit,300 ms,535 ms,
+Pb-184,halfLife (s),0.55,0.49,ratio 1.122
+Pb-184,halfLifeValue/Unit,0.55 s,490 ms,
+Pb-185,halfLife (s),4.1,6.3,ratio 0.6508
+Pb-185,halfLifeValue/Unit,4.1 s,6.3 s,
+Pb-186,halfLife (s),4.83,4.81,ratio 1.004
+Pb-186,halfLifeValue/Unit,4.83 s,4.81 s,
+Pb-187,halfLife (s),18.3,15.2,ratio 1.204
+Pb-187,halfLifeValue/Unit,18.3 s,15.2 s,
+Pb-188,halfLife (s),24.0,25.5,ratio 0.9412
+Pb-188,halfLifeValue/Unit,24 s,25.5 s,
+Pb-189,halfLife (s),51.0,39.0,ratio 1.308
+Pb-189,halfLifeValue/Unit,51 s,39 s,
+Pb-190,halfLife (s),72.0,71.0,ratio 1.014
+Pb-190,halfLifeValue/Unit,1.2 m,71 s,
+Pb-194,halfLife (s),720.0,642.0,ratio 1.121
+Pb-194,halfLifeValue/Unit,12 m,10.7 m,
+Pb-197,halfLife (s),480.0,486.0,ratio 0.9877
+Pb-197,halfLifeValue/Unit,8 m,8.1 m,
+Pb-204,naturalAbundance,,1.4,
+Pb-205,halfLife (s),482831300000000.0,536468000000000.0,ratio 0.9
+Pb-205,halfLifeValue/Unit,15300000 a,1.70E+07 Y,
+Pb-206,naturalAbundance,,24.1,
+Pb-207,naturalAbundance,,22.1,
+Pb-208,naturalAbundance,,52.4,
+Pb-209,halfLife (s),11710.8,11642.4,ratio 1.006
+Pb-209,halfLifeValue/Unit,3.253 h,3.234 h,
+Pb-210,halfLife (s),703734500.0,700563756.6,ratio 1.005
+Pb-210,halfLifeValue/Unit,22.3 a,22.2 Y,
+Pb-212,halfLife (s),38304.0,38239.2,ratio 1.002
+Pb-212,halfLifeValue/Unit,10.64 h,10.622 h,
+Pb-214,halfLife (s),1608.0,1623.6,ratio 0.9904
+Pb-214,halfLifeValue/Unit,26.8 m,27.06 m,
+Pb-215,halfLife (s),36.0,147.0,ratio 0.2449
+Pb-215,halfLifeValue/Unit,36 s,147 s,
+Bi-185,halfLife (s),4.4e-05,5.8e-05,ratio 0.7586
+Bi-185,halfLifeValue/Unit,44 µs,58 us,
+Bi-186,halfLife (s),0.015,0.0148,ratio 1.014
+Bi-186,halfLifeValue/Unit,15 ms,14.8 ms,
+Bi-187,halfLife (s),0.035,0.037,ratio 0.9459
+Bi-187,halfLifeValue/Unit,35 ms,37 ms,
+Bi-188,halfLife (s),0.21,0.06,ratio 3.5
+Bi-188,halfLifeValue/Unit,0.21 s,60 ms,
+Bi-189,halfLife (s),0.68,0.688,ratio 0.9884
+Bi-189,halfLifeValue/Unit,680 ms,688 ms,
+Bi-191,halfLife (s),12.0,12.4,ratio 0.9677
+Bi-191,halfLifeValue/Unit,12 s,12.4 s,
+Bi-192,halfLife (s),37.0,34.6,ratio 1.069
+Bi-192,halfLifeValue/Unit,37 s,34.6 s,
+Bi-193,halfLife (s),67.0,63.6,ratio 1.053
+Bi-193,halfLifeValue/Unit,67 s,63.6 s,
+Bi-201,halfLife (s),6480.0,6180.0,ratio 1.049
+Bi-201,halfLifeValue/Unit,108 m,103 m,
+Bi-202,halfLife (s),6192.0,6156.0,ratio 1.006
+Bi-202,halfLifeValue/Unit,1.72 h,1.71 h,
+Bi-205,halfLife (s),1322784.0,1288224.0,ratio 1.027
+Bi-205,halfLifeValue/Unit,15.31 d,14.91 d,
+Bi-209,isStable,True,False,
+Bi-209,halfLife (s),,6.34e+26,absent in NUCLEON
+Bi-209,naturalAbundance,,100.0,
+Bi-214,halfLife (s),1194.0,1182.6,ratio 1.01
+Bi-214,halfLifeValue/Unit,19.9 m,19.71 m,
+Bi-216,halfLife (s),216.0,135.0,ratio 1.6
+Bi-216,halfLifeValue/Unit,3.6 m,2.25 m,
+Bi-217,halfLife (s),97.0,98.5,ratio 0.9848
+Bi-217,halfLifeValue/Unit,97 s,98.5 s,
+Po-186,halfLifeValue/Unit,28 µs,28 us,
+Po-190,halfLife (s),0.002,0.00245,ratio 0.8163
+Po-190,halfLifeValue/Unit,2 ms,2.45 ms,
+Po-191,halfLife (s),0.0155,0.022,ratio 0.7045
+Po-191,halfLifeValue/Unit,15.5 ms,22 ms,
+Po-192,halfLife (s),0.0332,0.0322,ratio 1.031
+Po-192,halfLifeValue/Unit,0.0332 s,32.2 ms,
+Po-193,halfLife (s),0.42,0.399,ratio 1.053
+Po-193,halfLifeValue/Unit,0.42 s,399 ms,
+Po-197,halfLife (s),53.6,84.0,ratio 0.6381
+Po-197,halfLifeValue/Unit,53.6 s,84 s,
+Po-198,halfLife (s),106.2,105.6,ratio 1.006
+Po-198,halfLifeValue/Unit,1.77 m,1.76 m,
+Po-199,halfLife (s),328.8,328.2,ratio 1.002
+Po-199,halfLifeValue/Unit,5.48 m,5.47 m,
+Po-201,halfLife (s),918.0,930.0,ratio 0.9871
+Po-201,halfLifeValue/Unit,15.3 m,15.5 m,
+Po-202,halfLife (s),2682.0,2676.0,ratio 1.002
+Po-202,halfLifeValue/Unit,44.7 m,44.6 m,
+Po-204,halfLife (s),12708.0,12668.4,ratio 1.003
+Po-204,halfLifeValue/Unit,3.53 h,3.519 h,
+Po-205,halfLife (s),5976.0,6264.0,ratio 0.954
+Po-205,halfLifeValue/Unit,1.66 h,1.74 h,
+Po-209,halfLife (s),3218875000.0,3913058821.0,ratio 0.8226
+Po-209,halfLifeValue/Unit,102 a,124 Y,
+Po-212,halfLife (s),2.99e-07,2.943e-07,ratio 1.016
+Po-212,halfLifeValue/Unit,0.299 µs,294.3 ns,
+Po-213,halfLife (s),4.2e-06,3.706e-06,ratio 1.133
+Po-213,halfLifeValue/Unit,4.2 µs,3.706 us,
+Po-214,halfLife (s),0.0001643,0.00016346,ratio 1.005
+Po-214,halfLifeValue/Unit,164.3 µs,163.46 us,
+Po-217,halfLife (s),10.0,1.53,ratio 6.536
+Po-217,halfLifeValue/Unit,10 s,1.53 s,
+At-193,halfLife (s),0.04,0.028,ratio 1.429
+At-193,halfLifeValue/Unit,40 ms,28 ms,
+At-194,halfLife (s),0.04,0.286,ratio 0.1399
+At-194,halfLifeValue/Unit,40 ms,286 ms,
+At-195,halfLife (s),0.63,0.29,ratio 2.172
+At-195,halfLifeValue/Unit,0.63 s,290 ms,
+At-196,halfLife (s),0.253,0.388,ratio 0.6521
+At-196,halfLifeValue/Unit,0.253 s,0.388 s,
+At-197,halfLife (s),0.35,0.388,ratio 0.9021
+At-197,halfLifeValue/Unit,0.35 s,0.388 s,
+At-199,halfLife (s),7.2,7.03,ratio 1.024
+At-199,halfLifeValue/Unit,7.2 s,7.03 s,
+At-201,halfLife (s),89.0,87.6,ratio 1.016
+At-201,halfLifeValue/Unit,89 s,87.6 s,
+At-204,halfLife (s),552.0,547.2,ratio 1.009
+At-204,halfLifeValue/Unit,9.2 m,9.12 m,
+At-205,halfLife (s),1572.0,1614.0,ratio 0.974
+At-205,halfLifeValue/Unit,26.2 m,26.9 m,
+At-206,halfLife (s),1800.0,1836.0,ratio 0.9804
+At-206,halfLifeValue/Unit,30 m,30.6 m,
+At-207,halfLife (s),6480.0,6516.0,ratio 0.9945
+At-207,halfLifeValue/Unit,1.8 h,1.81 h,
+At-209,halfLife (s),19476.0,19512.0,ratio 0.9982
+At-209,halfLifeValue/Unit,5.41 h,5.42 h,
+At-217,halfLife (s),0.0323,0.0326,ratio 0.9908
+At-217,halfLifeValue/Unit,32.3 ms,32.6 ms,
+At-218,halfLife (s),1.5,1.28,ratio 1.172
+At-218,halfLifeValue/Unit,1.5 s,1.28 s,
+Rn-196,halfLife (s),0.003,0.0044,ratio 0.6818
+Rn-196,halfLifeValue/Unit,3 ms,4.4 ms,
+Rn-198,halfLife (s),0.064,0.065,ratio 0.9846
+Rn-198,halfLifeValue/Unit,64 ms,65 ms,
+Rn-199,halfLife (s),0.62,0.59,ratio 1.051
+Rn-199,halfLifeValue/Unit,0.62 s,0.59 s,
+Rn-200,halfLife (s),0.96,1.03,ratio 0.932
+Rn-200,halfLifeValue/Unit,0.96 s,1.03 s,
+Rn-202,halfLife (s),10.0,9.7,ratio 1.031
+Rn-202,halfLifeValue/Unit,10 s,9.7 s,
+Rn-203,halfLife (s),45.0,44.2,ratio 1.018
+Rn-203,halfLifeValue/Unit,45 s,44.2 s,
+Rn-204,halfLife (s),74.4,74.5,ratio 0.9987
+Rn-204,halfLifeValue/Unit,1.24 m,74.5 s,
+Rn-205,halfLife (s),168.0,170.0,ratio 0.9882
+Rn-205,halfLifeValue/Unit,2.8 m,170 s,
+Rn-209,halfLife (s),1710.0,1728.0,ratio 0.9896
+Rn-209,halfLifeValue/Unit,28.5 m,28.8 m,
+Rn-213,halfLife (s),0.025,0.0194,ratio 1.289
+Rn-213,halfLifeValue/Unit,25 ms,19.4 ms,
+Rn-214,halfLife (s),2.7e-07,2.59e-07,ratio 1.042
+Rn-214,halfLifeValue/Unit,0.27 µs,259 ns,
+Rn-215,halfLifeValue/Unit,2.3 µs,2.3 us,
+Rn-216,halfLifeValue/Unit,45 µs,45 us,
+Rn-218,halfLife (s),0.035,0.03375,ratio 1.037
+Rn-218,halfLifeValue/Unit,35 ms,33.75 ms,
+Rn-223,halfLife (s),1392.0,1458.0,ratio 0.9547
+Rn-223,halfLifeValue/Unit,23.2 m,24.3 m,
+Rn-225,halfLife (s),270.0,279.6,ratio 0.9657
+Rn-225,halfLifeValue/Unit,4.5 m,4.66 m,
+Rn-227,halfLife (s),22.5,20.2,ratio 1.114
+Rn-227,halfLifeValue/Unit,22.5 s,20.2 s,
+Fr-200,halfLife (s),0.019,0.049,ratio 0.3878
+Fr-200,halfLifeValue/Unit,19 ms,49 ms,
+Fr-201,halfLife (s),0.048,0.063,ratio 0.7619
+Fr-201,halfLifeValue/Unit,48 ms,63 ms,
+Fr-202,halfLife (s),0.34,0.3,ratio 1.133
+Fr-202,halfLifeValue/Unit,0.34 s,0.3 s,
+Fr-204,halfLife (s),1.7,1.8,ratio 0.9444
+Fr-204,halfLifeValue/Unit,1.7 s,1.8 s,
+Fr-205,halfLife (s),3.85,3.9,ratio 0.9872
+Fr-205,halfLifeValue/Unit,3.85 s,3.9 s,
+Fr-206,halfLife (s),15.9,16.0,ratio 0.9938
+Fr-206,halfLifeValue/Unit,15.9 s,16 s,
+Fr-209,halfLife (s),50.0,50.5,ratio 0.9901
+Fr-209,halfLifeValue/Unit,50 s,50.5 s,
+Fr-213,halfLife (s),34.6,34.17,ratio 1.013
+Fr-213,halfLifeValue/Unit,34.6 s,34.17 s,
+Fr-214,halfLife (s),0.005,0.0055,ratio 0.9091
+Fr-214,halfLifeValue/Unit,5 ms,5.5 ms,
+Fr-216,halfLifeValue/Unit,0.7 µs,0.7 us,
+Fr-217,halfLifeValue/Unit,22 µs,22 us,
+Fr-218,halfLife (s),0.001,0.0011,ratio 0.9091
+Fr-218,halfLifeValue/Unit,1 ms,1.1 ms,
+Fr-219,halfLife (s),0.02,0.024,ratio 0.8333
+Fr-219,halfLifeValue/Unit,20 ms,24 ms,
+Fr-223,halfLife (s),1308.0,1320.0,ratio 0.9909
+Fr-223,halfLifeValue/Unit,21.8 m,22 m,
+Fr-225,halfLife (s),240.0,237.0,ratio 1.013
+Fr-225,halfLifeValue/Unit,4 m,3.95 m,
+Fr-229,halfLife (s),50.0,50.2,ratio 0.996
+Fr-229,halfLifeValue/Unit,50 s,50.2 s,
+Fr-231,halfLife (s),17.5,17.6,ratio 0.9943
+Fr-231,halfLifeValue/Unit,17.5 s,17.6 s,
+Fr-232,halfLife (s),5.0,5.5,ratio 0.9091
+Fr-232,halfLifeValue/Unit,5 s,5.5 s,
+Ra-202,halfLife (s),0.0007,0.016,ratio 0.04375
+Ra-202,halfLifeValue/Unit,0.7 ms,16 ms,
+Ra-203,halfLife (s),0.001,0.031,ratio 0.03226
+Ra-203,halfLifeValue/Unit,1 ms,31 ms,
+Ra-204,halfLife (s),0.059,0.057,ratio 1.035
+Ra-204,halfLifeValue/Unit,59 ms,57 ms,
+Ra-207,halfLife (s),1.3,1.35,ratio 0.963
+Ra-207,halfLifeValue/Unit,1.3 s,1.35 s,
+Ra-209,halfLife (s),4.6,4.8,ratio 0.9583
+Ra-209,halfLifeValue/Unit,4.6 s,4.8 s,
+Ra-213,halfLife (s),164.4,163.8,ratio 1.004
+Ra-213,halfLifeValue/Unit,2.74 m,2.73 m,
+Ra-214,halfLife (s),2.46,2.438,ratio 1.009
+Ra-214,halfLifeValue/Unit,2.46 s,2.438 s,
+Ra-215,halfLife (s),0.00159,0.00166,ratio 0.9578
+Ra-215,halfLifeValue/Unit,1.59 ms,1.66 ms,
+Ra-217,halfLifeValue/Unit,1.6 µs,1.6 us,
+Ra-218,halfLife (s),2.56e-05,2.591e-05,ratio 0.988
+Ra-218,halfLifeValue/Unit,25.6 µs,25.91 us,
+Ra-219,halfLife (s),0.01,0.009,ratio 1.111
+Ra-219,halfLifeValue/Unit,10 ms,9 ms,
+Ra-224,halfLife (s),316224.0,313770.24,ratio 1.008
+Ra-224,halfLifeValue/Unit,3.66 d,3.6316 d,
+Ra-231,halfLife (s),103.0,103.9,ratio 0.9913
+Ra-231,halfLifeValue/Unit,103 s,103.9 s,
+Ra-232,halfLife (s),250.0,252.0,ratio 0.9921
+Ra-232,halfLifeValue/Unit,250 s,4.2 m,
+Ac-207,halfLife (s),0.022,0.027,ratio 0.8148
+Ac-207,halfLifeValue/Unit,22 ms,27 ms,
+Ac-209,halfLife (s),0.1,0.087,ratio 1.149
+Ac-209,halfLifeValue/Unit,0.1 s,0.087 s,
+Ac-211,halfLife (s),0.25,0.21,ratio 1.19
+Ac-211,halfLifeValue/Unit,0.25 s,0.21 s,
+Ac-212,halfLife (s),0.93,0.88,ratio 1.057
+Ac-212,halfLifeValue/Unit,0.93 s,880 ms,
+Ac-213,halfLife (s),0.8,0.738,ratio 1.084
+Ac-213,halfLifeValue/Unit,0.8 s,738 ms,
+Ac-216,halfLife (s),0.00033,0.00044,ratio 0.75
+Ac-216,halfLifeValue/Unit,0.33 ms,440 us,
+Ac-218,halfLife (s),1.08e-06,1.03e-06,ratio 1.049
+Ac-218,halfLifeValue/Unit,1.08 µs,1.03 us,
+Ac-219,halfLifeValue/Unit,11.8 µs,11.8 us,
+Ac-225,halfLife (s),864000.0,857088.0,ratio 1.008
+Ac-225,halfLifeValue/Unit,10 d,9.92 d,
+Ac-233,halfLife (s),145.0,143.0,ratio 1.014
+Ac-233,halfLifeValue/Unit,145 s,143 s,
+Th-210,halfLife (s),0.009,0.016,ratio 0.5625
+Th-210,halfLifeValue/Unit,9 ms,16 ms,
+Th-212,halfLife (s),0.03,0.0317,ratio 0.9464
+Th-212,halfLifeValue/Unit,30 ms,31.7 ms,
+Th-213,halfLife (s),0.14,0.146,ratio 0.9589
+Th-213,halfLifeValue/Unit,140 ms,146 ms,
+Th-214,halfLife (s),0.1,0.087,ratio 1.149
+Th-214,halfLifeValue/Unit,100 ms,87 ms,
+Th-216,halfLife (s),0.028,0.026,ratio 1.077
+Th-216,halfLifeValue/Unit,0.028 s,26 ms,
+Th-218,halfLife (s),1.09e-07,1.22e-07,ratio 0.8934
+Th-218,halfLifeValue/Unit,109 ns,122 ns,
+Th-219,halfLife (s),1.05e-06,1.025e-06,ratio 1.024
+Th-219,halfLifeValue/Unit,1.05 µs,1.025 us,
+Th-220,halfLifeValue/Unit,9.7 µs,9.7 us,
+Th-221,halfLife (s),0.00168,0.00174,ratio 0.9655
+Th-221,halfLifeValue/Unit,1.68 ms,1.74 ms,
+Th-222,halfLife (s),0.0028,0.00224,ratio 1.25
+Th-222,halfLifeValue/Unit,2.8 ms,2.24 ms,
+Th-224,halfLife (s),1.05,1.04,ratio 1.01
+Th-224,halfLifeValue/Unit,1.05 s,1.04 s,
+Th-225,halfLife (s),523.2,525.0,ratio 0.9966
+Th-225,halfLifeValue/Unit,8.72 m,8.75 m,
+Th-227,halfLife (s),1617408.0,1615420.8,ratio 1.001
+Th-227,halfLifeValue/Unit,18.72 d,18.697 d,
+Th-229,halfLife (s),231632800000.0,248669000000.0,ratio 0.9315
+Th-229,halfLifeValue/Unit,7340 a,7880 Y,
+Th-230,naturalAbundance,,0.02,
+Th-231,halfLife (s),91872.0,92052.0,ratio 0.998
+Th-231,halfLifeValue/Unit,25.52 h,25.57 h,
+Th-232,halfLife (s),4.433843e+17,4.42e+17,ratio 1.003
+Th-232,halfLifeValue/Unit,14050000000 a,1.40E+10 Y,
+Th-232,naturalAbundance,,99.98,
+Th-233,halfLife (s),1338.0,1309.8,ratio 1.022
+Th-233,halfLifeValue/Unit,22.3 m,21.83 m,
+Th-235,halfLife (s),426.0,432.0,ratio 0.9861
+Th-235,halfLifeValue/Unit,7.1 m,7.2 m,
+Th-237,halfLife (s),300.0,288.0,ratio 1.042
+Th-237,halfLifeValue/Unit,5 m,4.8 m,
+Pa-216,halfLife (s),0.2,0.15,ratio 1.333
+Pa-216,halfLifeValue/Unit,0.2 s,0.15 s,
+Pa-217,halfLife (s),0.0049,0.0038,ratio 1.289
+Pa-217,halfLifeValue/Unit,4.9 ms,3.8 ms,
+Pa-218,halfLife (s),0.00012,0.000109,ratio 1.101
+Pa-218,halfLifeValue/Unit,0.12 ms,109 us,
+Pa-219,halfLife (s),5.3e-08,5.4e-08,ratio 0.9815
+Pa-219,halfLifeValue/Unit,53 ns,54 ns,
+Pa-220,halfLifeValue/Unit,0.78 µs,0.78 us,
+Pa-221,halfLifeValue/Unit,5.9 µs,5.9 us,
+Pa-223,halfLife (s),0.0065,0.0051,ratio 1.275
+Pa-223,halfLifeValue/Unit,6.5 ms,5.1 ms,
+Pa-224,halfLife (s),0.79,0.846,ratio 0.9338
+Pa-224,halfLifeValue/Unit,0.79 s,0.846 s,
+Pa-231,halfLife (s),1033827000000.0,1027810000000.0,ratio 1.006
+Pa-231,halfLifeValue/Unit,32760 a,32570 Y,
+Pa-231,naturalAbundance,,100.0,
+Pa-232,halfLife (s),113184.0,114048.0,ratio 0.9924
+Pa-232,halfLifeValue/Unit,1.31 d,1.32 d,
+Pa-235,halfLife (s),1470.0,1464.0,ratio 1.004
+Pa-235,halfLifeValue/Unit,24.5 m,24.4 m,
+Pa-238,halfLife (s),138.0,136.8,ratio 1.009
+Pa-238,halfLifeValue/Unit,2.3 m,2.28 m,
+U-218,halfLife (s),0.0015,0.00065,ratio 2.308
+U-218,halfLifeValue/Unit,1.5 ms,0.65 ms,
+U-219,halfLife (s),4.2e-05,6e-05,ratio 0.7
+U-219,halfLifeValue/Unit,42 µs,60 us,
+U-221,halfLife (s),,6.6e-07,absent in NUCLEON
+U-222,halfLife (s),1e-06,4.7e-06,ratio 0.2128
+U-222,halfLifeValue/Unit,1 µs,4.7 us,
+U-223,halfLifeValue/Unit,18 µs,18 us,
+U-224,halfLife (s),0.0009,0.000396,ratio 2.273
+U-224,halfLifeValue/Unit,0.9 ms,396 us,
+U-225,halfLife (s),0.095,0.069,ratio 1.377
+U-225,halfLifeValue/Unit,95 ms,69 ms,
+U-226,halfLife (s),0.35,0.268,ratio 1.306
+U-226,halfLifeValue/Unit,0.35 s,268 ms,
+U-230,halfLife (s),1797120.0,1747872.0,ratio 1.028
+U-230,halfLifeValue/Unit,20.8 d,20.23 d,
+U-233,halfLifeValue/Unit,159200 a,1.59E+05 Y,
+U-234,halfLifeValue/Unit,245500 a,2.46E+05 Y,
+U-234,naturalAbundance,,0.0054,
+U-235,naturalAbundance,,0.7204,
+U-238,naturalAbundance,,99.2742,
+U-238,branching ratio,SpontaneousFission [5.5e-05],SpontaneousFission 5.45e-05,
+Np-220,halfLifeValue/Unit,25 µs,25 us,
+Np-222,halfLifeValue/Unit,0.38 µs,0.38 us,
+Np-223,halfLifeValue/Unit,2.2 µs,2.2 us,
+Np-224,halfLifeValue/Unit,38 µs,38 us,
+Np-225,halfLife (s),0.006,0.0036,ratio 1.667
+Np-225,halfLifeValue/Unit,6 ms,3.6 ms,
+Np-236,halfLife (s),4859870000000.0,4891320000000.0,ratio 0.9936
+Np-236,halfLifeValue/Unit,154000 a,1.55E+05 Y,
+Np-237,halfLifeValue/Unit,2144000 a,2.14E+06 Y,
+Np-238,halfLife (s),182908.8,181353.6,ratio 1.009
+Np-238,halfLifeValue/Unit,2.117 d,2.099 d,
+Np-242,halfLife (s),330.0,132.0,ratio 2.5
+Np-242,halfLifeValue/Unit,5.5 m,2.2 m,
+Np-243,halfLife (s),108.0,111.0,ratio 0.973
+Np-243,halfLifeValue/Unit,1.8 m,1.85 m,
+Pu-228,halfLife (s),0.004,1.1,ratio 0.003636
+Pu-228,halfLifeValue/Unit,4 ms,1.1 s,
+Pu-229,halfLife (s),,90.0,absent in NUCLEON
+Pu-230,halfLife (s),,102.0,absent in NUCLEON
+Pu-231,halfLife (s),,516.0,absent in NUCLEON
+Pu-232,halfLife (s),2046.0,2028.0,ratio 1.009
+Pu-232,halfLifeValue/Unit,34.1 m,33.8 m,
+Pu-237,halfLife (s),3905280.0,3943296.0,ratio 0.9904
+Pu-237,halfLifeValue/Unit,45.2 d,45.64 d,
+Pu-241,halfLife (s),452851600.0,452179192.3,ratio 1.001
+Pu-241,halfLifeValue/Unit,14.35 a,14.329 Y,
+Pu-244,halfLife (s),2549854000000000.0,2565580000000000.0,ratio 0.9939
+Pu-244,halfLifeValue/Unit,80800000 a,8.13E+07 Y,
+Am-233,halfLife (s),,192.0,absent in NUCLEON
+Am-235,halfLife (s),900.0,618.0,ratio 1.456
+Am-235,halfLifeValue/Unit,15 m,10.3 m,
+Am-236,halfLife (s),,216.0,absent in NUCLEON
+Am-237,halfLife (s),4380.0,4416.0,ratio 0.9918
+Am-237,halfLifeValue/Unit,73 m,73.6 m,
+Cm-238,halfLife (s),8640.0,7920.0,ratio 1.091
+Cm-238,halfLifeValue/Unit,2.4 h,2.2 h,
+Cm-239,halfLife (s),10440.0,9720.0,ratio 1.074
+Cm-239,halfLifeValue/Unit,2.9 h,2.7 h,
+Cm-245,halfLife (s),268239600000.0,265804000000.0,ratio 1.009
+Cm-245,halfLifeValue/Unit,8500 a,8423 Y,
+Cm-246,halfLife (s),149267400000.0,148507000000.0,ratio 1.005
+Cm-246,halfLifeValue/Unit,4730 a,4706 Y,
+Cm-248,halfLife (s),10729580000000.0,10981800000000.0,ratio 0.977
+Cm-248,halfLifeValue/Unit,340000 a,3.48E+05 Y,
+Cm-250,halfLife (s),284018400000.0,261922000000.0,ratio 1.084
+Cm-250,halfLifeValue/Unit,9000 a,8.30E+03 Y,
+Bk-241,halfLife (s),,276.0,absent in NUCLEON
+Bk-243,halfLife (s),16200.0,16560.0,ratio 0.9783
+Bk-243,halfLifeValue/Unit,4.5 h,4.6 h,
+Bk-244,halfLife (s),15660.0,18072.0,ratio 0.8665
+Bk-244,halfLifeValue/Unit,4.35 h,5.02 h,
+Bk-245,halfLife (s),426816.0,427680.0,ratio 0.998
+Bk-245,halfLifeValue/Unit,4.94 d,4.95 d,
+Bk-248,halfLife (s),32400.0,284012333.8,ratio 0.0001141
+Bk-248,halfLifeValue/Unit,9 h,9 Y,
+Bk-249,halfLife (s),27648000.0,28512000.0,ratio 0.9697
+Bk-249,halfLifeValue/Unit,320 d,330 d,
+Bk-250,halfLife (s),11581.2,11563.2,ratio 1.002
+Bk-250,halfLifeValue/Unit,3.217 h,3.212 h,
+Cf-238,halfLife (s),0.021,0.0211,ratio 0.9953
+Cf-238,halfLifeValue/Unit,21 ms,21.1 ms,
+Cf-240,halfLife (s),63.6,57.6,ratio 1.104
+Cf-240,halfLifeValue/Unit,1.06 m,0.96 m,
+Cf-242,halfLife (s),209.4,210.0,ratio 0.9971
+Cf-242,halfLifeValue/Unit,3.49 m,3.5 m,
+Es-241,halfLife (s),9.0,8.0,ratio 1.125
+Es-241,halfLifeValue/Unit,9 s,8 s,
+Es-242,halfLife (s),40.0,17.8,ratio 2.247
+Es-242,halfLifeValue/Unit,40 s,17.8 s,
+Es-246,halfLife (s),462.0,450.0,ratio 1.027
+Es-246,halfLifeValue/Unit,7.7 m,7.5 m,
+Es-248,halfLife (s),1620.0,1440.0,ratio 1.125
+Es-248,halfLifeValue/Unit,27 m,24 m,
+Fm-243,halfLife (s),0.18,0.231,ratio 0.7792
+Fm-243,halfLifeValue/Unit,0.18 s,231 ms,
+Fm-244,halfLife (s),0.0033,0.00312,ratio 1.058
+Fm-244,halfLifeValue/Unit,3.3 ms,3.12 ms,
+Fm-246,halfLife (s),1.1,1.54,ratio 0.7143
+Fm-246,halfLifeValue/Unit,1.1 s,1.54 s,
+Fm-247,halfLife (s),35.0,31.0,ratio 1.129
+Fm-247,halfLifeValue/Unit,35 s,31 s,
+Fm-248,halfLife (s),36.0,34.5,ratio 1.043
+Fm-248,halfLifeValue/Unit,36 s,34.5 s,
+Fm-256,halfLife (s),9456.0,9426.0,ratio 1.003
+Fm-256,halfLifeValue/Unit,157.6 m,157.1 m,
+Fm-258,halfLifeValue/Unit,370 µs,370 us,
+Md-245,halfLife (s),0.35,0.0009,ratio 388.9
+Md-245,halfLifeValue/Unit,0.35 s,0.9 ms,
+Md-246,halfLife (s),1.0,0.9,ratio 1.111
+Md-246,halfLifeValue/Unit,1 s,0.9 s,
+Md-247,halfLife (s),1.12,1.2,ratio 0.9333
+Md-247,halfLifeValue/Unit,1.12 s,1.2 s,
+Md-249,halfLife (s),24.0,21.7,ratio 1.106
+Md-249,halfLifeValue/Unit,24 s,21.7 s,
+Md-256,halfLife (s),4686.0,4662.0,ratio 1.005
+Md-256,halfLifeValue/Unit,78.1 m,77.7 m,
+Md-259,halfLifeValue/Unit,96 m,1.6 h,
+No-248,halfLifeValue/Unit,2 µs,2 us,
+No-250,halfLife (s),0.00025,4.2e-06,ratio 59.52
+No-250,halfLifeValue/Unit,0.25 ms,4.2 us,
+No-252,halfLife (s),2.3,2.46,ratio 0.935
+No-252,halfLifeValue/Unit,2.3 s,2.46 s,
+No-253,halfLife (s),102.0,97.2,ratio 1.049
+No-253,halfLifeValue/Unit,1.7 m,1.62 m,
+No-254,halfLife (s),55.0,51.2,ratio 1.074
+No-254,halfLifeValue/Unit,55 s,51.2 s,
+No-255,halfLife (s),186.0,211.2,ratio 0.8807
+No-255,halfLifeValue/Unit,3.1 m,3.52 m,
+No-257,halfLife (s),25.0,24.5,ratio 1.02
+No-257,halfLifeValue/Unit,25 s,24.5 s,
+Lr-253,halfLife (s),1.3,0.57,ratio 2.281
+Lr-253,halfLifeValue/Unit,1.3 s,0.57 s,
+Lr-254,halfLife (s),13.0,18.1,ratio 0.7182
+Lr-254,halfLifeValue/Unit,13 s,18.1 s,
+Lr-255,halfLife (s),22.0,31.1,ratio 0.7074
+Lr-255,halfLifeValue/Unit,22 s,31.1 s,
+Lr-256,halfLife (s),28.0,27.9,ratio 1.004
+Lr-256,halfLifeValue/Unit,28 s,27.9 s,
+Lr-257,halfLife (s),0.646,4.0,ratio 0.1615
+Lr-257,halfLifeValue/Unit,0.646 s,4 s,
+Lr-258,halfLife (s),3.9,3.92,ratio 0.9949
+Lr-258,halfLifeValue/Unit,3.9 s,3.92 s,
+Lr-259,halfLife (s),6.3,6.2,ratio 1.016
+Lr-259,halfLifeValue/Unit,6.3 s,6.2 s,
+Lr-262,halfLife (s),12960.0,14400.0,ratio 0.9
+Lr-262,halfLifeValue/Unit,216 m,4 h,
+Rf-253,halfLife (s),1.8,0.0099,ratio 181.8
+Rf-253,halfLifeValue/Unit,1.8 s,9.9 ms,
+Rf-254,halfLife (s),0.0005,2.32e-05,ratio 21.55
+Rf-254,halfLifeValue/Unit,0.5 ms,23.2 us,
+Rf-255,halfLife (s),1.5,1.68,ratio 0.8929
+Rf-255,halfLifeValue/Unit,1.5 s,1.68 s,
+Rf-256,halfLife (s),0.0067,0.00667,ratio 1.004
+Rf-256,halfLifeValue/Unit,6.7 ms,6.67 ms,
+Rf-257,halfLife (s),4.7,4.4,ratio 1.068
+Rf-257,halfLifeValue/Unit,4.7 s,4.4 s,
+Rf-259,halfLife (s),3.1,2.4,ratio 1.292
+Rf-259,halfLifeValue/Unit,3.1 s,2.4 s,
+Rf-260,halfLife (s),0.0201,0.021,ratio 0.9571
+Rf-260,halfLifeValue/Unit,20.1 ms,21 ms,
+Rf-261,halfLife (s),65.0,68.0,ratio 0.9559
+Rf-261,halfLifeValue/Unit,65 s,68 s,
+Rf-262,halfLife (s),2.1,2.3,ratio 0.913
+Rf-262,halfLifeValue/Unit,2.1 s,2.3 s,
+Db-256,halfLife (s),2.6,1.6,ratio 1.625
+Db-256,halfLifeValue/Unit,2.6 s,1.6 s,
+Db-257,halfLife (s),1.3,2.3,ratio 0.5652
+Db-257,halfLifeValue/Unit,1.3 s,2.3 s,
+Db-258,halfLife (s),4.4,4.3,ratio 1.023
+Db-258,halfLifeValue/Unit,4.4 s,4.3 s,
+Db-259,halfLife (s),,0.51,absent in NUCLEON
+Db-262,halfLife (s),34.0,35.0,ratio 0.9714
+Db-262,halfLifeValue/Unit,34 s,35 s,
+Sg-258,halfLife (s),0.0029,0.0025,ratio 1.16
+Sg-258,halfLifeValue/Unit,2.9 ms,2.5 ms,
+Sg-259,halfLife (s),0.48,0.29,ratio 1.655
+Sg-259,halfLifeValue/Unit,0.48 s,0.29 s,
+Sg-262,halfLife (s),,0.0069,absent in NUCLEON
+Sg-263,halfLife (s),0.8,1.0,ratio 0.8
+Sg-263,halfLifeValue/Unit,0.8 s,1 s,
+Sg-264,halfLife (s),,0.037,absent in NUCLEON
+Sg-265,halfLife (s),10.0,14.4,ratio 0.6944
+Sg-265,halfLifeValue/Unit,10 s,14.4 s,
+Sg-266,halfLife (s),21.0,0.34,ratio 61.76
+Sg-266,halfLifeValue/Unit,21 s,0.34 s,
+Bh-261,halfLife (s),0.0118,0.012,ratio 0.9833
+Bh-261,halfLifeValue/Unit,11.8 ms,12 ms,
+Hs-264,halfLife (s),0.00085,0.0008,ratio 1.062
+Hs-264,halfLifeValue/Unit,0.85 ms,0.8 ms,
+Hs-265,halfLife (s),0.0009,0.002,ratio 0.45
+Hs-265,halfLifeValue/Unit,0.9 ms,2 ms,
+Hs-266,halfLife (s),,0.00297,absent in NUCLEON
+Hs-267,halfLife (s),0.026,0.043,ratio 0.6047
+Hs-267,halfLifeValue/Unit,26 ms,43 ms,
+Hs-268,halfLife (s),,0.4,absent in NUCLEON
+Hs-269,halfLife (s),9.0,13.0,ratio 0.6923
+Hs-269,halfLifeValue/Unit,9 s,13 s,
+Mt-266,halfLife (s),0.0008,0.0021,ratio 0.381
+Mt-266,halfLifeValue/Unit,0.8 ms,2.1 ms,
+Mt-268,halfLife (s),0.07,0.021,ratio 3.333
+Mt-268,halfLifeValue/Unit,0.07 s,21 ms,
+Ds-267,halfLifeValue/Unit,3 µs,3 us,
+Ds-269,halfLife (s),0.00017,0.00018,ratio 0.9444
+Ds-269,halfLifeValue/Unit,0.17 ms,0.18 ms,
+Ds-270,halfLife (s),,0.0002,absent in NUCLEON
+Ds-271,halfLife (s),0.06,0.0016,ratio 37.5
+Ds-271,halfLifeValue/Unit,0.06 s,1.6 ms,
+Ds-273,halfLife (s),0.00018,0.00019,ratio 0.9474
+Ds-273,halfLifeValue/Unit,0.18 ms,0.19 ms,
+Rg-272,halfLife (s),0.0015,0.0038,ratio 0.3947
+Rg-272,halfLifeValue/Unit,1.5 ms,3.8 ms,
+Cn-277,halfLife (s),0.00024,0.00061,ratio 0.3934
+Cn-277,halfLifeValue/Unit,0.24 ms,0.61 ms,
+Fl-285,halfLife (s),0.00058,0.101,ratio 0.005743
+Fl-285,halfLifeValue/Unit,0.58 ms,101 ms,
