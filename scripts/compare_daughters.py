@@ -85,7 +85,8 @@ def load_nucleon(path):
                              "ratio": float(r) if r is not None else None})
         hl = g.value(n, N.halfLife)
         nuc[name] = {"branches": branches, "halfLife": float(hl) if hl is not None else None,
-                     "dicom": (n, N.dicomCode, None) in g}
+                     "dicom": (n, N.dicomCode, None) in g,
+                     "excitation_keV": float(g.value(n, N.excitationEnergy)) if (n, N.excitationEnergy, None) in g else None}
     return nuc, z_of
 
 
@@ -148,11 +149,17 @@ def ensdf_for(name, nuc_names, ensdf):
     excited = sorted(e for e in levels if e > 0)
     if not excited:
         return None, None
+    # match the isomer to the ENSDF parent level with the closest excitation energy
+    ex = nuc_names[name].get("excitation_keV")
+    if ex is not None:
+        best = min(excited, key=lambda e: abs(e - ex))
+        if abs(best - ex) <= max(2.0, 0.01 * ex):
+            return levels[best], f"isomer level {best:g} keV (NUCLEON {ex:g} keV)"
+        return None, None
     isomers = sorted(s for s in (split(x) for x in nuc_names) if s[0] == sym and s[1] == a and s[2] > 0)
     if len(isomers) == len(excited):
         return levels[excited[state - 1]], f"isomer level {excited[state - 1]:g} keV (matched by order)"
-    pooled = [x for e in excited for x in levels[e]]
-    return pooled, f"isomer: {len(excited)} ENSDF levels vs {len(isomers)} NUCLEON isomers; levels pooled"
+    return None, None
 
 
 def remap_icrp_isomers(icrp, nuc):

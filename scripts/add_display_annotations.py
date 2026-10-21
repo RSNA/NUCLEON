@@ -38,6 +38,7 @@ MIRRORS = [
     ("halfLife", "halfLifeDisplay", "half-life in seconds"),
     ("isStable", "isStableDisplay", "is stable"),
     ("metastableState", "metastableStateDisplay", "metastable state"),
+    ("excitationEnergy", "excitationEnergyDisplay", "excitation energy in keV"),
     ("naturalAbundance", "naturalAbundanceDisplay", "natural abundance in percent"),
     ("decayWidthValue", "decayWidthValueDisplay", "decay width value"),
     ("decayWidthUnit", "decayWidthUnitDisplay", "decay width unit"),

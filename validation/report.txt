@@ -1,11 +1,11 @@
 == Queries ==
-Q1      276 (276 distinct)  Which positron emitters have half-lives between 5 min and 2 h?
+Q1      282 (282 distinct)  Which positron emitters have half-lives between 5 min and 2 h?
 Q1a       3  the strict reading, :PositronEmission only
 Q2        1  Given the Radionuclide Code Sequence of a study, what is the half-life?
 Q3       14  What does 225Ac decay to, and what does that decay to?
 Q3a      18  the same chain as parent/daughter steps, with branch detail
-Q4      767 (706 distinct)  Which nuclides decay to a stable daughter in one step?
-Q5       34 (34 distinct)  Which alpha emitters have a half-life in the therapeutic window?
+Q4      894 (832 distinct)  Which nuclides decay to a stable daughter in one step?
+Q5       33 (33 distinct)  Which alpha emitters have a half-life in the therapeutic window?
 Q6       46  Which DICOM-coded radionuclides are NOT positron emitters?
 Q7        1  What is the German name of the element of 99mTc?
 Q7a       9  every language NUCLEON holds for that element
@@ -17,25 +17,25 @@ V5        0  every nuclide's atomic number matches its element's
 V6        0  every display annotation equals the value it mirrors
 
 == Table 1 counts ==
-triples                                     140,453
-named classes                                 4,228
-named individuals                            10,127
-punned                                        4,223
+triples                                     187,672
+named classes                                 5,531
+named individuals                            13,249
+punned                                        5,526
 elements                                        118
-nuclides                                      4,105
-  metastable isomers                            716
-  flagged stable                                249
-  with half-life                              3,681
-  with spin-parity                            2,881
-  with >=1 decay branch                       3,744
-  with >=2 decay branches                     1,757
-  isomers with a branch                         639
+nuclides                                      5,408
+  metastable isomers                          2,019
+  flagged stable                                250
+  with half-life                              4,984
+  with spin-parity                            5,197
+  with >=1 decay branch                       5,122
+  with >=2 decay branches                     2,083
+  isomers with a branch                       2,017
   radioactive, no branch (ground state)          50
-  radioactive, no branch (isomer)                77
-decay branches                                5,872
-  with decay product                          5,629
-  with branching ratio                        4,975
-  fission (no product by design)                207
+  radioactive, no branch (isomer)                 1
+decay branches                                7,691
+  with decay product                          7,399
+  with branching ratio                        6,282
+  fission (no product by design)                255
 decay modes                                      32
 skos:exactMatch                                 287
 nuclides with dicomCode                          87
