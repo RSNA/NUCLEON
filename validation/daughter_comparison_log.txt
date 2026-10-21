@@ -22,5 +22,5 @@ NUCLEON branches: 5872; with daughter: 5629; checked against a reference: 3503
 ICRP isomers re-keyed by half-life: [('Au-196m', 'Au-196m2'), ('Ir-194m', 'Ir-194m2'), ('Ta-182m', 'Ta-182m2'), ('Hf-179m', 'Hf-179m2'), ('Hf-178m', 'Hf-178m2'), ('Hf-177m', 'Hf-177m2')]
 ICRP radionuclides absent from NUCLEON: ['Nb-99m', 'Pm-137m']
 reference-only pairs: Counter({('ENSDF', 'NUCLEON lacks this mode'): 29})
-half-life flags: Counter({'': 1217, 'differs >5%': 33})
+half-life flags: Counter({'': 1209, 'differs >5%': 41})
 branching flags: Counter({'': 1575, 'differs >1 percentage point': 20})

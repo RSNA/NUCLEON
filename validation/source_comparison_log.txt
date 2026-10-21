@@ -1,10 +1,6 @@
-source rows: 3386; discrepancies: 2064 in 1189 nuclides
-    882  halfLife (s)
-    865  halfLifeValue/Unit
-    287  naturalAbundance
-     14  decay width
+source rows: 3386; discrepancies: 22 in 15 nuclides
       9  isStable
+      7  halfLife (s)
       3  missing from NUCLEON
       3  decay modes
-      1  branching ratio
-likely unit errors: [('Na-24', 14.959, 53841.6)]
+likely unit errors: []

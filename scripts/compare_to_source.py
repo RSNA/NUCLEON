@@ -28,7 +28,7 @@ from rdflib import RDF, RDFS, Namespace
 N = Namespace("https://rsna.org/radlex/nucleon#")
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 WIDTH_UNITS = {"eV", "keV", "MeV"}
-UNIT_ALIASES = {"Y": "a", "y": "a", "M": "m", "D": "d", "H": "h", "S": "s", "MS": "ms", "US": "us",
+UNIT_ALIASES = {"Y": "a", "y": "a", "M": "m", "D": "d", "H": "h", "S": "s", "MS": "ms", "US": "µs", "us": "µs",
                 "NS": "ns", "PS": "ps", "FS": "fs", "AS": "as", "ZS": "zs", "YS": "ys"}
 REL_TOL = 1e-3
 
