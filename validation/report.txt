@@ -1,0 +1,51 @@
+== Queries ==
+Q1      275 (275 distinct)  Which positron emitters have half-lives between 5 min and 2 h?
+Q1a       3  the strict reading, :PositronEmission only
+Q2        1  Given the Radionuclide Code Sequence of a study, what is the half-life?
+Q3       14  What does 225Ac decay to, and what does that decay to?
+Q3a      18  the same chain as parent/daughter steps, with branch detail
+Q4      767 (706 distinct)  Which nuclides decay to a stable daughter in one step?
+Q5       34 (34 distinct)  Which alpha emitters have a half-life in the therapeutic window?
+Q6       46  Which DICOM-coded radionuclides are NOT positron emitters?
+Q7        1  What is the German name of the element of 99mTc?
+Q7a       9  every language NUCLEON holds for that element
+V1        0  nucleon conservation across every asserted daughter link
+V2        0  A = Z + N for every nuclide
+V3        0  no nuclide decays to itself
+V4        0  every decayProduct target is a declared nuclide
+V5        0  every nuclide's atomic number matches its element's
+
+== Table 1 counts ==
+triples                                     114,496
+named classes                                 4,228
+named individuals                            10,127
+punned                                        4,223
+elements                                        118
+nuclides                                      4,105
+  metastable isomers                            716
+  flagged stable                                249
+  with half-life                              3,637
+  with spin-parity                            2,881
+  with >=1 decay branch                       3,744
+  with >=2 decay branches                     1,757
+  isomers with a branch                         639
+  radioactive, no branch (ground state)          50
+  radioactive, no branch (isomer)                77
+decay branches                                5,872
+  with decay product                          5,629
+  with branching ratio                        4,975
+  fission (no product by design)                207
+decay modes                                      32
+skos:exactMatch                                 287
+nuclides with dicomCode                          87
+language-tagged element names                   981
+
+== Structural checks ==
+branch without a parent                           0
+branch without a decay mode                       0
+nuclide without an element                        0
+branching ratio outside 0-100                     0
+deprecated :isMedicalIsotope present              0
+WARN stable-flagged nuclide with a branch        15  Ba-132 Bi-209 Cd-106 Cd-114 Cd-116 Ce-136 Ce-138 Dy-156 Dy-161 Eu-151 Nd-148 Pt-198 Se-80 W-180 Xe-134
+
+PASS
