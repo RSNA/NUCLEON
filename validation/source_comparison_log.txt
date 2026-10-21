@@ -1,6 +1,4 @@
-source rows: 3386; discrepancies: 22 in 15 nuclides
-      9  isStable
-      7  halfLife (s)
+source rows: 3386; discrepancies: 6 in 6 nuclides
       3  missing from NUCLEON
       3  decay modes
 likely unit errors: []

@@ -1,0 +1,11 @@
+nuclide,change,fields
+Cd-116,"stability flag, half-life",":isStable=false; :halfLife=""1.04e+27""^^xsd:double; :halfLifeValue=3.30E+19; :halfLifeUnit=""a""; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=None"
+Xe-134,"stability flag, half-life",":isStable=false; :halfLife=""1.83e+30""^^xsd:double; :halfLifeValue=5.80E+22; :halfLifeUnit=""a""; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=""The source reports this half-life as a lower limit (>).""@en"
+Ba-132,"stability flag, half-life",":isStable=false; :halfLife=""9.47e+28""^^xsd:double; :halfLifeValue=3.00E+21; :halfLifeUnit=""a""; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=""The source reports this half-life as a lower limit (>).""@en"
+Ce-138,"stability flag, half-life",":isStable=false; :halfLife=""1.39e+24""^^xsd:double; :halfLifeValue=4.40E+16; :halfLifeUnit=""a""; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=""The source reports this half-life as a lower limit (>).""@en"
+Sm-149,stability flag,:isStable=true; :halfLife=None; :halfLifeValue=None; :halfLifeUnit=None; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=None
+Eu-151,"stability flag, half-life",":isStable=false; :halfLife=""5.36e+25""^^xsd:double; :halfLifeValue=1.70E+18; :halfLifeUnit=""a""; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=""The source reports this half-life as a lower limit (>=).""@en"
+W-180,"stability flag, half-life",":isStable=false; :halfLife=""5.68e+25""^^xsd:double; :halfLifeValue=1.80E+18; :halfLifeUnit=""a""; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=None"
+W-184,stability flag,:isStable=true; :halfLife=None; :halfLifeValue=None; :halfLifeUnit=None; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=None
+Bi-209,"stability flag, half-life",":isStable=false; :halfLife=""6.34e+26""^^xsd:double; :halfLifeValue=2.01E+19; :halfLifeUnit=""a""; :decayWidthValue=None; :decayWidthUnit=None; rdfs:comment=None"
+Np-242m,half-life swapped back from ground state (5.5 min; ICRP-107 agrees),":halfLife=""330.0""^^xsd:double; :halfLifeValue=5.5; :halfLifeUnit=""m"""

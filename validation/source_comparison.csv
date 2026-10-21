@@ -4,20 +4,4 @@ n-4,missing from NUCLEON,,present,
 n-6,missing from NUCLEON,,present,
 K-40,decay modes,"[('BetaMinusDecay', 89.28), ('ElectronCapture', 10.72)]","[('BetaMinusDecay', 89.28), ('BetaPlusDecay', 10.72)]",
 Mn-60,decay modes,"[('BetaMinusDecay', 100.0)]","[('BetaMinusDecay', 100.0), ('IsomericTransition', 100.0)]",
-Cd-116,isStable,True,False,
-Cd-116,halfLife (s),,1.0400000000000001e+27,absent in NUCLEON
-Xe-134,isStable,True,False,
-Xe-134,halfLife (s),,1.8299999999999998e+30,absent in NUCLEON
-Ba-132,isStable,True,False,
-Ba-132,halfLife (s),,9.47e+28,absent in NUCLEON
-Ce-138,isStable,True,False,
-Ce-138,halfLife (s),,1.39e+24,absent in NUCLEON
-Sm-149,isStable,False,True,
-Eu-151,isStable,True,False,
-Eu-151,halfLife (s),,5.36e+25,absent in NUCLEON
 Hf-183,decay modes,"[('BetaMinusDecay', 100.0)]","[('BetaMinusDecay', 100.0), ('IsomericTransition', 100.0)]",
-W-180,isStable,True,False,
-W-180,halfLife (s),,5.68e+25,absent in NUCLEON
-W-184,isStable,False,True,
-Bi-209,isStable,True,False,
-Bi-209,halfLife (s),,6.34e+26,absent in NUCLEON

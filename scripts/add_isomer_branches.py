@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-"""Add decay branches to metastable isomers in NUCLEON.ttl.
+"""SUPERSEDED in v1.4 by scripts/rebuild_isomers.py (isomers from NUBASE2020).
+
+Kept for the record of how v1.1 was built.
+
+Add decay branches to metastable isomers in NUCLEON.ttl.
 
 The IAEA ground-state export used to build NUCLEON's decay branches does not
 cover isomers, so 713 of 716 isomers were released without a :DecayBranch.
