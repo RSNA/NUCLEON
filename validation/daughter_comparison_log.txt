@@ -1,0 +1,26 @@
+ICRP dataset: icrp107_ame2020_nubase2020; ICRP radionuclides: 1252; in NUCLEON: 1250
+NUCLEON branches: 5872; with daughter: 5629; checked against a reference: 3503
+  ENSDF       1752  agree
+  ENSDF        176  branch absent from reference
+  ENSDF          6  not checkable: BetaMinusDelayedAlphaEmission not in ENSDF package
+  ENSDF          1  not checkable: BetaMinusDelayedFiveNeutronEmission not in ENSDF package
+  ENSDF        276  not checkable: BetaMinusDelayedNeutronEmission not in ENSDF package
+  ENSDF          1  not checkable: BetaMinusDelayedProtonEmission not in ENSDF package
+  ENSDF          1  not checkable: BetaMinusDelayedThreeNeutronEmission not in ENSDF package
+  ENSDF         54  not checkable: BetaMinusDelayedTwoNeutronEmission not in ENSDF package
+  ENSDF         26  not checkable: BetaPlusDelayedAlphaEmission not in ENSDF package
+  ENSDF        165  not checkable: BetaPlusDelayedProtonEmission not in ENSDF package
+  ENSDF         11  not checkable: BetaPlusDelayedTwoProtonEmission not in ENSDF package
+  ENSDF          2  not checkable: DoubleBetaMinusDecay not in ENSDF package
+  ENSDF        102  not checkable: IsomericTransition not in ENSDF package
+  ENSDF         22  not checkable: ProtonEmission not in ENSDF package
+  ENSDF          3  not checkable: TwoProtonEmission not in ENSDF package
+  ICRP-107    1387  agree
+  ICRP-107     117  agree (reference daughter is an isomer; NUCLEON gives ground state)
+  ICRP-107      71  branch absent from reference
+  none        1456  not checkable: parent in neither reference
+ICRP isomers re-keyed by half-life: [('Au-196m', 'Au-196m2'), ('Ir-194m', 'Ir-194m2'), ('Ta-182m', 'Ta-182m2'), ('Hf-179m', 'Hf-179m2'), ('Hf-178m', 'Hf-178m2'), ('Hf-177m', 'Hf-177m2')]
+ICRP radionuclides absent from NUCLEON: ['Nb-99m', 'Pm-137m']
+reference-only pairs: Counter({('ENSDF', 'NUCLEON lacks this mode'): 29})
+half-life flags: Counter({'': 1217, 'differs >5%': 33})
+branching flags: Counter({'': 1575, 'differs >1 percentage point': 20})

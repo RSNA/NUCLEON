@@ -1,0 +1,101 @@
+id,nuclide,automated_flags
+1,Ac-225,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+2,As-70,
+3,As-72,
+4,Ba-133,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+5,Bi-213,
+6,Co-60,source_comparison.csv:halfLifeValue/Unit
+7,Gd-153,
+8,Ge-68,
+9,K-42,
+10,N-13,
+11,Na-22,
+12,Nb-90,
+13,Ru-97,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+14,Sr-87m,
+15,Tb-161,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+16,Tc-94m,
+17,Xe-123,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+18,Xe-127,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+19,Xe-133,
+20,Y-86,
+21,At-212m,
+22,Au-187m,
+23,Bi-196m,
+24,Bk-245m,
+25,Br-77m,
+26,Br-82m,
+27,Cm-243m,
+28,Cs-120m,
+29,Er-157m,
+30,I-120m,
+31,Ir-189m,
+32,Pb-207m,
+33,Pu-237m2,
+34,U-238m,
+35,Y-88m,
+36,Ar-36,source_comparison.csv:naturalAbundance
+37,Cr-54,source_comparison.csv:naturalAbundance
+38,Fe-56,source_comparison.csv:naturalAbundance
+39,Hg-199,source_comparison.csv:naturalAbundance
+40,Pb-207,source_comparison.csv:naturalAbundance
+41,Se-78,source_comparison.csv:naturalAbundance
+42,Si-30,source_comparison.csv:naturalAbundance
+43,Sm-150,source_comparison.csv:naturalAbundance
+44,Tl-205,source_comparison.csv:naturalAbundance
+45,Xe-134,source_comparison.csv:halfLife (s); source_comparison.csv:isStable; source_comparison.csv:naturalAbundance
+46,Bh-261,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+47,Bh-263,
+48,Bk-249,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+49,Ds-267,source_comparison.csv:halfLifeValue/Unit
+50,Es-240,
+51,Fm-248,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+52,Md-246,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+53,No-250,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+54,Np-222,source_comparison.csv:halfLifeValue/Unit
+55,Th-228,
+56,Br-95,
+57,Ca-57,
+58,Ca-58,
+59,Ir-200,
+60,Sr-73,
+61,Al-23,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+62,Cr-61,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+63,Fe-68,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+64,Mg-20,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+65,Nb-108,
+66,O-12,source_comparison.csv:decay width
+67,Ru-121,
+68,Ti-42,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+69,V-43,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+70,Xe-108,source_comparison.csv:halfLifeValue/Unit
+71,At-218,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+72,Au-208,
+73,Ca-51,
+74,Cl-50,
+75,Hf-163,
+76,Kr-72,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+77,La-149,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+78,Lu-160,
+79,Mo-82,
+80,N-16,
+81,Nb-106,
+82,Pm-143,
+83,Po-201,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+84,Y-97,
+85,Zr-113,
+86,Ag-116,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+87,Ca-45,
+88,Cd-96,
+89,F-21,
+90,Gd-148,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+91,Ho-155,
+92,Ir-182,
+93,K-47,
+94,Kr-75,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+95,La-135,
+96,Ne-19,
+97,Re-184,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+98,Tb-147,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
+99,Zn-77,
+100,Zr-84,source_comparison.csv:halfLife (s); source_comparison.csv:halfLifeValue/Unit
