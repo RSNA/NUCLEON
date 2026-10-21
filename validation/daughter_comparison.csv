@@ -5189,7 +5189,7 @@ U-236,U-236_b1,AlphaDecay,100.0,Th-232,ICRP-107,,Th-232,agree,False
 U-236,U-236_b2,SpontaneousFission,9.4e-08,,ICRP-107,,,no daughter asserted (by design),False
 U-237,U-237_b1,BetaMinusDecay,100.0,Np-237,ICRP-107,,Np-237,agree,False
 U-238,U-238_b1,AlphaDecay,100.0,Th-234,ICRP-107,,Th-234,agree,False
-U-238,U-238_b2,SpontaneousFission,5.5e-05,,ICRP-107,,,no daughter asserted (by design),False
+U-238,U-238_b2,SpontaneousFission,5.45e-05,,ICRP-107,,,no daughter asserted (by design),False
 U-239,U-239_b1,BetaMinusDecay,100.0,Np-239,ICRP-107,,Np-239,agree,False
 U-240,U-240_b1,BetaMinusDecay,100.0,Np-240,ICRP-107,,Np-240m,agree (reference daughter is an isomer; NUCLEON gives ground state),False
 U-241,U-241_b1,BetaMinusDecay,,Np-241,none,,,not checkable: parent in neither reference,False

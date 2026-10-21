@@ -1,5 +1,5 @@
 == Queries ==
-Q1      275 (275 distinct)  Which positron emitters have half-lives between 5 min and 2 h?
+Q1      276 (276 distinct)  Which positron emitters have half-lives between 5 min and 2 h?
 Q1a       3  the strict reading, :PositronEmission only
 Q2        1  Given the Radionuclide Code Sequence of a study, what is the half-life?
 Q3       14  What does 225Ac decay to, and what does that decay to?
@@ -17,7 +17,7 @@ V5        0  every nuclide's atomic number matches its element's
 V6        0  every display annotation equals the value it mirrors
 
 == Table 1 counts ==
-triples                                     139,673
+triples                                     140,453
 named classes                                 4,228
 named individuals                            10,127
 punned                                        4,223
@@ -25,7 +25,7 @@ elements                                        118
 nuclides                                      4,105
   metastable isomers                            716
   flagged stable                                249
-  with half-life                              3,637
+  with half-life                              3,681
   with spin-parity                            2,881
   with >=1 decay branch                       3,744
   with >=2 decay branches                     1,757
