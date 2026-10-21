@@ -21032,7 +21032,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
         rdfs:subClassOf :Nuclide ;
         :hasDecayBranch :Ba-132_b1 ;
         :atomicNumber 56 ;
-        :isStable true ;
         :massNumber 132 ;
         :neutronNumber 76 ;
         rdfs:label "Ba-132" ;
@@ -21041,10 +21040,16 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                       "(132)barium"@en ;
         :spinParity "0+" ;
         :naturalAbundance 0.1 ;
+        :isStable false ;
+        :halfLife "9.47e+28"^^xsd:double ;
+        :halfLifeValue 3.00E+21 ;
+        :halfLifeUnit "a" ;
+        rdfs:comment "The source reports this half-life as a lower limit (>)."@en ;
         :atomicNumberDisplay 56 ;
         :massNumberDisplay 132 ;
         :neutronNumberDisplay 76 ;
-        :isStableDisplay true ;
+        :halfLifeDisplay "9.47e+28"^^xsd:double ;
+        :isStableDisplay false ;
         :naturalAbundanceDisplay 0.1 ;
         :decaySummary "2β+ ?% → Xe-132"@en .
 
@@ -27202,7 +27207,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
         rdfs:subClassOf :Nuclide ;
         :hasDecayBranch :Bi-209_b1 ;
         :atomicNumber 83 ;
-        :isStable true ;
         :massNumber 209 ;
         :neutronNumber 126 ;
         rdfs:label "Bi-209" ;
@@ -27211,10 +27215,15 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                       "(209)bismuth"@en ;
         :spinParity "9/2-" ;
         :naturalAbundance 100.0 ;
+        :isStable false ;
+        :halfLife "6.34e+26"^^xsd:double ;
+        :halfLifeValue 2.01E+19 ;
+        :halfLifeUnit "a" ;
         :atomicNumberDisplay 83 ;
         :massNumberDisplay 209 ;
         :neutronNumberDisplay 126 ;
-        :isStableDisplay true ;
+        :halfLifeDisplay "6.34e+26"^^xsd:double ;
+        :isStableDisplay false ;
         :naturalAbundanceDisplay 100.0 ;
         :decaySummary "α 100% → Tl-205"@en .
 
@@ -34233,7 +34242,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
         rdfs:subClassOf :Nuclide ;
         :hasDecayBranch :Cd-116_b1 ;
         :atomicNumber 48 ;
-        :isStable true ;
         :massNumber 116 ;
         :neutronNumber 68 ;
         rdfs:label "Cd-116" ;
@@ -34242,10 +34250,15 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                       "(116)cadmium"@en ;
         :spinParity "0+" ;
         :naturalAbundance 7.512 ;
+        :isStable false ;
+        :halfLife "1.04e+27"^^xsd:double ;
+        :halfLifeValue 3.30E+19 ;
+        :halfLifeUnit "a" ;
         :atomicNumberDisplay 48 ;
         :massNumberDisplay 116 ;
         :neutronNumberDisplay 68 ;
-        :isStableDisplay true ;
+        :halfLifeDisplay "1.04e+27"^^xsd:double ;
+        :isStableDisplay false ;
         :naturalAbundanceDisplay 7.512 ;
         :decaySummary "2β− ?% → Sn-116"@en .
 
@@ -37217,7 +37230,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
         rdfs:subClassOf :Nuclide ;
         :hasDecayBranch :Ce-138_b1 ;
         :atomicNumber 58 ;
-        :isStable true ;
         :massNumber 138 ;
         :neutronNumber 80 ;
         rdfs:label "Ce-138" ;
@@ -37226,10 +37238,16 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                       "(138)cerium"@en ;
         :spinParity "0+" ;
         :naturalAbundance 0.251 ;
+        :isStable false ;
+        :halfLife "1.39e+24"^^xsd:double ;
+        :halfLifeValue 4.40E+16 ;
+        :halfLifeUnit "a" ;
+        rdfs:comment "The source reports this half-life as a lower limit (>)."@en ;
         :atomicNumberDisplay 58 ;
         :massNumberDisplay 138 ;
         :neutronNumberDisplay 80 ;
-        :isStableDisplay true ;
+        :halfLifeDisplay "1.39e+24"^^xsd:double ;
+        :isStableDisplay false ;
         :naturalAbundanceDisplay 0.251 ;
         :decaySummary "2ε 100% → Ba-138"@en .
 
@@ -59164,7 +59182,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
         rdfs:subClassOf :Nuclide ;
         :hasDecayBranch :Eu-151_b1 ;
         :atomicNumber 63 ;
-        :isStable true ;
         :massNumber 151 ;
         :neutronNumber 88 ;
         rdfs:label "Eu-151" ;
@@ -59173,10 +59190,16 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                       "(151)europium"@en ;
         :spinParity "5/2+" ;
         :naturalAbundance 47.81 ;
+        :isStable false ;
+        :halfLife "5.36e+25"^^xsd:double ;
+        :halfLifeValue 1.70E+18 ;
+        :halfLifeUnit "a" ;
+        rdfs:comment "The source reports this half-life as a lower limit (>=)."@en ;
         :atomicNumberDisplay 63 ;
         :massNumberDisplay 151 ;
         :neutronNumberDisplay 88 ;
-        :isStableDisplay true ;
+        :halfLifeDisplay "5.36e+25"^^xsd:double ;
+        :isStableDisplay false ;
         :naturalAbundanceDisplay 47.81 ;
         :decaySummary "α ?% → Pm-147"@en .
 
@@ -125417,7 +125440,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
          :hasDecayBranch :Np-242m_b1 ;
          :atomicNumber 93 ;
          :excitationEnergy 50 ;
-         :halfLife "330.0"^^xsd:double ;
          :isStable false ;
          :massNumber 242 ;
          :metastableState 1 ;
@@ -125427,9 +125449,10 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
          skos:altLabel "neptunium-242m"@en ,
                        "(242m)Np" ,
                        "(242m)neptunium"@en ;
-         :halfLifeUnit "m" ;
-         :halfLifeValue 5.5 ;
          :spinParity "(6+)" ;
+         :halfLife "330.0"^^xsd:double ;
+         :halfLifeValue 5.5 ;
+         :halfLifeUnit "m" ;
          :atomicNumberDisplay 93 ;
          :massNumberDisplay 242 ;
          :neutronNumberDisplay 149 ;
@@ -179908,24 +179931,21 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                  :Nuclide ;
         rdfs:subClassOf :Nuclide ;
         :atomicNumber 62 ;
-        :halfLife "6.31152E22"^^xsd:double ;
-        :isStable false ;
         :massNumber 149 ;
         :neutronNumber 87 ;
         rdfs:label "Sm-149" ;
         skos:altLabel "samarium-149"@en ,
                       "(149)Sm" ,
                       "(149)samarium"@en ;
-        :halfLifeUnit "a" ;
-        :halfLifeValue 2000000000000000.0 ;
         :spinParity "7/2-" ;
         :naturalAbundance 13.82 ;
+        :isStable true ;
         :atomicNumberDisplay 62 ;
         :massNumberDisplay 149 ;
         :neutronNumberDisplay 87 ;
-        :halfLifeDisplay "6.31152E22"^^xsd:double ;
-        :isStableDisplay false ;
-        :naturalAbundanceDisplay 13.82 .
+        :isStableDisplay true ;
+        :naturalAbundanceDisplay 13.82 ;
+        :decaySummary "stable"@en .
 
 
 ###  https://rsna.org/radlex/nucleon#Sm-150
@@ -214801,7 +214821,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
        rdfs:subClassOf :Nuclide ;
        :hasDecayBranch :W-180_b1 ;
        :atomicNumber 74 ;
-       :isStable true ;
        :massNumber 180 ;
        :neutronNumber 106 ;
        rdfs:label "W-180" ;
@@ -214810,10 +214829,15 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                      "(180)tungsten"@en ;
        :spinParity "0+" ;
        :naturalAbundance 0.12 ;
+       :isStable false ;
+       :halfLife "5.68e+25"^^xsd:double ;
+       :halfLifeValue 1.80E+18 ;
+       :halfLifeUnit "a" ;
        :atomicNumberDisplay 74 ;
        :massNumberDisplay 180 ;
        :neutronNumberDisplay 106 ;
-       :isStableDisplay true ;
+       :halfLifeDisplay "5.68e+25"^^xsd:double ;
+       :isStableDisplay false ;
        :naturalAbundanceDisplay 0.12 ;
        :decaySummary "α 100% → Hf-176"@en .
 
@@ -215162,24 +215186,21 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                 :Nuclide ;
        rdfs:subClassOf :Nuclide ;
        :atomicNumber 74 ;
-       :halfLife "9.46728E24"^^xsd:double ;
-       :isStable false ;
        :massNumber 184 ;
        :neutronNumber 110 ;
        rdfs:label "W-184" ;
        skos:altLabel "tungsten-184"@en ,
                      "(184)W" ,
                      "(184)tungsten"@en ;
-       :halfLifeUnit "a" ;
-       :halfLifeValue 3.0E17 ;
        :spinParity "0+" ;
        :naturalAbundance 30.64 ;
+       :isStable true ;
        :atomicNumberDisplay 74 ;
        :massNumberDisplay 184 ;
        :neutronNumberDisplay 110 ;
-       :halfLifeDisplay "9.46728E24"^^xsd:double ;
-       :isStableDisplay false ;
-       :naturalAbundanceDisplay 30.64 .
+       :isStableDisplay true ;
+       :naturalAbundanceDisplay 30.64 ;
+       :decaySummary "stable"@en .
 
 
 ###  https://rsna.org/radlex/nucleon#W-184m
@@ -217455,7 +217476,6 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
         rdfs:subClassOf :Nuclide ;
         :hasDecayBranch :Xe-134_b1 ;
         :atomicNumber 54 ;
-        :isStable true ;
         :massNumber 134 ;
         :neutronNumber 80 ;
         rdfs:label "Xe-134" ;
@@ -217464,10 +217484,16 @@ skos:exactMatch rdf:type owl:AnnotationProperty .
                       "(134)xenon"@en ;
         :spinParity "0+" ;
         :naturalAbundance 10.436 ;
+        :isStable false ;
+        :halfLife "1.83e+30"^^xsd:double ;
+        :halfLifeValue 5.80E+22 ;
+        :halfLifeUnit "a" ;
+        rdfs:comment "The source reports this half-life as a lower limit (>)."@en ;
         :atomicNumberDisplay 54 ;
         :massNumberDisplay 134 ;
         :neutronNumberDisplay 80 ;
-        :isStableDisplay true ;
+        :halfLifeDisplay "1.83e+30"^^xsd:double ;
+        :isStableDisplay false ;
         :naturalAbundanceDisplay 10.436 ;
         :decaySummary "2β− 0% → Ba-134"@en .
 

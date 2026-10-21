@@ -4,7 +4,7 @@ Q1a       3  the strict reading, :PositronEmission only
 Q2        1  Given the Radionuclide Code Sequence of a study, what is the half-life?
 Q3       14  What does 225Ac decay to, and what does that decay to?
 Q3a      18  the same chain as parent/daughter steps, with branch detail
-Q4      894 (832 distinct)  Which nuclides decay to a stable daughter in one step?
+Q4      874 (817 distinct)  Which nuclides decay to a stable daughter in one step?
 Q5       33 (33 distinct)  Which alpha emitters have a half-life in the therapeutic window?
 Q6       46  Which DICOM-coded radionuclides are NOT positron emitters?
 Q7        1  What is the German name of the element of 99mTc?
@@ -17,20 +17,20 @@ V5        0  every nuclide's atomic number matches its element's
 V6        0  every display annotation equals the value it mirrors
 
 == Table 1 counts ==
-triples                                     187,672
+triples                                     187,698
 named classes                                 5,531
 named individuals                            13,249
 punned                                        5,526
 elements                                        118
 nuclides                                      5,408
   metastable isomers                          2,019
-  flagged stable                                250
-  with half-life                              4,984
+  flagged stable                                245
+  with half-life                              4,989
   with spin-parity                            5,197
   with >=1 decay branch                       5,122
   with >=2 decay branches                     2,083
   isomers with a branch                       2,017
-  radioactive, no branch (ground state)          50
+  radioactive, no branch (ground state)          48
   radioactive, no branch (isomer)                 1
 decay branches                                7,691
   with decay product                          7,399
@@ -48,6 +48,6 @@ nuclide without an element                        0
 branching ratio outside 0-100                     0
 deprecated :isMedicalIsotope present              0
 :decaySummary differs from its branches           0
-WARN stable-flagged nuclide with a branch        15  Ba-132 Bi-209 Cd-106 Cd-114 Cd-116 Ce-136 Ce-138 Dy-156 Dy-161 Eu-151 Nd-148 Pt-198 Se-80 W-180 Xe-134
+WARN stable-flagged nuclide with a branch         8  Cd-106 Cd-114 Ce-136 Dy-156 Dy-161 Nd-148 Pt-198 Se-80
 
 PASS

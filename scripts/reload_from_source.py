@@ -18,9 +18,11 @@ covers:
                      the export's operator_hl
   :naturalAbundance  export abundance (percent)
 
-It does not change a nuclide that NUCLEON flags stable while the export gives
-a half-life, or the reverse; those are reported. Values the export lacks are
-left as they are. Np-242m, an isomer and so not in the export, takes the
+  :isStable          aligned with the export: a nuclide the export gives a
+                     half-life for is radioactive (e.g. Bi-209, 2.01E+19 y);
+                     one it lists as STABLE is stable and has no half-life
+
+Values the export lacks are left as they are. Np-242m, an isomer and so not in the export, takes the
 5.5-min half-life that the earlier build had attached to the Np-242 ground
 state (agreeing with ICRP-107).
 
@@ -121,9 +123,11 @@ def main(path, src="source-data/IAEA nuclide livechart.csv", write=False):
 
         if not stable_src and not pd.isna(r.half_life) and not pd.isna(r.unit_hl):
             if stable_n:
-                skipped.append((name, "NUCLEON flags stable; export gives "
-                                f"{r.half_life} {r.unit_hl}"))
-            else:
+                # align with the export: radioactive, with the export's half-life
+                updates[":isStable"] = "false"
+                why.append("stability flag")
+                stable_n = False
+            if not stable_n:
                 unit = r.unit_hl.strip()
                 if unit in WIDTH_EV:
                     gamma = float(r.half_life) * WIDTH_EV[unit]
@@ -151,7 +155,11 @@ def main(path, src="source-data/IAEA nuclide livechart.csv", write=False):
                     updates.update(upd)
                     why.append("half-life" if unit not in WIDTH_EV else "decay width")
         elif stable_src and not stable_n:
-            skipped.append((name, "export says STABLE; NUCLEON flags radioactive"))
+            # align with the export: stable, so no half-life
+            updates.update({":isStable": "true", ":halfLife": None, ":halfLifeValue": None,
+                            ":halfLifeUnit": None, ":decayWidthValue": None, ":decayWidthUnit": None,
+                            "rdfs:comment": None})
+            why.append("stability flag")
         elif not stable_src and pd.isna(r.half_life) and (u, N.halfLife, None) in g:
             skipped.append((name, "export gives no half-life; NUCLEON value kept"))
 

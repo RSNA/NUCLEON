@@ -10,7 +10,7 @@ Results for NUCLEON v1.4 (`NUCLEON.ttl` at the commit containing this file), pro
 | Logical consistency (HermiT) | Whole ontology | Consistent; no unsatisfiable classes |
 | Derived daughters vs ICRP Publication 107 | 1,598 links from 1,252 parents | 1,510 agree, 88 not listed by ICRP-107, **0 disagree** |
 | Derived daughters vs ENSDF | 1,882 links from 1,544 further parents | 1,688 agree, 194 not covered by an ENSDF dataset, **0 disagree** |
-| Ground states vs the IAEA source export | 3,386 rows | All values match, apart from 22 documented exceptions in 15 nuclides |
+| Ground states vs the IAEA source export | 3,386 rows | All values match, apart from 6 documented exceptions |
 | Isomers vs NUBASE2020 | 2,019 isomers | Generated from NUBASE2020; mapping of the 716 earlier isomers in [`isomer_mapping.csv`](isomer_mapping.csv) |
 | Manual audit | Stratified random sample of 100 | Sheet ready for two reviewers ([`audit_sample.csv`](audit_sample.csv)) |
 
@@ -20,7 +20,7 @@ No derived parent&ndash;daughter link contradicts either reference.
 
 | Content | Source |
 | --- | --- |
-| Ground states: half-life, decay width, spin-parity, natural abundance, decay modes and branching ratios, Q-values | IAEA LiveChart of Nuclides data export ([`source-data/IAEA nuclide livechart.csv`](../source-data)); ENSDF evaluations, abundances from NUBASE2020; extracted 18 October 2023. Refresh with [`scripts/download_iaea.py`](../scripts/download_iaea.py). |
+| Ground states: stability, half-life, decay width, spin-parity, natural abundance, decay modes and branching ratios, Q-values | IAEA LiveChart of Nuclides data export ([`source-data/IAEA nuclide livechart.csv`](../source-data)); ENSDF evaluations, abundances from NUBASE2020; extracted 18 October 2023. Refresh with [`scripts/download_iaea.py`](../scripts/download_iaea.py). |
 | Metastable isomers: existence, excitation energy, half-life, spin-parity, decay modes and branching ratios | NUBASE2020 ([`source-data/nubase_3.mas20.txt`](../source-data)): Kondev FG, Wang M, Huang WJ, Naimi S, Audi G. *Chin Phys C* 2021;45:030001 |
 | Ground-state values the export lacks (10 half-lives, 433 spin-parities) | NUBASE2020 |
 | Decay products (daughters) | Derived from the parent's Z and A and the decay mode's change in Z and A |
@@ -60,12 +60,10 @@ Five reference pairs have no NUCLEON counterpart ([`daughter_comparison_referenc
 
 ## 2. Ground states vs the IAEA source export
 
-[`scripts/compare_to_source.py`](../scripts/compare_to_source.py) checks every row of the export against the ontology ([`source_comparison.csv`](source_comparison.csv)): existence, stability, half-life in seconds, half-life value and unit as given, decay width, natural abundance, decay modes and branching ratios. 22 discrepancies remain, in 15 nuclides, all deliberate:
+[`scripts/compare_to_source.py`](../scripts/compare_to_source.py) checks every row of the export against the ontology ([`source_comparison.csv`](source_comparison.csv)): existence, stability, half-life in seconds, half-life value and unit as given, decay width, natural abundance, decay modes and branching ratios. 6 discrepancies remain, all deliberate:
 
 | Discrepancy | Nuclides | Reason |
 | --- | --- | --- |
-| Flagged stable; export gives a very long half-life (7 also lack `:halfLife`) | Bi-209, W-180, Eu-151, Cd-116, Xe-134, Ba-132, Ce-138 | Primordial nuclides; stability flag kept pending a modelling decision |
-| Flagged radioactive; export says stable | Sm-149, W-184 | As above |
 | Decay modes | Hf-183, Mn-60 | The export attributes the isomers' transitions to the ground states |
 | Decay modes | K-40 | NUCLEON: electron capture; export: EC + &beta;+ |
 | Missing | n-1, n-4, n-6 | The neutron is not an element |
@@ -93,15 +91,15 @@ The 716 isomers of v1.3 were matched to NUBASE2020 states by half-life within ea
 | --- | ---: | ---: |
 | DICOM-coded radionuclides | 20 | 87 |
 | Metastable isomers | 15 | 2,012 |
-| Flagged stable | 10 | 249 |
+| Flagged stable | 10 | 244 |
 | Z &ge; 89 | 10 | 466 |
-| Half-life given as a limit or approximation | 5 | 152 |
+| Half-life given as a limit or approximation | 5 | 156 |
 | Half-life &lt; 1 s or given as a decay width | 10 | 757 |
 | Two or more decay branches | 15 | 526 |
-| One branch, half-life &ge; 1 s | 15 | 1,136 |
-| **Total** | **100** | 5,385 |
+| One branch, half-life &ge; 1 s | 15 | 1,139 |
+| **Total** | **100** | 5,387 |
 
-**Protocol.** Two reviewers independently fill in the blank columns of [`audit_sample.csv`](audit_sample.csv), each in their own copy. Ground states are checked against the [IAEA LiveChart of Nuclides](https://nds.iaea.org/livechart/) and isomers against NUBASE2020. For each nuclide they record the reference half-life and decay modes, and mark half-life, modes and ratios, daughters, and abundance as Y or N. Discrepancies between reviewers are resolved by discussion. [`audit_sample_key.csv`](audit_sample_key.csv) lists which sampled nuclides the automated comparisons flagged (3 of 100). Keep it from reviewers until both have finished, so the audit stays blind.
+**Protocol.** Two reviewers independently fill in the blank columns of [`audit_sample.csv`](audit_sample.csv), each in their own copy. Ground states are checked against the [IAEA LiveChart of Nuclides](https://nds.iaea.org/livechart/) and isomers against NUBASE2020. For each nuclide they record the reference half-life and decay modes, and mark half-life, modes and ratios, daughters, and abundance as Y or N. Discrepancies between reviewers are resolved by discussion. [`audit_sample_key.csv`](audit_sample_key.csv) lists which sampled nuclides the automated comparisons flagged (1 of 100). Keep it from reviewers until both have finished, so the audit stays blind.
 
 ## Reproducing
 
@@ -127,4 +125,5 @@ python3 scripts/draw_audit_sample.py
 | [`source_comparison.csv`](source_comparison.csv) | Every ground-state field that differs from the IAEA export |
 | [`reload_from_source_log.csv`](reload_from_source_log.csv) | Every nuclide changed by the v1.3 reload |
 | [`isomer_mapping.csv`](isomer_mapping.csv) | Fate of each v1.3 isomer under the NUBASE2020 rebuild |
+| [`stability_alignment_log.csv`](stability_alignment_log.csv) | The 9 stability flags aligned with the IAEA export |
 | [`audit_sample.csv`](audit_sample.csv), [`audit_sample_key.csv`](audit_sample_key.csv) | Manual audit sheet and blinded key |

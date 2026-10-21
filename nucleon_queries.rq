@@ -1,7 +1,7 @@
 ########################################################################
 # NUCLEON — competency queries (Table 3)
 #
-# Tested against NUCLEON.ttl v1.4, 187,672 triples, with rdflib 7.
+# Tested against NUCLEON.ttl v1.4, 187,698 triples, with rdflib 7.
 # Run them all with: python3 scripts/validate.py
 # All queries run over asserted triples only: no reasoner is required.
 #

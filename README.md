@@ -27,12 +27,12 @@ NUCLEON is also available from [NCBO BioPortal](https://bioportal.bioontology.or
 
 | Entity or property | Count |
 | --- | ---: |
-| Triples | 187,672 |
+| Triples | 187,698 |
 | Elements | 118 |
 | Nuclides | 5,408 |
 | &nbsp;&nbsp;metastable isomers | 2,019 |
-| &nbsp;&nbsp;flagged stable | 250 |
-| &nbsp;&nbsp;with a half-life | 4,984 |
+| &nbsp;&nbsp;flagged stable | 245 |
+| &nbsp;&nbsp;with a half-life | 4,989 |
 | &nbsp;&nbsp;with at least one decay branch | 5,122 |
 | Decay branches | 7,691 |
 | &nbsp;&nbsp;with a decay product | 7,399 |
@@ -40,7 +40,7 @@ NUCLEON is also available from [NCBO BioPortal](https://bioportal.bioontology.or
 | `skos:exactMatch` assertions | 287 |
 | Nuclides with a DICOM code | 87 |
 
-Of the 292 branches without a decay product, 255 are fission branches (products vary by event), 5 bundle fission with electron capture/beta-plus decay, and 32 lead to a daughter not in the ontology. Of the 286 nuclides without a branch, 235 are stable and 51 are radioactive with no decay mode reported by the source (50 ground states, 1 isomer). Fifteen primordial nuclides flagged stable (e.g. Bi-209, W-180) also carry the alpha or double-beta branch the source lists for them.
+Of the 292 branches without a decay product, 255 are fission branches (products vary by event), 5 bundle fission with electron capture/beta-plus decay, and 32 lead to a daughter not in the ontology. Of the 286 nuclides without a branch, 237 are stable and 49 are radioactive with no decay mode reported by the source (48 ground states, 1 isomer). Stability follows the IAEA export: primordial nuclides with a measured or bounded half-life (e.g. Bi-209, 2.01&times;10<sup>19</sup> a; W-180) are radioactive, while 8 nuclides the export lists as stable (e.g. Cd-106, Se-80) still carry the predicted double-beta or alpha mode it gives for them.
 
 ## Validation
 
@@ -68,6 +68,7 @@ Derived parent&ndash;daughter links have also been compared with ICRP Publicatio
 ## Changes in v1.4
 
 - **Isomers from NUBASE2020.** All 2,019 NUBASE2020 isomers (states with a half-life), with excitation energy (new property `:excitationEnergy`), half-life, spin-parity, decay modes and branching ratios. Of the 716 earlier isomers, 626 keep their IRI, 66 are renamed to NUBASE's numbering, and 24 with no NUBASE2020 state (mostly actinide fission isomers) are removed. 64 earlier IRIs now denote a different state (e.g. `:Lu-177m`); see `validation/isomer_mapping.csv`.
+- **Stability flags aligned with the IAEA export.** Bi-209, W-180, Eu-151, Cd-116, Xe-134, Ba-132 and Ce-138 are now radioactive, with the export's half-lives; Sm-149 and W-184 are stable (their spreadsheet half-lives removed). Changes in `validation/stability_alignment_log.csv`.
 - **No spreadsheet data remain.** Ground-state spin-parity from the IAEA export (NUBASE2020 where absent); 10 ground-state half-lives the export lacks from NUBASE2020; Q-values from the export; the `:decayModeOrAbundance` free text removed.
 - Added `scripts/download_iaea.py`, `scripts/rebuild_isomers.py`, `scripts/nubase.py`, `scripts/retire_legacy_fields.py`; `source-data/nubase_3.mas20.txt`.
 - Daughter comparison matches ENSDF isomer levels by excitation energy.
