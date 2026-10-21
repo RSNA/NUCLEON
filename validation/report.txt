@@ -14,9 +14,10 @@ V2        0  A = Z + N for every nuclide
 V3        0  no nuclide decays to itself
 V4        0  every decayProduct target is a declared nuclide
 V5        0  every nuclide's atomic number matches its element's
+V6        0  every display annotation equals the value it mirrors
 
 == Table 1 counts ==
-triples                                     114,496
+triples                                     139,673
 named classes                                 4,228
 named individuals                            10,127
 punned                                        4,223
@@ -46,6 +47,7 @@ branch without a decay mode                       0
 nuclide without an element                        0
 branching ratio outside 0-100                     0
 deprecated :isMedicalIsotope present              0
+:decaySummary differs from its branches           0
 WARN stable-flagged nuclide with a branch        15  Ba-132 Bi-209 Cd-106 Cd-114 Cd-116 Ce-136 Ce-138 Dy-156 Dy-161 Eu-151 Nd-148 Pt-198 Se-80 W-180 Xe-134
 
 PASS
