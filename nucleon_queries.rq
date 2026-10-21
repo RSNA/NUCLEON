@@ -1,7 +1,7 @@
 ########################################################################
 # NUCLEON — competency queries (Table 3)
 #
-# Tested against NUCLEON.ttl v1.1, 114,496 triples, with rdflib 7.
+# Tested against NUCLEON.ttl v1.2, 139,673 triples, with rdflib 7.
 # Run them all with: python3 scripts/validate.py
 # All queries run over asserted triples only: no reasoner is required.
 #
@@ -279,4 +279,30 @@ WHERE {
            :atomicNumber ?elementZ .
   ?nuclide :atomicNumber ?nuclideZ .
   FILTER(?elementZ != ?nuclideZ)
+}
+
+
+### V6 — every display annotation equals the value it mirrors ###
+# Returns 0 rows. Each sub-property of :displayValue names, by :mirrorOf,
+# the datatype property it copies onto the class reading of a punned IRI.
+# The first branch catches a mirror with no matching source value (stale or
+# hand-edited); the second catches a source value with no mirror (a value
+# added without rerunning scripts/add_display_annotations.py). Terms are
+# compared exactly, so a change of datatype is also caught.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?entity ?display ?source ?value
+WHERE {
+  ?display rdfs:subPropertyOf :displayValue ;
+           :mirrorOf          ?source .
+  {
+    ?entity ?display ?value .
+    FILTER NOT EXISTS { ?entity ?source ?value }
+  }
+  UNION
+  {
+    ?entity ?source ?value .
+    FILTER NOT EXISTS { ?entity ?display ?value }
+  }
 }

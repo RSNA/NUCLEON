@@ -12,6 +12,9 @@ import sys
 import rdflib
 from rdflib import OWL, RDF, RDFS, Namespace
 
+sys.path.insert(0, __import__("os").path.dirname(__file__))
+from add_display_annotations import decay_summary  # noqa: E402
+
 N = Namespace("https://rsna.org/radlex/nucleon#")
 SKOS = Namespace("http://www.w3.org/2004/02/skos/core#")
 
@@ -93,6 +96,10 @@ def main(ttl="NUCLEON.ttl", rq="nucleon_queries.rq"):
         "branching ratio outside 0-100": [b for b in branches for r in g.objects(b, N.branchingRatio)
                                           if not 0 <= float(r) <= 100],
         "deprecated :isMedicalIsotope present": list(g.triples((None, N.isMedicalIsotope, None))),
+        ":decaySummary differs from its branches": [
+            n for n in nuclides
+            if (str(g.value(n, N.decaySummary)) if g.value(n, N.decaySummary) is not None else None)
+            != decay_summary(g, n)],
     }
     for k, v in checks.items():
         print(f"{k:42} {len(v):>8}")
