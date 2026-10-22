@@ -1,0 +1,6 @@
+gamma emissions with yield >= 5%: 216
+    204  agree
+     10  not checkable: no ENSDF decay dataset with gammas
+      2  no ENSDF gamma at this energy
+no match: [('As-70', 744.8, 743.62), ('Tc-99m', 140.511, 89.6)]
+not checkable: ['In-113m', 'Ir-191m', 'Kr-81m', 'Sr-87m', 'Ta-178']

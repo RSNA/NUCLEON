@@ -80,6 +80,8 @@ def main(ttl="NUCLEON.ttl", rq="nucleon_queries.rq"):
             if (b, N.decayProduct, None) not in g
             and (g.value(b, N.decayMode), N.changeInAtomicNumber, None) not in g),
         "decay modes": len(set(g.subjects(RDF.type, N.DecayMode))),
+        "emissions (ICRP-107)": len(set(g.subjects(RDF.type, N.Emission))),
+        "  nuclides with emissions": len(set(g.subjects(N.hasEmission, None))),
         "skos:exactMatch": len(list(g.triples((None, SKOS.exactMatch, None)))),
         "nuclides with dicomCode": len(set(g.subjects(N.dicomCode, None))),
         "language-tagged element names": sum(
@@ -96,6 +98,11 @@ def main(ttl="NUCLEON.ttl", rq="nucleon_queries.rq"):
         "branching ratio outside 0-100": [b for b in branches for r in g.objects(b, N.branchingRatio)
                                           if not 0 <= float(r) <= 100],
         "deprecated :isMedicalIsotope present": list(g.triples((None, N.isMedicalIsotope, None))),
+        "emission without exactly one type, energy, yield": [
+            e for e in g.subjects(RDF.type, N.Emission)
+            if any(len(list(g.objects(e, p))) != 1 for p in (N.radiationType, N.emissionEnergy, N.emissionYield))],
+        "emission without exactly one parent nuclide": [
+            e for e in g.subjects(RDF.type, N.Emission) if len(list(g.subjects(N.hasEmission, e))) != 1],
         ":decaySummary differs from its branches": [
             n for n in nuclides
             if (str(g.value(n, N.decaySummary)) if g.value(n, N.decaySummary) is not None else None)

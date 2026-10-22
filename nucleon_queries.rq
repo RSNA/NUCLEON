@@ -1,7 +1,7 @@
 ########################################################################
 # NUCLEON — competency queries (Table 3)
 #
-# Tested against NUCLEON.ttl v1.4, 187,698 triples, with rdflib 7.
+# Tested against NUCLEON.ttl v1.5, 215,862 triples, with rdflib 7.
 # Run them all with: python3 scripts/validate.py
 # All queries run over asserted triples only: no reasoner is required.
 #
@@ -206,6 +206,26 @@ WHERE {
   FILTER(?language != "")
 }
 ORDER BY ?language
+
+
+### Q8 — Which DICOM-coded radionuclides emit a gamma ray of 100-200 keV with yield above 50%? ###
+# Returns 9 rows: 57Co (122 keV), 75Se (136 keV), 99mTc (140.5 keV),
+# 90Nb (141 keV), 123I (159 keV), 47Sc (159 keV), 52Fe (169 keV),
+# 111In (171 keV) and 81mKr (190 keV). Emission data are from ICRP
+# Publication 107 and cover the DICOM-coded nuclides and their decay chains.
+# :emissionYield is per decay (0.5 = 50%); :emissionEnergy is in keV.
+
+PREFIX : <https://rsna.org/radlex/nucleon#>
+SELECT DISTINCT ?nuclide ?energy_keV ?yield
+WHERE {
+  ?nuclide :dicomCode   ?code ;
+           :hasEmission ?e .
+  ?e :radiationType  :GammaRay ;
+     :emissionEnergy ?energy_keV ;
+     :emissionYield  ?yield .
+  FILTER(?energy_keV >= 100 && ?energy_keV <= 200 && ?yield > 0.5)
+}
+ORDER BY ?energy_keV
 
 
 ########################################################################
