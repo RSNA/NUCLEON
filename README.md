@@ -57,7 +57,7 @@ pip install rdflib
 python3 scripts/validate.py
 ```
 
-The script runs every query in `nucleon_queries.rq` over asserted triples only (no reasoner is needed) and exits non-zero if any validation query or structural check fails. V1 confirms nucleon conservation across every asserted daughter link; because daughters are derived with that same arithmetic, it verifies internal consistency, not independent physical correctness. The ontology classifies as consistent with no unsatisfiable classes under HermiT.
+The script runs every query in `nucleon_queries.rq` over asserted triples only (no reasoner is needed) and exits non-zero if any validation query or structural check fails. V1 confirms nucleon conservation across every asserted daughter link; because daughters are derived with that same arithmetic, it verifies internal consistency, not independent physical correctness. The ontology is consistent, with no unsatisfiable classes, under both HermiT 1.3.8 and Pellet 2.3.1 (`python3 scripts/check_reasoners.py`).
 
 Derived parent&ndash;daughter links have also been compared with ICRP Publication 107 and ENSDF, which list daughters explicitly: no link disagrees with either. Every ground-state value is also checked against the IAEA source export. See [`validation/README.md`](validation/README.md).
 

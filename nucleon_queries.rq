@@ -114,7 +114,7 @@ ORDER BY DESC(?branchingRatio)
 
 
 ### Q4 — Which nuclides decay to a stable daughter in one step? ###
-# Returns 894 rows over 832 distinct nuclides — the difference being
+# Returns 874 rows over 817 distinct nuclides — the difference being
 # nuclides with two branches that both land on a stable daughter.
 # :isStable is a genuine boolean, so no string comparison is needed.
 
