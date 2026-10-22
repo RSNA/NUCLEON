@@ -1,0 +1,11 @@
+ground states: 3389
+cells with a DICOM-coded nuclide: 86
+DICOM-coded nuclides: 87
+Stable: 244
+$\beta^{-}$ decay: 1372
+$\beta^{+}$ decay / electron capture: 1092
+α decay: 479
+Spontaneous fission: 52
+Proton emission: 78
+Neutron emission: 24
+Radioactive, mode not known: 48
