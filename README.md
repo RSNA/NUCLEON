@@ -76,6 +76,7 @@ Derived parent&ndash;daughter links have also been compared with ICRP Publicatio
 
 ## Changes in v1.5
 
+- **Licence changed to CC BY-NC-ND 4.0**, consistent with the non-commercial terms of the ICRP-107 emission data.
 - **Radiation emissions** from ICRP Publication 107 for the DICOM-coded radionuclides and their decay chains: new classes `:Emission` and `:RadiationType`, properties `:hasEmission`, `:radiationType`, `:emissionEnergy`, `:emissionYield`, display annotation `:emissionSummary`; 3,990 emissions for 123 nuclides. New example query Q8.
 
 ## Changes in v1.4
@@ -103,8 +104,8 @@ Derived parent&ndash;daughter links have also been compared with ICRP Publicatio
 - Added 971 decay branches for 636 metastable isomers (e.g. Kr-81m, In-113m, Tc-94m, Mn-52m), parsed from the source decay text; daughters derived as for ground states.
 - Tc-99m: isomeric transition corrected to 99.9963%; 0.0037% beta-minus branch to Ru-99 added.
 - Removed `:isMedicalIsotope`, whose criterion was undocumented; use `:dicomContextGroup`.
-- Added license, validation script, and validation report.
+- Added license (CC BY 4.0, since changed to CC BY-NC-ND 4.0), validation script, and validation report.
 
 ## License
 
-NUCLEON is released under the [Creative Commons Attribution 4.0 International license](LICENSE) (CC BY 4.0). The emission data are taken from ICRP Publication 107, whose data files may be used, copied and distributed for educational, research and not-for-profit purposes ([`source-data/LICENSE.ICRP-07`](source-data/LICENSE.ICRP-07)). SNOMED CT identifiers are included as cross-references only; use of SNOMED CT content is subject to the SNOMED International license.
+NUCLEON is released under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International license](LICENSE) (CC BY-NC-ND 4.0). The emission data are taken from ICRP Publication 107, whose data files may be used, copied and distributed for educational, research and not-for-profit purposes ([`source-data/LICENSE.ICRP-07`](source-data/LICENSE.ICRP-07)). SNOMED CT identifiers are included as cross-references only; use of SNOMED CT content is subject to the SNOMED International license.
