@@ -7,7 +7,7 @@ Results for NUCLEON v1.5 (`NUCLEON.ttl` at the commit containing this file), pro
 | Check | Scope | Result |
 | --- | --- | --- |
 | Internal consistency (V1&ndash;V6, structural checks) | Whole ontology | 0 violations ([`report.txt`](report.txt)) |
-| Logical consistency (HermiT) | Whole ontology | Consistent; no unsatisfiable classes |
+| Logical consistency (HermiT 1.3.8, Pellet 2.3.1) | Whole ontology | Both: consistent; no unsatisfiable classes ([`reasoners.txt`](reasoners.txt)) |
 | Derived daughters vs ICRP Publication 107 | 1,598 links from 1,252 parents | 1,510 agree, 88 not listed by ICRP-107, **0 disagree** |
 | Derived daughters vs ENSDF | 1,882 links from 1,544 further parents | 1,688 agree, 194 not covered by an ENSDF dataset, **0 disagree** |
 | Ground states vs the IAEA source export | 3,386 rows | All values match, apart from 6 documented exceptions |
@@ -118,7 +118,7 @@ The structural checks in [`report.txt`](report.txt) confirm every emission has e
 ## Reproducing
 
 ```
-pip install rdflib pandas pyreadr radioactivedecay==0.6.1 paceENSDF==0.6.3
+pip install rdflib pandas pyreadr owlready2 radioactivedecay==0.6.1 paceENSDF==0.6.3
 python3 scripts/download_iaea.py                       # optional: refresh the IAEA export
 python3 scripts/reload_from_source.py NUCLEON.ttl --write
 python3 scripts/rebuild_isomers.py NUCLEON.ttl --write
@@ -126,6 +126,7 @@ python3 scripts/retire_legacy_fields.py NUCLEON.ttl --write
 python3 scripts/add_display_annotations.py NUCLEON.ttl --write
 python3 scripts/add_emissions.py NUCLEON.ttl source-data/ICRP_07.RAD.rda --write
 python3 scripts/validate.py > validation/report.txt
+python3 scripts/check_reasoners.py                     # HermiT and Pellet; needs Java
 python3 scripts/compare_daughters.py > validation/daughter_comparison_log.txt
 python3 scripts/compare_to_source.py > validation/source_comparison_log.txt
 python3 scripts/compare_emissions.py > validation/emission_comparison_log.txt
@@ -135,6 +136,7 @@ python3 scripts/draw_audit_sample.py
 | File | Contents |
 | --- | --- |
 | [`report.txt`](report.txt) | V1&ndash;V6, content counts, structural checks |
+| [`reasoners.txt`](reasoners.txt) | HermiT and Pellet results |
 | [`daughter_comparison.csv`](daughter_comparison.csv) | One row per NUCLEON branch: reference used, reference daughters, verdict |
 | [`daughter_comparison_reference_only.csv`](daughter_comparison_reference_only.csv) | Reference pairs with no NUCLEON counterpart |
 | [`halflife_vs_icrp107.csv`](halflife_vs_icrp107.csv), [`branching_vs_icrp107.csv`](branching_vs_icrp107.csv) | Half-lives and branching ratios vs ICRP-107 |
