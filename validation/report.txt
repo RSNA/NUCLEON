@@ -9,6 +9,7 @@ Q5       33 (33 distinct)  Which alpha emitters have a half-life in the therapeu
 Q6       46  Which DICOM-coded radionuclides are NOT positron emitters?
 Q7        1  What is the German name of the element of 99mTc?
 Q7a       9  every language NUCLEON holds for that element
+Q8        9  Which DICOM-coded radionuclides emit a gamma ray of 100-200 keV with yield above 50%?
 V1        0  nucleon conservation across every asserted daughter link
 V2        0  A = Z + N for every nuclide
 V3        0  no nuclide decays to itself
@@ -17,9 +18,9 @@ V5        0  every nuclide's atomic number matches its element's
 V6        0  every display annotation equals the value it mirrors
 
 == Table 1 counts ==
-triples                                     187,698
-named classes                                 5,531
-named individuals                            13,249
+triples                                     215,862
+named classes                                 5,533
+named individuals                            17,253
 punned                                        5,526
 elements                                        118
 nuclides                                      5,408
@@ -37,6 +38,8 @@ decay branches                                7,691
   with branching ratio                        6,282
   fission (no product by design)                255
 decay modes                                      32
+emissions (ICRP-107)                          3,990
+  nuclides with emissions                       123
 skos:exactMatch                                 287
 nuclides with dicomCode                          87
 language-tagged element names                   981
@@ -47,6 +50,8 @@ branch without a decay mode                       0
 nuclide without an element                        0
 branching ratio outside 0-100                     0
 deprecated :isMedicalIsotope present              0
+emission without exactly one type, energy, yield        0
+emission without exactly one parent nuclide        0
 :decaySummary differs from its branches           0
 WARN stable-flagged nuclide with a branch         8  Cd-106 Cd-114 Ce-136 Dy-156 Dy-161 Nd-148 Pt-198 Se-80
 
