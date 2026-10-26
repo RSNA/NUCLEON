@@ -3,7 +3,8 @@
 
 Each ground state is one cell, shaded by its dominant decay mode (the branch
 with the largest branching ratio, grouped as below). Cells of nuclides that
-carry a DICOM code (ground state or isomer) are outlined. Reads NUCLEON.ttl;
+carry a DICOM code (ground state or isomer) are outlined. Twelve uranium
+placeholders (U-243 to U-255) are not plotted; see EXCLUDE. Reads NUCLEON.ttl;
 writes chart_figure.svg, .pdf and .png (600 dpi at 180 mm width) and
 chart_figure_counts.txt next to this script.
 
@@ -85,8 +86,16 @@ for r in g.query(Q):
         if key not in best or br > best[key][0]:
             best[key] = (br, grp)
 
+# The IAEA export carries twelve uranium entries beyond U-242 (U-243 to U-255,
+# no U-252) as empty ENSDF placeholders: no half-life, no discovery, absent from
+# NUBASE2020 or estimated there. They stay in the ontology but would draw a
+# spurious row past the end of the uranium chain, so they are not plotted.
+EXCLUDE = {f"U-{a}" for a in range(243, 256)}
+
 cat = {}
 for key, c in cells.items():
+    if c["name"] in EXCLUDE:
+        continue
     cat[key] = "stable" if c["stable"] else (best[key][1] if key in best else "unknown")
 counts = collections.Counter(cat.values())
 assert "IT" not in counts, "a ground state is dominated by isomeric transition"
@@ -157,7 +166,8 @@ p = os.path.join(HERE, "chart_figure")
 fig.savefig(p + ".svg")
 fig.savefig(p + ".pdf")
 fig.savefig(p + ".png", dpi=600)
-report = [f"ground states: {len(cat)}", f"cells with a DICOM-coded nuclide: {len(dicom)}",
+report = [f"ground states plotted: {len(cat)} of {len(cells)}",
+          f"not plotted: {', '.join(sorted(c['name'] for c in cells.values() if c['name'] in EXCLUDE))}", f"cells with a DICOM-coded nuclide: {len(dicom)}",
           f"DICOM-coded nuclides: {sum(len(v) for v in dicom.values())}"]
 report += [f"{l}: {counts[k]}" for k, _, l in STYLE]
 open(p + "_counts.txt", "w").write("\n".join(report) + "\n")
