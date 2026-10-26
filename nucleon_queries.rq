@@ -36,7 +36,7 @@ WHERE {
   ?nuclide a :Nuclide ;
            :halfLife       ?halfLifeSeconds ;
            :hasDecayBranch ?branch .
-  ?branch :decayMode ?mode .
+  ?branch :hasDecayMode ?mode .
   VALUES ?mode { :BetaPlusDecay :PositronEmission }
   FILTER(?halfLifeSeconds >= 300 && ?halfLifeSeconds <= 7200)
 }
@@ -53,7 +53,7 @@ WHERE {
   ?nuclide a :Nuclide ;
            :halfLife       ?halfLifeSeconds ;
            :hasDecayBranch ?branch .
-  ?branch :decayMode :PositronEmission .
+  ?branch :hasDecayMode :PositronEmission .
   FILTER(?halfLifeSeconds >= 300 && ?halfLifeSeconds <= 7200)
 }
 ORDER BY ?halfLifeSeconds
@@ -78,7 +78,7 @@ WHERE {
 
 
 ### Q3 — What does 225Ac decay to, and what does that decay to? ###
-# Property path over :hasDecayBranch/:decayProduct, one or more steps.
+# Property path over :hasDecayBranch/:hasDecayProduct, one or more steps.
 # Returns 14 nuclides: the seven of the main chain, the side products
 # 221Ra, 217Rn and 209Tl, the 14C cluster product 211Bi with its own
 # daughters 207Tl and 207Pb, and 205Tl from 209Bi's alpha branch.
@@ -90,7 +90,7 @@ WHERE {
 PREFIX : <https://rsna.org/radlex/nucleon#>
 SELECT DISTINCT ?descendant
 WHERE {
-  :Ac-225 (:hasDecayBranch/:decayProduct)+ ?descendant .
+  :Ac-225 (:hasDecayBranch/:hasDecayProduct)+ ?descendant .
 }
 
 
@@ -103,10 +103,10 @@ PREFIX : <https://rsna.org/radlex/nucleon#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT ?parent ?mode ?branchingRatio ?daughter ?daughterHalfLife
 WHERE {
-  { BIND(:Ac-225 AS ?parent) } UNION { :Ac-225 (:hasDecayBranch/:decayProduct)+ ?parent }
+  { BIND(:Ac-225 AS ?parent) } UNION { :Ac-225 (:hasDecayBranch/:hasDecayProduct)+ ?parent }
   ?parent :hasDecayBranch ?branch .
-  ?branch :decayMode     ?mode ;
-          :decayProduct  ?daughter .
+  ?branch :hasDecayMode     ?mode ;
+          :hasDecayProduct  ?daughter .
   OPTIONAL { ?branch  :branchingRatio ?branchingRatio }
   OPTIONAL { ?daughter :halfLife      ?daughterHalfLife }
 }
@@ -123,8 +123,8 @@ SELECT ?nuclide ?mode ?stableDaughter
 WHERE {
   ?nuclide a :Nuclide ;
            :hasDecayBranch ?branch .
-  ?branch :decayMode    ?mode ;
-          :decayProduct ?stableDaughter .
+  ?branch :hasDecayMode    ?mode ;
+          :hasDecayProduct ?stableDaughter .
   ?stableDaughter :isStable true .
 }
 ORDER BY ?nuclide
@@ -147,7 +147,7 @@ WHERE {
   ?nuclide a :Nuclide ;
            :halfLife       ?halfLifeSeconds ;
            :hasDecayBranch ?branch .
-  ?branch :decayMode      :AlphaDecay ;
+  ?branch :hasDecayMode      :AlphaDecay ;
           :branchingRatio ?branchingRatio .
   OPTIONAL { ?nuclide :halfLifeValue ?halfLifeValue ; :halfLifeUnit ?halfLifeUnit }
   FILTER(?halfLifeSeconds >= 3600 && ?halfLifeSeconds <= 2592000)
@@ -169,7 +169,7 @@ SELECT DISTINCT ?nuclide ?dicomCode
 WHERE {
   ?nuclide :dicomCode ?dicomCode .
   FILTER NOT EXISTS {
-    ?nuclide :hasDecayBranch/:decayMode ?mode .
+    ?nuclide :hasDecayBranch/:hasDecayMode ?mode .
     VALUES ?mode { :BetaPlusDecay :PositronEmission }
   }
 }
@@ -220,7 +220,7 @@ SELECT DISTINCT ?nuclide ?energy_keV ?yield
 WHERE {
   ?nuclide :dicomCode   ?code ;
            :hasEmission ?e .
-  ?e :radiationType  :GammaRay ;
+  ?e :hasRadiationType  :GammaRay ;
      :emissionEnergy ?energy_keV ;
      :emissionYield  ?yield .
   FILTER(?energy_keV >= 100 && ?energy_keV <= 200 && ?yield > 0.5)
@@ -241,8 +241,8 @@ PREFIX : <https://rsna.org/radlex/nucleon#>
 SELECT (COUNT(*) AS ?violations)
 WHERE {
   ?branch a :DecayBranch ;
-          :decayMode       ?mode ;
-          :decayProduct    ?daughter ;
+          :hasDecayMode       ?mode ;
+          :hasDecayProduct    ?daughter ;
           ^:hasDecayBranch ?parent .
   ?parent   :atomicNumber ?zp ; :massNumber ?ap .
   ?daughter :atomicNumber ?zd ; :massNumber ?ad .
@@ -274,17 +274,17 @@ PREFIX : <https://rsna.org/radlex/nucleon#>
 SELECT ?parent ?branch
 WHERE {
   ?parent :hasDecayBranch ?branch .
-  ?branch :decayProduct   ?parent .
+  ?branch :hasDecayProduct   ?parent .
 }
 
 
-### V4 — every decayProduct target is a declared nuclide ###
+### V4 — every hasDecayProduct target is a declared nuclide ###
 # Returns 0 rows. Guards against dangling IRIs when new branches are added.
 
 PREFIX : <https://rsna.org/radlex/nucleon#>
 SELECT ?branch ?daughter
 WHERE {
-  ?branch :decayProduct ?daughter .
+  ?branch :hasDecayProduct ?daughter .
   FILTER NOT EXISTS { ?daughter a :Nuclide }
 }
 

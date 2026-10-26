@@ -77,8 +77,8 @@ def load_nucleon(path):
         name = local(n)
         branches = []
         for b in sorted(g.objects(n, N.hasDecayBranch), key=lambda b: int(str(b).rsplit("_b", 1)[1])):
-            mode = local(g.value(b, N.decayMode))
-            d = g.value(b, N.decayProduct)
+            mode = local(g.value(b, N.hasDecayMode))
+            d = g.value(b, N.hasDecayProduct)
             r = g.value(b, N.branchingRatio)
             branches.append({"branch": local(b), "mode": mode, "family": FAMILY.get(mode, "other"),
                              "daughter": local(d) if d is not None else None,

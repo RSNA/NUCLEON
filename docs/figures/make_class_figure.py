@@ -3,7 +3,7 @@
 
 The style template is the author's Fig1 slide (template/Fig1_template.pptx): its
 header, property-panel, annotation-panel, arrow and label shapes are cloned and
-placed for the six upper classes of NUCLEON v1.5. Writes class_figure.pptx; use
+placed for the six upper classes of NUCLEON v1.6. Writes class_figure.pptx; use
 LibreOffice to export PDF/PNG (see README).
 
 Usage: python3 docs/figures/make_class_figure.py
@@ -146,16 +146,16 @@ arrow(COL[1], y2, COL[0] + W, y2); label(":isNuclideOf", mid_gap0, y2 + 30000)
 # Nuclide -> Emission -> RadiationType
 arrow(COL[1] + W, y, COL[2], y); label(":hasEmission", mid_gap1, y - LBL - 20000)
 cx = COL[2] + W / 2
-arrow(cx, em[2], cx, rt[1]); label(":radiationType", cx - 90000, em[2] + (VGAP - LBL) / 2, "r", int(2.0 * IN))
+arrow(cx, em[2], cx, rt[1]); label(":hasRadiationType", cx - 90000, em[2] + (VGAP - LBL) / 2, "r", int(2.0 * IN))
 # Nuclide <-> DecayBranch
 cx1 = COL[1] + W / 2 - int(0.42 * IN)
 cx2 = COL[1] + W / 2 + int(0.42 * IN)
 ly = nu[2] + (VGAP - LBL) / 2
 arrow(cx1, nu[2], cx1, row2); label(":hasDecayBranch", cx1 - 90000, ly, "r", int(2.2 * IN))
-arrow(cx2, row2, cx2, nu[2]); label(":decayProduct", cx2 + 90000, ly, "l", int(2.0 * IN))
+arrow(cx2, row2, cx2, nu[2]); label(":hasDecayProduct", cx2 + 90000, ly, "l", int(2.0 * IN))
 # DecayBranch -> DecayMode
 y3 = row2 + HDR / 2
-arrow(COL[1], y3, COL[0] + W, y3); label(":decayMode", mid_gap0, y3 - LBL - 20000)
+arrow(COL[1], y3, COL[0] + W, y3); label(":hasDecayMode", mid_gap0, y3 - LBL - 20000)
 
 prs.save(OUT)
 print("wrote", OUT)

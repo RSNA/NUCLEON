@@ -2,7 +2,7 @@
 """Add radiation emissions from ICRP Publication 107 to NUCLEON.
 
 Scope: the nuclides DICOM codes (CID 18, CID 4020) and every radioactive
-member of their decay chains (following :hasDecayBranch / :decayProduct).
+member of their decay chains (following :hasDecayBranch / :hasDecayProduct).
 Source: ICRP Publication 107, Nuclear Decay Data for Dosimetric Calculations
 (Ann. ICRP 38(3), 2008), file ICRP-07.RAD, read from the RadData R package
 (data/ICRP_07.RAD.rda; https://github.com/markhogue/RadData).
@@ -11,7 +11,7 @@ ICRP-107 gives, for each radionuclide, every emitted radiation with its
 energy and yield per decay (summed over the nuclide's decay branches). Each
 emission with yield >= 0.1% per decay and energy >= 1 keV becomes an
 :Emission individual linked from the nuclide by :hasEmission, with
-:radiationType (one of 14 :RadiationType individuals, ICRP-107's radiation
+:hasRadiationType (one of 14 :RadiationType individuals, ICRP-107's radiation
 codes), :emissionEnergy (keV; for beta particles the mean energy of the
 spectrum) and :emissionYield (per decay; may exceed 1, e.g. two annihilation
 photons per positron). Complete spectra, including weaker lines, are in
@@ -63,7 +63,7 @@ RTYPES = {
 ORDER = ["G", "X", "AQ", "PG", "DG", "B-", "B+", "BD", "IE", "AE", "A", "AR", "FF", "N"]
 PHOTONS = {"G", "X", "AQ", "PG", "DG"}
 
-DECL_IRIS = ["Emission", "RadiationType", "hasEmission", "radiationType", "emissionEnergy",
+DECL_IRIS = ["Emission", "RadiationType", "hasEmission", "hasRadiationType", "emissionEnergy",
              "emissionYield", "emissionSummary"] + [v[0] for v in RTYPES.values()]
 
 
@@ -128,7 +128,7 @@ def main(path, rad_path, write=False):
             continue
         scope.add(n)
         for b in g.objects(N[n], N.hasDecayBranch):
-            d = g.value(b, N.decayProduct)
+            d = g.value(b, N.hasDecayProduct)
             if d is not None and (d, N.isStable, rdflib.Literal(True)) not in g:
                 stack.append(local(d))
 
@@ -167,7 +167,7 @@ def main(path, rad_path, write=False):
                                 ("rdfs:range", [":Emission"]),
                                 ("rdfs:comment", ['"Relates a radionuclide to a radiation it emits, from ICRP Publication 107."@en']),
                                 ("rdfs:label", ['"has emission"@en'])])
-           + block("radiationType", [("rdf:type", ["owl:ObjectProperty", "owl:FunctionalProperty"]),
+           + block("hasRadiationType", [("rdf:type", ["owl:ObjectProperty", "owl:FunctionalProperty"]),
                                      ("rdfs:domain", [":Emission"]), ("rdfs:range", [":RadiationType"]),
                                      ("rdfs:comment", ['"The kind of radiation an emission is (gamma ray, X-ray, beta-minus particle, ...)."@en']),
                                      ("rdfs:label", ['"radiation type"@en'])]))
@@ -217,7 +217,7 @@ def main(path, rad_path, write=False):
             y = sig(r.prob)
             name = f"{n}_e{k}"
             ems.append(block(name, [("rdf:type", ["owl:NamedIndividual", ":Emission"]),
-                                    (":radiationType", [f":{iri}"]),
+                                    (":hasRadiationType", [f":{iri}"]),
                                     (":emissionEnergy", [e_kev]), (":emissionYield", [y]),
                                     ("rdfs:label", [f'"{n} {label} {e_kev.rstrip("0").rstrip(".")} keV"@en'])]))
             counts[r.code_AN] += 1

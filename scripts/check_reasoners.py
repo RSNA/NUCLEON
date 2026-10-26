@@ -7,7 +7,7 @@ The ontology is converted to RDF/XML, then:
   Pellet 2.3.1: `consistency`, then `unsat` (classifies the ontology and
                 lists unsatisfiable classes); about 10 s each.
   HermiT 1.3.8: consistency and classification through owlready2;
-                about 15 min for version 1.5.
+                about 15 min for version 1.6.
 
 Writes validation/reasoners.txt.
 

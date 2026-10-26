@@ -51,7 +51,7 @@ def main(ttl="NUCLEON.ttl", outdir="validation"):
         a = int(re.match(r"\d+", rest).group(0))
         key = (sym, a, (N[n], N.metastableState, None) in g)
         for e in g.objects(N[n], N.hasEmission):
-            if g.value(e, N.radiationType) != N.GammaRay or float(g.value(e, N.emissionYield)) < MIN_YIELD:
+            if g.value(e, N.hasRadiationType) != N.GammaRay or float(g.value(e, N.emissionYield)) < MIN_YIELD:
                 continue
             en = float(g.value(e, N.emissionEnergy))
             cand = gammas.get(key)

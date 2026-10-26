@@ -118,7 +118,7 @@ def main(path, write=False):
     # 3. decayEnergy from IAEA Q-values
     for b, q in list(g.subject_objects(N.decayEnergy)):
         parent = local(next(g.subjects(N.hasDecayBranch, b)))
-        col = Q_COLUMN.get(local(g.value(b, N.decayMode)))
+        col = Q_COLUMN.get(local(g.value(b, N.hasDecayMode)))
         if col and parent in src.index and not pd.isna(src.at[parent, col]):
             mev = format((Decimal(src.at[parent, col]) / 1000).normalize(), "f")
             bname = local(b)
