@@ -121,7 +121,7 @@ def main(ttl="NUCLEON.ttl", src="source-data/IAEA nuclide livechart.csv", outdir
         n_modes = []
         for b in g.objects(u, N.hasDecayBranch):
             br = g.value(b, N.branchingRatio)
-            n_modes.append((local(g.value(b, N.decayMode)), None if br is None else float(br)))
+            n_modes.append((local(g.value(b, N.hasDecayMode)), None if br is None else float(br)))
         if sorted(m for m, _ in src_modes) != sorted(m for m, _ in n_modes):
             flag(name, "decay modes", sorted(n_modes), sorted(src_modes))
         else:

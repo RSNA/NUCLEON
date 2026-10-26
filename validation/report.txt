@@ -13,7 +13,7 @@ Q8        9  Which DICOM-coded radionuclides emit a gamma ray of 100-200 keV wit
 V1        0  nucleon conservation across every asserted daughter link
 V2        0  A = Z + N for every nuclide
 V3        0  no nuclide decays to itself
-V4        0  every decayProduct target is a declared nuclide
+V4        0  every hasDecayProduct target is a declared nuclide
 V5        0  every nuclide's atomic number matches its element's
 V6        0  every display annotation equals the value it mirrors
 

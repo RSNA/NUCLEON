@@ -75,7 +75,7 @@ def decay_summary(g, nuclide):
         return "stable" if (nuclide, N.isStable, rdflib.Literal(True)) in g else None
     parts = []
     for b in branches:
-        mode = g.value(b, N.decayMode)
+        mode = g.value(b, N.hasDecayMode)
         s = mode_symbol(g, mode)
         ratio = g.value(b, N.branchingRatio)
         comment = str(g.value(b, RDFS.comment) or "")
@@ -88,7 +88,7 @@ def decay_summary(g, nuclide):
             r = float(ratio)
             txt = f"{r:.2g}" if 0 < r < 1e-3 else str(ratio)
             s += f" {op}{txt}%"
-        d = g.value(b, N.decayProduct)
+        d = g.value(b, N.hasDecayProduct)
         if d is not None:
             s += f" → {local(d)}"
         elif (mode, N.changeInAtomicNumber, None) not in g:

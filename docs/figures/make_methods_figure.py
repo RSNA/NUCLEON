@@ -2,7 +2,7 @@
 """Draw the NUCLEON methods figure (pipeline from sources to release).
 
 Writes methods_figure.svg, .pdf and .png (600 dpi at 180 mm width) next to
-this script. Numbers are those of NUCLEON v1.5 and validation/README.md.
+this script. Numbers are those of NUCLEON v1.6 and validation/README.md.
 """
 import os
 

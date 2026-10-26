@@ -73,12 +73,12 @@ def main(ttl="NUCLEON.ttl", rq="nucleon_queries.rq"):
         "  radioactive, no branch (ground state)": len(nuclides - stable - with_branch - isomers),
         "  radioactive, no branch (isomer)": len((isomers - stable) - with_branch),
         "decay branches": len(branches),
-        "  with decay product": sum(1 for b in branches if (b, N.decayProduct, None) in g),
+        "  with decay product": sum(1 for b in branches if (b, N.hasDecayProduct, None) in g),
         "  with branching ratio": sum(1 for b in branches if (b, N.branchingRatio, None) in g),
         "  fission (no product by design)": sum(
             1 for b in branches
-            if (b, N.decayProduct, None) not in g
-            and (g.value(b, N.decayMode), N.changeInAtomicNumber, None) not in g),
+            if (b, N.hasDecayProduct, None) not in g
+            and (g.value(b, N.hasDecayMode), N.changeInAtomicNumber, None) not in g),
         "decay modes": len(set(g.subjects(RDF.type, N.DecayMode))),
         "emissions (ICRP-107)": len(set(g.subjects(RDF.type, N.Emission))),
         "  nuclides with emissions": len(set(g.subjects(N.hasEmission, None))),
@@ -93,14 +93,14 @@ def main(ttl="NUCLEON.ttl", rq="nucleon_queries.rq"):
     print("\n== Structural checks ==")
     checks = {
         "branch without a parent": [b for b in branches if (None, N.hasDecayBranch, b) not in g],
-        "branch without a decay mode": [b for b in branches if (b, N.decayMode, None) not in g],
+        "branch without a decay mode": [b for b in branches if (b, N.hasDecayMode, None) not in g],
         "nuclide without an element": [n for n in nuclides if (None, N.hasNuclide, n) not in g],
         "branching ratio outside 0-100": [b for b in branches for r in g.objects(b, N.branchingRatio)
                                           if not 0 <= float(r) <= 100],
         "deprecated :isMedicalIsotope present": list(g.triples((None, N.isMedicalIsotope, None))),
         "emission without exactly one type, energy, yield": [
             e for e in g.subjects(RDF.type, N.Emission)
-            if any(len(list(g.objects(e, p))) != 1 for p in (N.radiationType, N.emissionEnergy, N.emissionYield))],
+            if any(len(list(g.objects(e, p))) != 1 for p in (N.hasRadiationType, N.emissionEnergy, N.emissionYield))],
         "emission without exactly one parent nuclide": [
             e for e in g.subjects(RDF.type, N.Emission) if len(list(g.subjects(N.hasEmission, e))) != 1],
         ":decaySummary differs from its branches": [

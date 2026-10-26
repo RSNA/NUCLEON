@@ -17,7 +17,7 @@ Protégé-style layout is preserved and the diff shows only what changed.
 Conventions (same as the ground-state build):
   * The daughter is the ground state of nuclide (Z + dZ, A + dA); an isomeric
     transition therefore resolves to the ground state of the same nuclide.
-  * Fission modes get no :decayProduct.
+  * Fission modes get no :hasDecayProduct.
   * A daughter absent from the ontology is left unasserted.
   * "?" ratios are omitted. Approximate ("~") and limit ("<", ">") ratios are
     stored as their numeric value with an rdfs:comment saying so.
@@ -98,7 +98,7 @@ def main(path, write):
     da = {local(m): g.value(m, N.changeInMassNumber) for m in g.subjects(RDF.type, N.DecayMode)}
     mode_label = {}
     for b in g.subjects(RDF.type, N.DecayBranch):
-        mode_label.setdefault(local(g.value(b, N.decayMode)),
+        mode_label.setdefault(local(g.value(b, N.hasDecayMode)),
                               str(g.value(b, RDFS.label)).split(" ", 1)[1])
     mode_label.setdefault("BetaPlusDelayedProtonEmission", "beta+-delayed-proton branch")
 
@@ -135,14 +135,14 @@ def main(path, write):
                     daughter = cand
                 else:
                     report["no_daughter"].append((bid, cand))
-            props = [f":decayMode :{mode}"]
+            props = [f":hasDecayMode :{mode}"]
             if daughter:
-                props.append(f":decayProduct :{daughter}")
+                props.append(f":hasDecayProduct :{daughter}")
             if val is not None:
                 props.append(f":branchingRatio {val}")
             # keep extra assertions (e.g. :decayEnergy) from an existing branch of the same mode
             for eb in existing:
-                if local(g.value(eb, N.decayMode)) == mode:
+                if local(g.value(eb, N.hasDecayMode)) == mode:
                     for p, o in g.predicate_objects(eb):
                         if p == N.decayEnergy:
                             props.append(f":decayEnergy {o}")

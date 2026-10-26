@@ -67,7 +67,7 @@ SELECT ?n ?z ?nn ?m ?st ?mode ?br ?dicom WHERE {
   OPTIONAL { ?n :metastableState ?m }
   OPTIONAL { ?n :isStable ?st }
   OPTIONAL { ?n :dicomCode ?dicom }
-  OPTIONAL { ?n :hasDecayBranch ?b . ?b :decayMode ?mode . OPTIONAL { ?b :branchingRatio ?br } }
+  OPTIONAL { ?n :hasDecayBranch ?b . ?b :hasDecayMode ?mode . OPTIONAL { ?b :branchingRatio ?br } }
 }"""
 cells = {}
 best = {}

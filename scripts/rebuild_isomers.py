@@ -108,7 +108,7 @@ def main(path, write=False):
     iso = {k: v for k, v in nb.items() if v["i"] > 0}
     mode_label = {}
     for b in g.subjects(RDF.type, N.DecayBranch):
-        mode_label.setdefault(local(g.value(b, N.decayMode)), str(g.value(b, RDFS.label)).split(" ", 1)[1])
+        mode_label.setdefault(local(g.value(b, N.hasDecayMode)), str(g.value(b, RDFS.label)).split(" ", 1)[1])
     mode_label.setdefault("ClusterDecay", "cluster branch")
     dz = {local(m): g.value(m, N.changeInAtomicNumber) for m in g.subjects(RDF.type, N.DecayMode)}
     da = {local(m): g.value(m, N.changeInMassNumber) for m in g.subjects(RDF.type, N.DecayMode)}
@@ -199,7 +199,7 @@ def main(path, write=False):
                 sign_note = None
                 if mode == "?B":
                     # NUBASE gives "B" (beta decay, sign unspecified): take the ground state's beta mode
-                    gs_modes = {local(g.value(b, N.decayMode)) for b in g.objects(N[gs], N.hasDecayBranch)}
+                    gs_modes = {local(g.value(b, N.hasDecayMode)) for b in g.objects(N[gs], N.hasDecayBranch)}
                     mode = "BetaMinusDecay" if "BetaMinusDecay" in gs_modes else "BetaPlusDecay"
                     sign_note = ("NUBASE2020 gives this mode as 'B' (beta decay, sign unspecified); "
                                  "assigned from the ground state's beta mode.")
@@ -216,11 +216,11 @@ def main(path, write=False):
                 else:
                     d_z, d_a = dz.get(mode), da.get(mode)
                 bid = f"{name}_b{len(branches) + 1}"
-                props = [("rdf:type", ["owl:NamedIndividual", ":DecayBranch"]), (":decayMode", [f":{mode}"])]
+                props = [("rdf:type", ["owl:NamedIndividual", ":DecayBranch"]), (":hasDecayMode", [f":{mode}"])]
                 if d_z is not None and d_a is not None:
                     dn = za_of.get((z + int(d_z), a + int(d_a)))
                     if dn:
-                        props.append((":decayProduct", [f":{dn}"]))
+                        props.append((":hasDecayProduct", [f":{dn}"]))
                 if val is not None:
                     props.append((":branchingRatio", [dec(val)]))
                 bc = [sign_note] if sign_note else []
