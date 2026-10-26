@@ -1,8 +1,9 @@
-ground states: 3389
+ground states plotted: 3377 of 3389
+not plotted: U-243, U-244, U-245, U-246, U-247, U-248, U-249, U-250, U-251, U-253, U-254, U-255
 cells with a DICOM-coded nuclide: 86
 DICOM-coded nuclides: 87
 Stable: 244
-$\beta^{-}$ decay: 1372
+$\beta^{-}$ decay: 1360
 $\beta^{+}$ decay / electron capture: 1092
 α decay: 479
 Spontaneous fission: 52
