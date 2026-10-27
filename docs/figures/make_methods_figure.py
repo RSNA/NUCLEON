@@ -125,8 +125,7 @@ vboxes = [
                                        ("0 disagreements", {"weight": "bold", "color": ACCENT})]),
     ("Values vs sources", ["IAEA export: 6 documented exceptions",
                            "Gamma lines vs ENSDF: 204 of 206 agree"]),
-    ("Manual audit", ["Stratified random sample of 100 nuclides,",
-                      "two independent reviewers"]),
+    ("Manual audit", ["Stratified random sample of 100 nuclides"]),
 ]
 REL = ("Release: NUCLEON.ttl (OWL 2 DL)",
        ["118 elements \u00b7 5,408 nuclides (2,019 isomers)",

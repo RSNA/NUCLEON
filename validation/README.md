@@ -13,7 +13,7 @@ Results for NUCLEON v1.6 (`NUCLEON.ttl` at the commit containing this file). Pro
 | Ground states vs the IAEA source export | 3,386 rows | All values match, apart from 6 documented exceptions |
 | Isomers vs NUBASE2020 | 2,019 isomers | Generated from NUBASE2020; mapping of the 716 earlier isomers in [`isomer_mapping.csv`](isomer_mapping.csv) |
 | Emissions (ICRP-107) vs ENSDF gamma energies | 216 gamma lines with yield &ge; 5% | 204 agree; 10 not checkable; 2 explained (see section 4) |
-| Manual audit | Stratified random sample of 100 | Sheet ready for two reviewers ([`audit_sample.csv`](audit_sample.csv)) |
+| Manual audit | Stratified random sample of 100 | Sheet ready for the reviewer ([`audit_sample.csv`](audit_sample.csv)) |
 
 No derived parent&ndash;daughter link contradicts either reference.
 
@@ -113,7 +113,7 @@ The structural checks in [`report.txt`](report.txt) confirm every emission has e
 | One branch, half-life &ge; 1 s | 15 | 1,139 |
 | **Total** | **100** | 5,387 |
 
-**Protocol.** Two reviewers independently fill in the blank columns of [`audit_sample.csv`](audit_sample.csv), each in their own copy. Ground states are checked against the [IAEA LiveChart of Nuclides](https://nds.iaea.org/livechart/) and isomers against NUBASE2020. For each nuclide they record the reference half-life and decay modes, and mark half-life, modes and ratios, daughters, and abundance as Y or N. Discrepancies between reviewers are resolved by discussion. [`audit_sample_key.csv`](audit_sample_key.csv) lists which sampled nuclides the automated comparisons flagged (1 of 100). Keep it from reviewers until both have finished, so the audit stays blind.
+**Protocol.** One reviewer fills in the blank columns of [`audit_sample.csv`](audit_sample.csv). Ground states are checked against the [IAEA LiveChart of Nuclides](https://nds.iaea.org/livechart/) and isomers against NUBASE2020. For each nuclide the reviewer records the reference half-life and decay modes, and marks half-life, modes and ratios, daughters, and abundance as Y or N. [`audit_sample_key.csv`](audit_sample_key.csv) lists which sampled nuclides the automated comparisons flagged (1 of 100). Keep it from the reviewer until the audit is finished, so the audit stays blind.
 
 ## Reproducing
 
