@@ -3,13 +3,13 @@
 
 Every nuclide is assigned to exactly one stratum (first match in the order
 below), then a fixed number is drawn from each with a fixed seed, so the sample
-is reproducible. Reviewers compare the NUCLEON values in the sheet with the
+is reproducible. The reviewer compares the NUCLEON values in the sheet with the
 IAEA LiveChart of Nuclides web interface (https://nds.iaea.org/livechart/).
 
 Outputs (in validation/):
   audit_sample.csv      the review sheet; reviewer columns are blank
   audit_sample_key.csv  which sampled nuclides the automated comparisons
-                        flagged; keep from reviewers until they finish, so
+                        flagged; keep from the reviewer until the audit ends, so
                         the audit stays blind
 
 Usage: python3 scripts/draw_audit_sample.py [NUCLEON.ttl] [outdir] [seed]
