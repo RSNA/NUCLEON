@@ -30,7 +30,7 @@ Sources feed scripted build steps; every decay product is derived from the decay
 | [`scripts/compare_daughters.py`](scripts/compare_daughters.py), [`compare_to_source.py`](scripts/compare_to_source.py), [`draw_audit_sample.py`](scripts/draw_audit_sample.py) | Scripts that produce those results |
 | [`source-data/`](source-data) | IAEA LiveChart export and the decay-mode reference table |
 
-## Content (v1.6)
+## Content (v1.0)
 
 | Entity or property | Count |
 | --- | ---: |
@@ -74,16 +74,16 @@ Derived parent&ndash;daughter links have also been compared with ICRP Publicatio
 - Uncertainties are not represented; values are central values. Limit or approximate branching ratios carry an `rdfs:comment`.
 - Nuclides used in nuclear medicine can be selected by `:dicomContextGroup` (CID 18 or CID 4020).
 
-## Changes in v1.6
+## Changes in v0.6 (was labeled "v1.6" in GitHub)
 
 - **Object properties renamed** so that no property shares a name with a class: `:decayMode` is now `:hasDecayMode` (it was easily confused with the class `:DecayMode`), `:decayProduct` is now `:hasDecayProduct`, and `:radiationType` is now `:hasRadiationType`. Labels changed to match ("has decay mode", ...). The old IRIs are not kept; update SPARQL queries accordingly. No values changed.
 
-## Changes in v1.5
+## Changes in v0.5
 
 - **Licence changed to CC BY-NC-ND 4.0**, consistent with the non-commercial terms of the ICRP-107 emission data.
-- **Radiation emissions** from ICRP Publication 107 for the DICOM-coded radionuclides and their decay chains: new classes `:Emission` and `:RadiationType`, properties `:hasEmission`, `:radiationType` (renamed `:hasRadiationType` in v1.6), `:emissionEnergy`, `:emissionYield`, display annotation `:emissionSummary`; 3,990 emissions for 123 nuclides. New example query Q8.
+- **Radiation emissions** from ICRP Publication 107 for the DICOM-coded radionuclides and their decay chains: new classes `:Emission` and `:RadiationType`, properties `:hasEmission`, `:radiationType` (renamed `:hasRadiationType` in v0.6), `:emissionEnergy`, `:emissionYield`, display annotation `:emissionSummary`; 3,990 emissions for 123 nuclides. New example query Q8.
 
-## Changes in v1.4
+## Changes in v0.4
 
 - **Isomers from NUBASE2020.** All 2,019 NUBASE2020 isomers (states with a half-life), with excitation energy (new property `:excitationEnergy`), half-life, spin-parity, decay modes and branching ratios. Of the 716 earlier isomers, 626 keep their IRI, 66 are renamed to NUBASE's numbering, and 24 with no NUBASE2020 state (mostly actinide fission isomers) are removed. 64 earlier IRIs now denote a different state (e.g. `:Lu-177m`); see `validation/isomer_mapping.csv`.
 - **Stability flags aligned with the IAEA export.** Bi-209, W-180, Eu-151, Cd-116, Xe-134, Ba-132 and Ce-138 are now radioactive, with the export's half-lives; Sm-149 and W-184 are stable (their spreadsheet half-lives removed). Changes in `validation/stability_alignment_log.csv`.
@@ -91,19 +91,19 @@ Derived parent&ndash;daughter links have also been compared with ICRP Publicatio
 - Added `scripts/download_iaea.py`, `scripts/rebuild_isomers.py`, `scripts/nubase.py`, `scripts/retire_legacy_fields.py`; `source-data/nubase_3.mas20.txt`.
 - Daughter comparison matches ENSDF isomer levels by excitation energy.
 
-## Changes in v1.3
+## Changes in v0.3
 
 - Reloaded half-lives, decay widths and half-life limit notes for 1,095 ground states from the IAEA export, replacing values from an earlier build. Fixes the Na-24 half-life (recorded in seconds instead of hours).
 - Swapped back the Np-242 (2.2 min) and Np-242m (5.5 min) half-lives.
 - Added natural abundance to the 287 naturally occurring nuclides.
 - Added `scripts/reload_from_source.py`; every change is logged in `validation/reload_from_source_log.csv`.
 
-## Changes in v1.2
+## Changes in v0.2
 
 - Mirrored the physical values on each element and nuclide onto its class as annotation properties under `:displayValue`, and added `:decaySummary`, so BioPortal and class-only tools display them.
 - Added validation query V6 and a `validate.py` check that every mirror and summary matches its source.
 
-## Changes in v1.1
+## Changes in v0.1
 
 - Added 971 decay branches for 636 metastable isomers (e.g. Kr-81m, In-113m, Tc-94m, Mn-52m), parsed from the source decay text; daughters derived as for ground states.
 - Tc-99m: isomeric transition corrected to 99.9963%; 0.0037% beta-minus branch to Ru-99 added.
