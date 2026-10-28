@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/1350705533.svg)](https://doi.org/10.5281/zenodo.23736195)
+
 # NUCLEON &mdash; Nuclide and Element Ontology
 
 The Nuclide and Element Ontology (NUCLEON) is a machine-processable knowledge resource that represents the 118 known chemical elements and 5,408 nuclides, including 2,019 metastable isomers, with computable nuclear properties.
